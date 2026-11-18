@@ -1,0 +1,43 @@
+{
+  "lemma": "Gianluigi Donnarumma",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Gianluigi Donnarumma",
+      "short": "Donnarumma"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Gianluigi Donnarummos",
+      "short": "Donnarummos"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Gianluigi Donnarummai",
+      "short": "Donnarummai"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Gianluigi Donnarummą",
+      "short": "Donnarummą"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Gianluigi Donnarumma",
+      "short": "Donnarumma"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Gianluigi Donnarummoje",
+      "short": "Donnarummoje"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Gianluigi Donnarumma",
+      "short": "Donnarumma"
+    }
+  ],
+  "usage_note": "The first name Gianluigi ends in -i, so it stays undeclined. The surname ends in unstressed -a and declines like a Lithuanian -a stem (Donnarummos, Donnarummai, Donnarummą), even though the player is masculine. Sports copy usually writes G. Donnarumma or just Donnarumma. The locative is rarely used. Keep the original spelling with the double n and double m."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "bb-zal-rma",
+  "sport": "basketball",
+  "competition": "EuroLeague (simulated regular-season game)",
+  "home": "BC Žalgiris",
+  "away": "Real Madrid Baloncesto",
+  "entities": [
+    {"name": "BC Žalgiris", "kind": "team", "qid": "Q393357"},
+    {"name": "Real Madrid Baloncesto", "kind": "team", "qid": "Q54922"},
+    {"name": "Sylvain Francisco", "kind": "player", "qid": "Q47494985"},
+    {"name": "Facundo Campazzo", "kind": "player", "qid": "Q2701620"}
+  ],
+  "facts": [
+    "Žalgiris won the EuroLeague in 1999.",
+    "Real Madrid is the most successful club in EuroLeague history.",
+    "Home arena: Žalgiris Arena, Kaunas."
+  ],
+  "moments": [
+    {"id": "m1", "buff_type": "prediction", "state": "3rd quarter, 6:12 left, Žalgiris 58 - 61 Real Madrid",
+     "text": "Sylvain Francisco hits a three-pointer to cut the deficit to three; Real Madrid calls a timeout."},
+    {"id": "m2", "buff_type": "quiz", "state": "Halftime, Žalgiris 41 - 44 Real Madrid",
+     "text": "Halftime break. Campazzo has 7 assists already."}
+  ]
+}

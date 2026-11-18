@@ -1,0 +1,11 @@
+<section id="experiment" class="compact">
+<p class="eyebrow">THE EXPERIMENT</p>
+<h2>Three approaches, judged blind on the same live moments</h2>
+<div class="row">
+<div class="card grow in" style="--i:0"><p class="tag">INPUT</p><h3>3 simulated matches</h3><p class="body">Žalgiris vs Real Madrid (EuroLeague basketball), Latvia vs Canada (IIHF hockey), Estonia vs Italy (World Cup qualifier). 2 live moments each, real Wikidata entities.</p></div>
+<div class="card grow in" style="--i:1"><p class="tag">OUTPUT</p><h3>18 buffs per approach</h3><p class="body">6 moments × Lithuanian, Latvian, Estonian. Every buff is validated and judged the same way.</p></div>
+<div class="card grow in" style="--i:2"><p class="tag">JUDGE</p><h3>MQM, blind</h3><p class="body">Sees only the match facts and the card. Lists errors (minor, major, critical) and scores grammar, naturalness, terminology, facts and engagement.</p></div>
+</div>
+<div class="card hot in" style="--i:3"><p class="tag">ABLATION</p><p class="body" style="font-size:28px">First run: A and B on Sonnet 5.5 (this repo’s backend model), C on Opus 5.5. Second run: A and B on Opus 5.5 too, so the model and the pipeline can be separated.</p></div>
+<aside>The MQM method is what WMT uses for human and LLM evaluation of translation (GEMBA-MQM). An approved verdict means no major or critical errors.</aside>
+</section>

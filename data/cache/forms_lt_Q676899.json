@@ -1,0 +1,43 @@
+{
+  "lemma": "Italijos vyrų futbolo rinktinė",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Italijos vyrų futbolo rinktinė",
+      "short": "Italija"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Italijos vyrų futbolo rinktinės",
+      "short": "Italijos"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Italijos vyrų futbolo rinktinei",
+      "short": "Italijai"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Italijos vyrų futbolo rinktinę",
+      "short": "Italiją"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Italijos vyrų futbolo rinktine",
+      "short": "Italija"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Italijos vyrų futbolo rinktinėje",
+      "short": "Italijoje"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Italijos vyrų futbolo rinktine",
+      "short": "Italija"
+    }
+  ],
+  "usage_note": "Only the head noun „rinktinė“ declines (ė-stem, feminine); „Italijos vyrų futbolo“ stays fixed in the genitive. In running sports copy the country name alone („Italija“, e.g. „rungtynės su Italija“, „pralaimėjo Italijai“) or „Italijos rinktinė“ / „italai“ is standard. No quotation marks are used for national teams."
+}

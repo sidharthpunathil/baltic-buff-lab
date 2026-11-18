@@ -1,0 +1,78 @@
+{
+  "lemma": "Eesti jalgpallikoondis",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Eesti jalgpallikoondis",
+      "short": "Eesti"
+    },
+    {
+      "case": "omastav",
+      "singular": "Eesti jalgpallikoondise",
+      "short": "Eesti"
+    },
+    {
+      "case": "osastav",
+      "singular": "Eesti jalgpallikoondist",
+      "short": "Eestit"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Eesti jalgpallikoondisse",
+      "short": "Eestisse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Eesti jalgpallikoondises",
+      "short": "Eestis"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Eesti jalgpallikoondisest",
+      "short": "Eestist"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Eesti jalgpallikoondisele",
+      "short": "Eestile"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Eesti jalgpallikoondisel",
+      "short": "Eestil"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Eesti jalgpallikoondiselt",
+      "short": "Eestilt"
+    },
+    {
+      "case": "saav",
+      "singular": "Eesti jalgpallikoondiseks",
+      "short": "Eestiks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Eesti jalgpallikoondiseni",
+      "short": "Eestini"
+    },
+    {
+      "case": "olev",
+      "singular": "Eesti jalgpallikoondisena",
+      "short": "Eestina"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Eesti jalgpallikoondiseta",
+      "short": "Eestita"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Eesti jalgpallikoondisega",
+      "short": "Eestiga"
+    }
+  ],
+  "usage_note": "Only the head noun 'jalgpallikoondis' declines; 'Eesti' stays in the genitive as an attribute. The illative also has the long form 'jalgpallikoondisesse', but sports press normally uses 'jalgpallikoondisse'. In running copy the team is usually called 'Eesti' (Eestit, Eestiga, Eesti vastu) or 'Eesti koondis' (koondise, koondist, koondisse). The fuller variant 'Eesti meeste jalgpallikoondis' declines the same way, with 'meeste' left unchanged."
+}

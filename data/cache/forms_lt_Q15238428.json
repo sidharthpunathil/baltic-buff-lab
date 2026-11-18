@@ -1,0 +1,43 @@
+{
+  "lemma": "Elvis Merzlikinas",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Elvis Merzlikinas",
+      "short": "Merzlikinas"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Elvio Merzlikino",
+      "short": "Merzlikino"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Elviui Merzlikinui",
+      "short": "Merzlikinui"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Elvį Merzlikiną",
+      "short": "Merzlikiną"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Elviu Merzlikinu",
+      "short": "Merzlikinu"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Elvyje Merzlikine",
+      "short": "Merzlikine"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Elvi Merzlikinai",
+      "short": "Merzlikinai"
+    }
+  ],
+  "usage_note": "Latvian names are adapted in Lithuanian sports press. The Latvian -s ending is replaced with Lithuanian -as, and ļ is simplified to l (Merzļikins → Merzlikinas). This follows the same pattern as Porziņģis → Porzingis. Elvis declines like a Lithuanian -is noun (Elvio, Elviui). In running copy, the surname is usually used alone: Merzlikinas, Merzlikino."
+}

@@ -1,0 +1,10 @@
+<section id="contracts">
+<p class="eyebrow">DATA CONTRACTS · bbl/schemas.py, bbl/reviewers.py</p>
+<h2>Malformed model output fails loudly instead of reaching an operator</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code grow"><span class="k">class</span> Buff:<br>&#160;&#160;buff_type: poll | quiz | prediction<br>&#160;&#160;title: str  <span class="c"># ≤ 35 chars</span><br>&#160;&#160;question: str<br>&#160;&#160;options: list[str]  <span class="c"># 2 to 4</span><br>&#160;&#160;correct_index: int | None<br>&#160;&#160;reveal: str<br>&#160;&#160;english_gloss: str  <span class="c"># for operators</span><br><br><span class="k">class</span> BuffDraft:<br>&#160;&#160;reasoning_notes: str  <span class="c"># case choices</span><br>&#160;&#160;buff: Buff</p>
+<p class="code grow"><span class="k">class</span> EntityForms:<br>&#160;&#160;lemma: str<br>&#160;&#160;declines: bool<br>&#160;&#160;forms: list[CaseForm]  <span class="c"># case, full, short</span><br><br><span class="k">class</span> Finding:<br>&#160;&#160;severity: minor | major | critical<br>&#160;&#160;span: str  <span class="c"># must exist on card</span><br>&#160;&#160;fix: str<br>&#160;&#160;confidence: float  <span class="c"># 0 to 1</span></p>
+</div>
+<p class="small in" style="--i:1">Calls go through <span class="mono">client.messages.parse(output_format=Model)</span>; Gemini through <span class="mono">response_schema=Model</span>. No free-text parsing anywhere.</p>
+<aside>JIL's existing proposal JSON has languages[] with options by id. Buff maps onto one languages[] entry; english_gloss and the decision log would be new optional fields.</aside>
+</section>

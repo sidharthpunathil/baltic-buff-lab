@@ -1,0 +1,78 @@
+{
+  "lemma": "Kanada jäähokikoondis",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Kanada jäähokikoondis",
+      "short": "Kanada"
+    },
+    {
+      "case": "omastav",
+      "singular": "Kanada jäähokikoondise",
+      "short": "Kanada"
+    },
+    {
+      "case": "osastav",
+      "singular": "Kanada jäähokikoondist",
+      "short": "Kanadat"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Kanada jäähokikoondisesse",
+      "short": "Kanadasse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Kanada jäähokikoondises",
+      "short": "Kanadas"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Kanada jäähokikoondisest",
+      "short": "Kanadast"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Kanada jäähokikoondisele",
+      "short": "Kanadale"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Kanada jäähokikoondisel",
+      "short": "Kanadal"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Kanada jäähokikoondiselt",
+      "short": "Kanadalt"
+    },
+    {
+      "case": "saav",
+      "singular": "Kanada jäähokikoondiseks",
+      "short": "Kanadaks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Kanada jäähokikoondiseni",
+      "short": "Kanadani"
+    },
+    {
+      "case": "olev",
+      "singular": "Kanada jäähokikoondisena",
+      "short": "Kanadana"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Kanada jäähokikoondiseta",
+      "short": "Kanadata"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Kanada jäähokikoondisega",
+      "short": "Kanadaga"
+    }
+  ],
+  "usage_note": "Only the head noun 'jäähokikoondis' declines; 'Kanada' stays in the genitive as a modifier. In running sports copy the country name alone ('Kanada') is used for the team and declines as a regular a-final noun (Kanadat, Kanadaga, Kanada vastu). Alternatives: 'Kanada koondis'; colloquially 'kanadalased' for the players."
+}

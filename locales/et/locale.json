@@ -1,0 +1,41 @@
+{
+ "quotes": "„…“",
+ "bad_quotes": [
+  "\""
+ ],
+ "decimal": ",",
+ "yesno_particle": "Kas",
+ "min_diacritic_density": 0.02,
+ "forbidden_patterns": [
+  {
+   "pattern": "\\bpoolt\\b",
+   "message": "'poolt' passive is translationese; use active voice",
+   "severity": "warn"
+  },
+  {
+   "pattern": "\\bhakkab \\w+ma\\b",
+   "message": "forced future with 'hakkab'",
+   "severity": "warn"
+  },
+  {
+   "pattern": "\\barvuliselt ülekaal",
+   "message": "use 'arvulises ülekaalus'",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\b(Teie|teie|Vaadake|Hääletage)\\b",
+   "message": "formal register; use sina",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\blöi\\b",
+   "message": "õ/ö swap: 'lõi'",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\w'(st|le|ga|l|s|t|d)\\b",
+   "message": "apostrophe before case ending only when spelling and pronunciation conflict",
+   "severity": "warn"
+  }
+ ]
+}

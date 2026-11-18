@@ -1,0 +1,38 @@
+{
+  "lemma": "Džanluidži Donnarumma",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Džanluidži Donnarumma",
+      "short": "Donnarumma"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Džanluidži Donnarummas",
+      "short": "Donnarummas"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Džanluidži Donnarummai",
+      "short": "Donnarummai"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Džanluidži Donnarummu",
+      "short": "Donnarummu"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Džanluidži Donnarummā",
+      "short": "Donnarummā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Džanluidži Donnarumma",
+      "short": "Donnarumma"
+    }
+  ],
+  "usage_note": "The first name Džanluidži ends in -i, so it stays undeclined. The surname Donnarumma is a masculine noun ending in -a and declines like a 4th-declension noun: Donnarummas, Donnarummam, Donnarummu, Donnarummā. Italian double consonants are kept, as in the curated label. Sports copy usually uses the surname alone or the initial plus surname (Dž. Donnarumma). The original spelling Gianluigi Donnarumma may be given in parentheses on first mention. | Tēzaurs morpho-api applied (datīvs: Džanluidži Donnarummam->Džanluidži Donnarummai)"
+}

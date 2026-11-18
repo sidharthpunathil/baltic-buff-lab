@@ -1,0 +1,38 @@
+{
+  "lemma": "Itālijas futbola izlase",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Itālijas futbola izlase",
+      "short": "Itālija"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Itālijas futbola izlases",
+      "short": "Itālijas"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Itālijas futbola izlasei",
+      "short": "Itālijai"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Itālijas futbola izlasi",
+      "short": "Itāliju"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Itālijas futbola izlasē",
+      "short": "Itālijā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Itālijas futbola izlase",
+      "short": "Itālija"
+    }
+  ],
+  "usage_note": "Only the head noun 'izlase' (5th declension, feminine) declines; 'Itālijas futbola' stays in genitive as a fixed modifier. In running sports copy the country name alone (Itālija, 4th declension) is the usual short form, e.g. 'spēlē pret Itāliju', 'Itālijai uzvara'. 'Itālijas izlase' is also common. Lokatīvs 'Itālijā' means 'in Italy', so for the team use 'Itālijas izlasē' (e.g. 'spēlē Itālijas izlasē'). The nickname 'Squadra Azzurra' is written in quotes and does not decline."
+}

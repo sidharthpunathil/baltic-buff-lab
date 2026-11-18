@@ -1,0 +1,38 @@
+{
+  "lemma": "Madrides \"Real\"",
+  "gender": "masculine",
+  "declines": false,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    },
+    {
+      "case": "datīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Madrides \"Real\"",
+      "short": "\"Real\""
+    }
+  ],
+  "usage_note": "Foreign club name: kept in quotes and undeclined, with the city in the genitive (Madrides). Case is carried by the context, e.g. \"pret Madrides \"Real\"\", \"\"Real\" basketbolisti\", or an added declinable noun (\"Real\" komandai, komandā). Agreement is usually masculine (\"Real\" uzvarēja). To distinguish it from the football club, sports copy often adds \"basketbolisti\" or \"basketbola komanda\" (Madrides \"Real\" basketbolisti). Do not respell or add Latvian endings (not *Reāls, *Reala)."
+}

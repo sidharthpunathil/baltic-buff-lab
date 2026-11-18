@@ -1,0 +1,38 @@
+{
+  "lemma": "Fakundo Kampaco",
+  "gender": "masculine",
+  "declines": false,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Fakundo Kampaco",
+      "short": "Kampaco"
+    }
+  ],
+  "usage_note": "Latvian sports media respell the Argentine guard's name phonetically as Fakundo Kampaco, from the Italian-derived spelling Campazzo. Both the first name and the surname end in -o, so under Latvian norms they stay undeclined in every case. In running copy, use the surname alone (Kampaco) or the initial plus surname (F. Kampaco). On first mention, you may give the original spelling in parentheses: Fakundo Kampaco (Facundo Campazzo). | Tēzaurs morpho-api applied (agreed)"
+}

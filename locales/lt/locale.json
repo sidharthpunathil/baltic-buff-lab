@@ -1,0 +1,31 @@
+{
+ "quotes": "„…“",
+ "bad_quotes": [
+  "\""
+ ],
+ "decimal": ",",
+ "yesno_particle": "Ar",
+ "min_diacritic_density": 0.035,
+ "forbidden_patterns": [
+  {
+   "pattern": "\\bsekan(t|č)",
+   "message": "'sekantis' for 'next' is a Russianism; use kitas/kita/kitą",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\bJūs(ų)?\\b",
+   "message": "polite Jūs; Go3 copy uses informal tu",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\bbaudos smūg",
+   "message": "'baudos smūgis' is a free kick, not a penalty (baudinys)",
+   "severity": "warn"
+  },
+  {
+   "pattern": "\\bma(č|t)(as|o|ą|ai|ų)\\b",
+   "message": "colloquial 'mačas'; use rungtynės",
+   "severity": "warn"
+  }
+ ]
+}

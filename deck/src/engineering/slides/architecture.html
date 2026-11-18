@@ -1,0 +1,14 @@
+<section id="architecture">
+<p class="eyebrow">POC: baltic-buff-lab/bbl</p>
+<h2>Linguists fix language problems without an engineer: all language data lives in plain files</h2>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px" class="in">
+<div class="card"><p class="tag">REFERENCE DATA</p><p class="body"><span class="mono">entities.py</span> Wikidata labels, disk cache<br><span class="mono">inflect.py</span> LLM case tables<br><span class="mono">tezaurs.py</span> Latvian morphology API<br><span class="mono">press.py</span> press-verified overrides</p></div>
+<div class="card"><p class="tag">GENERATION</p><p class="body"><span class="mono">locale_pack.py</span> style, glossary, examples<br><span class="mono">generate.py</span> arms A, B, C/D prompts<br><span class="mono">llm.py</span> structured output, model chains, usage</p></div>
+<div class="card"><p class="tag">CHECKS</p><p class="body"><span class="mono">validators.py</span> deterministic rules<br><span class="mono">spell.py</span> Hunspell lt/lv/et<br><span class="mono">reviewers.py</span> 5 specialists + orchestrator<br><span class="mono">judge.py</span> MQM evaluation panel</p></div>
+</div>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">ORCHESTRATION</p><p class="body"><span class="mono">pipeline.py</span> runs arms in a thread pool, keeps a full trace; <span class="mono">cli.py</span>, <span class="mono">report.py</span>, <span class="mono">analyze.py</span> for runs and HTML reports.</p></div>
+<div class="card grow"><p class="tag">DATA FILES</p><p class="body"><span class="mono">locales/&lt;lang&gt;/</span> style.md, locale.json, fewshot.json · <span class="mono">data/glossary/</span> · <span class="mono">data/names/press.json</span></p></div>
+</div>
+<aside>Python 3.12, uv. Dependencies: anthropic, pydantic, google-genai, spylls, phunspell, rich, pytest. About 1,700 lines of Python across 17 modules, including config, schemas and the CLI.</aside>
+</section>

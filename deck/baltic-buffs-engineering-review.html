@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baltic Buffs Engineering Review</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root {
+  --ink: #101223;
+  --ink-2: #191C33;
+  --ink-3: #23274A;
+  --paper: #F3F4EE;
+  --paper-2: #E6E8DC;
+  --yellow: #D4FF00;
+  --blue: #3A30F0;
+  --blue-soft: #A29CFF;
+  --orange: #FF8A3D;
+  --muted-dark: #B7BAD4;
+  --muted-light: #4A4D66;
+  --line-dark: #33375C;
+  --line-light: #C8CBBB;
+}
+
+body { font-family: 'IBM Plex Sans', Arial, sans-serif; }
+
+section {
+  padding: 112px 128px 128px;
+  background: var(--ink);
+  color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  counter-increment: page;
+}
+section.light { background: var(--paper); color: var(--ink); }
+section.accent { background: var(--yellow); color: var(--ink); }
+
+h1, h2, h3 { font-family: 'IBM Plex Sans', Arial, sans-serif; }
+h1 { font-size: 112px; line-height: 1.02; font-weight: 700; letter-spacing: -2px; }
+h2 { font-size: 60px; line-height: 1.1; font-weight: 600; letter-spacing: -0.5px; }
+h3 { font-size: 34px; line-height: 1.2; font-weight: 600; }
+p { font-size: 30px; line-height: 1.4; }
+
+.eyebrow { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; letter-spacing: 1px; color: var(--yellow); font-weight: 600; }
+section.light .eyebrow, section.accent .eyebrow { color: var(--blue); }
+.lede { font-size: 36px; color: var(--muted-dark); max-width: 1500px; line-height: 1.35; }
+.small { font-size: 26px; line-height: 1.4; color: var(--muted-dark); }
+section.light .small { color: var(--muted-light); }
+
+.row { display: flex; gap: 28px; }
+.col { display: flex; flex-direction: column; gap: 18px; }
+.grow { flex: 1; }
+.fill { flex: 1; min-height: 0; }
+
+.card { background: var(--ink-2); border: 2px solid var(--line-dark); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+section.light .card { background: #FAFBF6; border-color: var(--line-light); }
+.card .tag { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; color: var(--yellow); font-weight: 600; }
+section.light .card .tag { color: var(--blue); }
+.card .body { font-size: 27px; line-height: 1.38; color: var(--muted-dark); }
+section.light .card .body { color: var(--muted-light); }
+.card.hot { border-color: var(--yellow); }
+section.light .card.hot { border-color: var(--blue); }
+
+.code { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 25px; line-height: 1.5; background: #0A0B18; color: #E3E5F4; border: 2px solid var(--line-dark); border-radius: 16px; padding: 28px 32px; }
+.code .k { color: var(--yellow); }
+.code .c { color: #8A8EB0; }
+.code .s { color: var(--blue-soft); }
+.mono { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+.path { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; color: var(--blue-soft); }
+section.light .path { color: var(--blue); }
+
+table { font-size: 28px; color: var(--paper); width: 100%; }
+section.light table { color: var(--ink); }
+.win { color: var(--yellow); font-weight: 700; }
+section.light .win { color: var(--blue); }
+.bad { color: var(--orange); }
+
+.stage { background: var(--ink-2); border: 2px solid var(--line-dark); border-radius: 16px; padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; }
+.stage .name { font-size: 28px; font-weight: 600; }
+.stage .meta { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; color: var(--muted-dark); }
+.stage.hot { border-color: var(--yellow); }
+.arrow { width: 56px; height: 28px; background: var(--line-dark); }
+
+.big { font-size: 140px; line-height: 1; font-weight: 700; letter-spacing: -3px; }
+.biglabel { font-size: 28px; color: var(--muted-dark); line-height: 1.35; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.in { animation: rise 550ms cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: calc(var(--i, 0) * 100ms); }
+
+.big-body .card .body { font-size: 30px; }
+.big-body .card { padding: 36px; gap: 14px; }
+
+html,body{margin:0;height:100%;background:#0B0C1C;overflow:hidden}
+/* same base the Slides renderer applies: no default margins, its own table hairlines */
+#deck *{margin:0}
+#deck p,#deck li,#deck h1,#deck h2,#deck h3,#deck td,#deck th{overflow-wrap:break-word}
+#deck table{border-collapse:collapse}
+#deck th,#deck td{padding:.35em .6em;text-align:left;vertical-align:top;border-bottom:1px solid rgba(140,144,170,.35)}
+#deck th{font-weight:600;border-bottom:2px solid rgba(140,144,170,.6)}
+#stage{position:fixed;left:0;right:0;top:0;bottom:var(--navh);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+#spacer{width:1px}
+:root{--navh:72px}
+#deck{width:1920px;height:1080px;position:absolute;left:0;top:0;transform-origin:0 0;border-radius:6px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+#deck>section{position:absolute;inset:0;box-sizing:border-box;display:none}
+#deck>section.active{display:flex}
+#deck>section .in{animation:none}
+#deck>section.active .in{animation:rise 600ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:calc(var(--i,0)*110ms)}
+x-shape{display:block} x-shape[kind="arrow-right"]{clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%)}
+aside.notes{display:none}
+body.shownotes aside.notes{display:block;position:absolute;left:128px;right:128px;bottom:24px;font-size:22px;line-height:1.4;background:rgba(10,11,24,.92);color:#F4F5EE;padding:16px 20px;border-radius:12px}
+#nav{position:fixed;left:0;right:0;bottom:0;height:var(--navh);display:flex;gap:10px;align-items:center;justify-content:center;font:600 15px system-ui,sans-serif;color:#F4F5EE;z-index:9;background:#0B0C1C;border-top:1px solid #23264A}
+#nav button{background:#1C1E40;color:#F4F5EE;border:1px solid #34375E;border-radius:999px;padding:10px 18px;font:inherit;cursor:pointer;min-width:44px;min-height:44px}
+#nav button:hover{background:#3A30F0} #nav button:focus-visible{outline:2px solid #D4FF00;outline-offset:2px}
+#count{padding:0 8px;font-variant-numeric:tabular-nums}
+#bar{position:fixed;top:0;left:0;height:4px;background:#D4FF00;z-index:9;transition:width .3s}
+/* Read mode: reflow slides into one column for phones */
+body.read #deck{position:static;transform:none!important;width:auto;height:auto;border-radius:0;box-shadow:none;overflow:visible}
+body.read #spacer{display:none}
+body.read #deck>section{display:flex!important;position:relative;inset:auto;height:auto;min-height:0;padding:28px 18px 32px;gap:16px;border-bottom:1px solid #2A2D4A}
+body.read #deck .row{flex-direction:column;gap:12px;align-items:stretch!important}
+body.read #deck [style*="grid-template-columns"]{grid-template-columns:1fr!important;grid-template-rows:auto!important}
+body.read #deck .fill{flex:none}
+body.read #deck x-shape{display:none}
+body.read #deck p,body.read #deck li,body.read #deck td,body.read #deck th,body.read #deck .body,body.read #deck .small,body.read #deck .lede{font-size:16px!important;line-height:1.45!important}
+body.read #deck .eyebrow,body.read #deck .tag,body.read #deck .meta,body.read #deck .path,body.read #deck .barlabel{font-size:12px!important;letter-spacing:.5px}
+body.read #deck h1{font-size:40px!important} body.read #deck h2{font-size:26px!important;line-height:1.2} body.read #deck h3{font-size:19px!important}
+body.read #deck .big{font-size:64px!important} body.read #deck .quote{font-size:24px!important;padding-left:14px;border-left-width:4px}
+body.read #deck .code{font-size:13px!important;padding:14px;overflow-x:auto}
+body.read #deck .card,body.read #deck .stage{padding:16px!important;border-radius:14px}
+body.read #deck table{display:block;overflow-x:auto;width:100%}
+body.read #deck th,body.read #deck td{width:auto!important;min-width:90px}
+body.read #deck [style*="width:"]:not(table):not(th):not(td){max-width:100%}
+body.read #deck .in{animation:none!important}
+body.read aside.notes{display:block!important;position:static;font-size:14px;background:#191C33;color:#B7BAD4;padding:10px 12px;border-radius:10px}
+@media (prefers-reduced-motion:reduce){#deck>section.active .in{animation:none}#bar{transition:none}}
+</style></head><body>
+<div id="bar"></div>
+<div id="stage"><div id="spacer"></div><div id="deck" role="region" aria-roledescription="slideshow" aria-label="Baltic Buffs Engineering Review">
+<section id="cover" style="justify-content:space-between" data-transition="fade">
+<p class="eyebrow in" style="--i:0">ENGINEERING REVIEW · feature/baltic-language-research · 18 NOV 2026</p>
+<div class="col">
+<h1 class="in" style="--i:1">Baltic buffs:<br>from POC to production</h1>
+<p class="lede in" style="--i:2">How the lt / lv / et pipeline is built, what it costs per buff, and the seven PRs that would put it in JIL.</p>
+</div>
+<div class="row in" style="--i:3">
+<div class="card grow"><p class="tag">QUALITY</p><p class="body">Approved by both judges: 14/17 with the review team, 4/11 with today’s native prompt, same model.</p></div>
+<div class="card grow"><p class="tag">SCOPE</p><p class="body">Python POC in baltic-buff-lab/ (gitignored), 22 offline tests, 3 matches × 3 languages × 4 arms.</p></div>
+<div class="card grow"><p class="tag">THE ASK</p><p class="body">Approve PRs 1 and 2 (prompt-only) now; shadow-mode the rest behind an org flag.</p></div>
+</div>
+<aside class="notes">Audience: backend and frontend engineers. Everything here traces to code in baltic-buff-lab/ or to file:line references in backend/app.</aside>
+</section>
+<section id="tldr" class="light">
+<p class="eyebrow">TL;DR FOR ENGINEERS</p>
+<h2>Same model, better inputs and checks: 21 major errors down to 1</h2>
+<table class="in" style="--i:0; font-size:30px">
+<tr><th style="width:40%">Round 2, claude-opus-5-5, 18 buffs per arm</th><th style="text-align:right">B: today’s native prompt</th><th style="text-align:right">D: review-team pipeline</th></tr>
+<tr><td>Major + critical errors (blind judge)</td><td style="text-align:right">21</td><td class="win" style="text-align:right">1</td></tr>
+<tr><td>Approved by Claude judge</td><td style="text-align:right">7/18</td><td class="win" style="text-align:right">17/18</td></tr>
+<tr><td>Approved by both Claude and Gemini judges</td><td style="text-align:right">4/11</td><td class="win" style="text-align:right">14/17</td></tr>
+<tr><td>Mean MQM penalty (lower is better)</td><td style="text-align:right">7.7</td><td class="win" style="text-align:right">0.8</td></tr>
+</table>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">WHAT CHANGED</p><p class="body">Glossary + style sheet + gold examples in the prompt, press-verified name case tables, deterministic validators, five specialist reviewers.</p></div>
+<div class="card grow"><p class="tag">WHAT DIDN’T</p><p class="body">The model. B and D both generate with claude-opus-5-5, so the gap is the pipeline.</p></div>
+</div>
+<aside class="notes">Run out/run-20261117-235224. Gemini scored 38 of 54 buffs; the rest were overload errors, hence the n/11 and n/17 denominators.</aside>
+</section>
+<section id="codepaths">
+<p class="eyebrow">TODAY: BACKEND CODE PATHS</p>
+<h2>One prompt builder feeds every AI buff, so one change reaches all of them</h2>
+<div class="row in" style="--i:0; align-items:center">
+<div class="col grow">
+<div class="stage"><p class="name">Timeline / Temporal</p><p class="meta">feed/agent.py:945 _generate_proposal</p></div>
+<div class="stage"><p class="name">Push ingest</p><p class="meta">feed_ingest_processor.py:434</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage hot"><p class="name">Prompt builder</p><p class="meta">feed_buff_gen_prompts.py:416</p><p class="meta">pack: sports | sports_native</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage"><p class="name">LLMClient<br>Factory</p><p class="meta">temp 0.8, JSON</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage"><p class="name">flatten_native_<br>languages</p><p class="meta">buff_translation.py:214</p></div>
+<div class="stage"><p class="name">normalize_llm_<br>translations</p><p class="meta">buff_translation.py:280</p></div>
+</div>
+</div>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">MANUAL PATH</p><p class="body">Editor’s Translate button: <span class="mono">viewer_api_routes.py:9317</span> translate_buff_content, platform default model, temp 0.2, English source in, no match context.</p></div>
+<div class="card grow"><p class="tag">LANGUAGE PLAN</p><p class="body"><span class="mono">resolve_language_plan</span> (feed_buff_gen_prompts.py:312): org flag multi_language_buffs + event translation_languages; first listed is primary.</p></div>
+</div>
+<aside class="notes">Verified against the current branch. The decision gate (BuffGenDecisionGate, agent.py:878) runs before generation and is unaffected.</aside>
+</section>
+<section id="rootcauses" class="light">
+<p class="eyebrow">ROOT CAUSES IN CODE</p>
+<h2>Each Baltic failure maps to a specific line</h2>
+<table class="in" style="--i:0; font-size:26px">
+<tr><th style="width:30%">Symptom in the run</th><th style="width:36%">Where</th><th>Cause</th></tr>
+<tr><td>Names left undeclined</td><td class="mono">viewer_api_routes.py:9365</td><td>Prompt says “Preserve … team names, player names … as-is”</td></tr>
+<tr><td>Calqued sport terms</td><td class="mono">packs/sports_native/…/system_prompt.txt</td><td>Asks for native terms but supplies no glossary</td></tr>
+<tr><td>Invented name spellings</td><td class="mono">models/event.py:66</td><td>Event.teams exists but never reaches the prompt; only name and sport do</td></tr>
+<tr><td>Bad copy reaches operators</td><td class="mono">buff_translation.py:280</td><td>Normalizer checks structure only: no language, length or term checks</td></tr>
+<tr><td>English text in Baltic buffs</td><td class="mono">feed/agent.py:1178, 1188</td><td>Hard-coded fallbacks “Rate this moment”, “Agree / Disagree”</td></tr>
+<tr><td>Wrong facts after translation</td><td class="mono">viewer_api_routes.py:9317</td><td>Translate call never sees the match state</td></tr>
+</table>
+<aside class="notes">None of these need a model change. Rows 1 to 4 are fixed by PRs 1 to 4 in the plan; row 5 needs localized fallbacks from the i18n catalog.</aside>
+</section>
+<section id="architecture">
+<p class="eyebrow">POC: baltic-buff-lab/bbl</p>
+<h2>Linguists fix language problems without an engineer: all language data lives in plain files</h2>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px" class="in">
+<div class="card"><p class="tag">REFERENCE DATA</p><p class="body"><span class="mono">entities.py</span> Wikidata labels, disk cache<br><span class="mono">inflect.py</span> LLM case tables<br><span class="mono">tezaurs.py</span> Latvian morphology API<br><span class="mono">press.py</span> press-verified overrides</p></div>
+<div class="card"><p class="tag">GENERATION</p><p class="body"><span class="mono">locale_pack.py</span> style, glossary, examples<br><span class="mono">generate.py</span> arms A, B, C/D prompts<br><span class="mono">llm.py</span> structured output, model chains, usage</p></div>
+<div class="card"><p class="tag">CHECKS</p><p class="body"><span class="mono">validators.py</span> deterministic rules<br><span class="mono">spell.py</span> Hunspell lt/lv/et<br><span class="mono">reviewers.py</span> 5 specialists + orchestrator<br><span class="mono">judge.py</span> MQM evaluation panel</p></div>
+</div>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">ORCHESTRATION</p><p class="body"><span class="mono">pipeline.py</span> runs arms in a thread pool, keeps a full trace; <span class="mono">cli.py</span>, <span class="mono">report.py</span>, <span class="mono">analyze.py</span> for runs and HTML reports.</p></div>
+<div class="card grow"><p class="tag">DATA FILES</p><p class="body"><span class="mono">locales/&lt;lang&gt;/</span> style.md, locale.json, fewshot.json · <span class="mono">data/glossary/</span> · <span class="mono">data/names/press.json</span></p></div>
+</div>
+<aside class="notes">Python 3.12, uv. Dependencies: anthropic, pydantic, google-genai, spylls, phunspell, rich, pytest. About 1,700 lines of Python across 17 modules, including config, schemas and the CLI.</aside>
+</section>
+<section id="dataflow" class="light">
+<p class="eyebrow">ARM D: REQUEST FLOW FOR ONE BUFF</p>
+<h2>Live buffs pay only for writing and review; name work happens before kickoff</h2>
+<div class="row in" style="--i:0; align-items:stretch">
+<div class="card grow"><p class="tag">PRECOMPUTE · per event</p><p class="body">1. Resolve teams + players on Wikidata<br>2. Case tables per language<br>3. Apply press overrides + Tēzaurs<br>4. Cache, native editor checks once</p></div>
+<div class="card grow hot"><p class="tag">LIVE · per moment</p><p class="body">5. Assemble prompt: style + glossary(sport) + names + 6 examples<br>6. Generate <span class="mono">BuffDraft</span> (structured output)<br>7. Validators, ms<br>8. Five reviewers in parallel</p></div>
+<div class="card grow"><p class="tag">DECIDE</p><p class="body">9. Orchestrator: dismiss, block or advise<br>10. Routed repair, max 2 rounds, re-run only affected reviewers<br>11. Proposal + English gloss + decision log to the operator</p></div>
+</div>
+<p class="small in" style="--i:1">The evaluation panel (fresh Claude judge + Gemini) only runs in the lab and in an offline nightly job. It never gates a live buff.</p>
+<aside class="notes">Steps 1 to 4 run once per event at event creation, so the live path pays nothing for Wikidata, Tēzaurs or press lookups.</aside>
+</section>
+<section id="contracts">
+<p class="eyebrow">DATA CONTRACTS · bbl/schemas.py, bbl/reviewers.py</p>
+<h2>Malformed model output fails loudly instead of reaching an operator</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code grow"><span class="k">class</span> Buff:<br>&#160;&#160;buff_type: poll | quiz | prediction<br>&#160;&#160;title: str  <span class="c"># ≤ 35 chars</span><br>&#160;&#160;question: str<br>&#160;&#160;options: list[str]  <span class="c"># 2 to 4</span><br>&#160;&#160;correct_index: int | None<br>&#160;&#160;reveal: str<br>&#160;&#160;english_gloss: str  <span class="c"># for operators</span><br><br><span class="k">class</span> BuffDraft:<br>&#160;&#160;reasoning_notes: str  <span class="c"># case choices</span><br>&#160;&#160;buff: Buff</p>
+<p class="code grow"><span class="k">class</span> EntityForms:<br>&#160;&#160;lemma: str<br>&#160;&#160;declines: bool<br>&#160;&#160;forms: list[CaseForm]  <span class="c"># case, full, short</span><br><br><span class="k">class</span> Finding:<br>&#160;&#160;severity: minor | major | critical<br>&#160;&#160;span: str  <span class="c"># must exist on card</span><br>&#160;&#160;fix: str<br>&#160;&#160;confidence: float  <span class="c"># 0 to 1</span></p>
+</div>
+<p class="small in" style="--i:1">Calls go through <span class="mono">client.messages.parse(output_format=Model)</span>; Gemini through <span class="mono">response_schema=Model</span>. No free-text parsing anywhere.</p>
+<aside class="notes">JIL's existing proposal JSON has languages[] with options by id. Buff maps onto one languages[] entry; english_gloss and the decision log would be new optional fields.</aside>
+</section>
+<section id="orchestrator">
+<p class="eyebrow">bbl/reviewers.py · orchestrate()</p>
+<h2>Every hold or publish decision can be explained and replayed</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code" style="width:980px"><span class="k">for</span> finding <span class="k">in</span> all_reviews:<br>&#160;&#160;<span class="k">if</span> finding.span ⊆ press_verified_forms:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"contradicts press evidence"</span>)<br>&#160;&#160;<span class="k">elif</span> finding.span <span class="k">not in</span> card_text:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"hallucinated span"</span>)<br>&#160;&#160;<span class="k">elif</span> finding.span <span class="k">in</span> seen:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"duplicate"</span>)<br>&#160;&#160;<span class="k">elif</span> major_or_critical <span class="k">and</span> confidence ≥ 0.6:<br>&#160;&#160;&#160;&#160;block(finding)<br>&#160;&#160;<span class="k">else</span>:<br>&#160;&#160;&#160;&#160;advise(finding)<br><br>repair(route_by_reviewer(blocking))<br>rerun = blocking_reviewers ∪ {<span class="s">"grammar"</span>}</p>
+<div class="col grow">
+<div class="card"><p class="tag">ROUND 2 BEHAVIOUR</p><p class="body">18 buffs: 14 published on the first draft, 2 needed one repair, 2 hit the 2-repair cap. Validator false positives, since fixed, drove both cap hits.</p></div>
+<div class="card"><p class="tag">TESTED OFFLINE</p><p class="body">tests/test_press_and_orchestrator.py drives the real orchestrate() with real Review objects; only the LLM call is replaced.</p></div>
+</div>
+</div>
+<aside class="notes">Grammar always re-runs after a repair because any edit can break case agreement elsewhere in the sentence.</aside>
+</section>
+<section id="latency" class="big-body">
+<p class="eyebrow">MEASURED · tools/timing.py · one moment per language · claude-opus-5-5</p>
+<h2>About 14 seconds and 4 cents per buff, if Gemini stays off the live path</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:34%">Stage</th><th style="text-align:right">All Claude (lt / lv / et)</th><th style="text-align:right">Native ear on Gemini</th></tr>
+<tr><td>Generate (medium effort)</td><td style="text-align:right">13.2 / 11.0 / 10.5 s</td><td style="text-align:right">10 to 15 s</td></tr>
+<tr><td>Validators</td><td style="text-align:right">0.25 / 0.36 / 0.88 s</td><td style="text-align:right">same</td></tr>
+<tr><td>Five reviewers, parallel, low effort</td><td class="win" style="text-align:right">4.0 / 2.2 / 2.1 s</td><td class="bad" style="text-align:right">3 s to 200 s</td></tr>
+<tr><td>End to end, first draft</td><td class="win" style="text-align:right">median 13.5 s</td><td style="text-align:right">median 27.7 s, tail 213 s</td></tr>
+<tr><td>Cost per buff, warm prompt cache</td><td class="win" style="text-align:right">$0.036 to $0.050</td><td style="text-align:right">similar</td></tr>
+</table>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">DECISION</p><p class="body">Native-ear review runs on Claude live. Gemini moves to the offline panel only, where a slow answer costs nothing.</p></div>
+<div class="card grow"><p class="tag">COST NOTE</p><p class="body">The first buff per event and language writes ~13k cached prompt tokens (about $0.10). Every later buff reads the cache.</p></div>
+</div>
+<aside class="notes">Cost uses $4 / $20 per million input / output tokens, cache writes at 1.25x and reads at 0.05x input. A repair round adds roughly one generate plus the affected reviewers. Lower generation effort or a smaller model was not measured yet.</aside>
+</section>
+<section id="caching" class="light">
+<p class="eyebrow">DATA PLACEMENT · follows the Redis-first rule in CLAUDE.md</p>
+<h2>Nothing new hits Postgres on a polled path</h2>
+<table class="in" style="--i:0; font-size:31px">
+<tr><th style="width:24%">Data</th><th style="width:24%">System of record</th><th style="width:26%">Read path</th><th>Written when</th></tr>
+<tr><td>Glossary, style, examples</td><td>prompt pack files</td><td>process memory</td><td>deploy / PR</td></tr>
+<tr><td>Name case tables</td><td>Postgres, new table</td><td>Redis per event, then Postgres fallback</td><td>event create (worker), native edit</td></tr>
+<tr><td>Press evidence</td><td>Postgres, same table</td><td>Redis with the case tables</td><td>nightly refresh job</td></tr>
+<tr><td>Decision log per buff</td><td>Postgres, proposal JSON</td><td>admin UI only, not polled</td><td>proposal write (existing path)</td></tr>
+<tr><td>Operator edits (flywheel)</td><td>Postgres, new table</td><td>analytics only</td><td>write-behind via Redis stream</td></tr>
+</table>
+<p class="small in" style="--i:1">Viewers never read any of this: they get the finished buff through the existing delivery path. Only the generator and the admin UI read the new data.</p>
+<aside class="notes">Edit capture is a user-generated write, so it follows the ScoreStore / award_persistence write-behind pattern and needs the data-loss tests from CLAUDE.md rule 8.</aside>
+</section>
+<section id="prplan">
+<p class="eyebrow">INTEGRATION PLAN · each a feature/* branch → develop</p>
+<h2>Seven PRs, smallest risk first</h2>
+<table class="in" style="--i:0; font-size:25px">
+<tr><th style="width:5%">#</th><th style="width:38%">Change</th><th style="width:37%">Touches</th><th>Size</th></tr>
+<tr><td>1</td><td>Native rewrite replaces the translate prompt; pass match context</td><td class="mono">viewer_api_routes.translate_buff_content</td><td>S</td></tr>
+<tr><td>2</td><td>{{LOCALE_PACK}} token: style + sport glossary + examples</td><td class="mono">feed_buff_gen_prompts.py:416, packs/</td><td>S</td></tr>
+<tr><td>3</td><td>Validators as a pure module, results into issues[]</td><td class="mono">buff_translation.flatten_native_languages</td><td>M</td></tr>
+<tr><td>4</td><td>Entity case tables: model, worker, Redis cache, prompt token</td><td class="mono">models/, worker/, feed_buff_gen_prompts</td><td>L</td></tr>
+<tr><td>5</td><td>Review team + orchestrator, shadow mode first</td><td class="mono">new services/buff_review/</td><td>L</td></tr>
+<tr><td>6</td><td>Per-language model assignment</td><td class="mono">llm/factory.py build_for_org</td><td>S</td></tr>
+<tr><td>7</td><td>Operator edit capture + nightly MQM eval job</td><td class="mono">write-behind stream, worker beat</td><td>M</td></tr>
+</table>
+<aside class="notes">PRs 1 and 2 are prompt and string changes only and can ship this week. PR 3 has no LLM dependency. PRs 4 and 5 are where the real engineering is.</aside>
+</section>
+<section id="failures" class="light">
+<p class="eyebrow">FAILURE MODES SEEN IN THE LAB</p>
+<h2>Every one of these happened during the runs</h2>
+<table class="in" style="--i:0; font-size:25px">
+<tr><th style="width:30%">What happened</th><th style="width:36%">Effect</th><th>Handling</th></tr>
+<tr><td>Gemini 3.6 Flash 503 overload</td><td>One review took 200 s; 16 of 54 panel scores missing</td><td>Model chain with fallback to Claude; hard per-reviewer timeout needed in prod</td></tr>
+<tr><td>Gemini free-tier 429 quota</td><td>Round 1 second judge failed 38 of 54</td><td>Pooled-key proxy rotates keys</td></tr>
+<tr><td>OpenAI key lacks model.request scope</td><td>No GPT judge possible</td><td>Fix the key, or keep Gemini as cross-family</td></tr>
+<tr><td>Wikidata 403 for the httpx client</td><td>Entity lookup blocked</td><td>urllib with a descriptive User-Agent; precompute, never live</td></tr>
+<tr><td>Validator false positive (substring of preferred term)</td><td>2 wasted repair rounds per buff</td><td>Mask preferred terms first; regression tests</td></tr>
+<tr><td>Judge flags a press-correct name</td><td>False major error</td><td>Press evidence in judge and reviewer prompts</td></tr>
+<tr><td>A reviewer fails or times out</td><td>Missing signal</td><td>Treat as advisory, never block publish on it</td></tr>
+</table>
+<aside class="notes">Design rule for prod: the review team can only hold a buff for the operator; it can never drop or auto-publish one on its own.</aside>
+</section>
+<section id="testing" class="big-body">
+<p class="eyebrow">QUALITY GATES · mapped to the repo’s CLAUDE.md rules</p>
+<h2>What each PR must prove before merge</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px" class="in fill">
+<div class="card"><p class="tag">100% COVERAGE, NO MOCKS</p><p class="body">Validators run against real Hunspell dictionaries and real glossary files. Only the LLM and Wikidata HTTP boundary is stubbed, which the rules allow.</p></div>
+<div class="card"><p class="tag">EDGE CASES</p><p class="body">Empty options, quiz without an answer, NFC vs NFD text, avoid-term inside the preferred term, foreign letters inside names, hallucinated review spans.</p></div>
+<div class="card"><p class="tag">DATA LOSS (RULE 8)</p><p class="body">Edit capture: assert the Postgres row exists after the drain, the drain task is in the beat schedule, and a re-delivered message doesn’t double-write.</p></div>
+<div class="card"><p class="tag">QUALITY REGRESSION</p><p class="body">Nightly golden-set eval (150 buffs per language once natives provide them). A PR that drops approval or raises MQM penalty is flagged, not auto-blocked.</p></div>
+</div>
+<p class="small in" style="--i:1">The lab already has 22 offline tests for validators, press overrides and the orchestrator that can be ported as-is.</p>
+<aside class="notes">CI runs without Redis, so the Redis branch of the case-table cache must be covered by unit tests on the cache helpers, as the play-screen section of CLAUDE.md already requires.</aside>
+</section>
+<section id="observability" class="light">
+<p class="eyebrow">OBSERVABILITY · ai_request_logs + proposal JSON</p>
+<h2>Six numbers tell us if Baltic quality is holding</h2>
+<table class="in" style="--i:0; font-size:34px">
+<tr><th style="width:34%">Metric</th><th style="width:30%">Source</th><th>Alert when</th></tr>
+<tr><td>Operator edit rate (HTER)</td><td>edit capture table</td><td>rises 2 weeks running, per language</td></tr>
+<tr><td>Blocked-by-review rate</td><td>decision log</td><td>above 20% of buffs</td></tr>
+<tr><td>Dismissed findings by reason</td><td>decision log</td><td>hallucinated spans climb (reviewer drift)</td></tr>
+<tr><td>Validator errors by code</td><td>issues[]</td><td>new code appears in top 3</td></tr>
+<tr><td>Generate + review latency p95</td><td>ai_request_logs</td><td>above the live budget</td></tr>
+<tr><td>Nightly judge approval</td><td>eval job</td><td>drops more than 2 buffs in 18</td></tr>
+</table>
+<aside class="notes">Every stage already writes through the existing ai_request_logger. The decision log adds reviewer, severity, span and dismissal reason per finding.</aside>
+</section>
+<section id="rollout" class="big-body">
+<p class="eyebrow">ROLLOUT · per org, behind feature_flags</p>
+<h2>Shadow first, then operator-visible, then default</h2>
+<div class="row in fill" style="--i:0; align-items:stretch">
+<div class="card grow"><p class="tag">STAGE 0 · NOW</p><h3>PRs 1 and 2</h3><p class="body">Prompt-only. Ship to every org with Baltic languages; watch edit rate.</p></div>
+<div class="card grow"><p class="tag">STAGE 1 · SHADOW</p><h3>PRs 3 to 5</h3><p class="body">Pipeline runs beside today’s output; decisions logged, nothing shown. Compare against operator edits.</p></div>
+<div class="card grow hot"><p class="tag">STAGE 2 · ASSIST</p><h3>Operator sees it</h3><p class="body">Native buff + English gloss + reviewer flags in the approval card. Operator still approves.</p></div>
+<div class="card grow"><p class="tag">STAGE 3 · DEFAULT</p><h3>On for Baltic orgs</h3><p class="body">After natives sign off on the golden set and edit rate drops.</p></div>
+</div>
+<p class="small in" style="--i:1">Exit criteria for each stage: native rater agreement with the judge, edit rate trend and p95 latency, all from the observability slide.</p>
+<aside class="notes">The existing multi_language_buffs org flag and the superadmin language shortlist already gate which orgs see lt, lv and et, so a new flag only needs to switch the pipeline variant.</aside>
+</section>
+<section id="spike" class="light">
+<p class="eyebrow">SPIKE PROPOSAL: TildeAI/TildeOpen-30b AS A GRAMMAR RANKER</p>
+<h2>Pick the most grammatical of three drafts with a model built for Baltic grammar</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code" style="width:900px"><span class="c"># 1. generate 3 candidate buffs (Claude, temperature varied)</span><br>drafts = [generate(moment) <span class="k">for</span> _ <span class="k">in</span> range(3)]<br><br><span class="c"># 2. score each with TildeOpen log-probability</span><br>tok = AutoTokenizer.from_pretrained(<br>&#160;&#160;<span class="s">"TildeAI/TildeOpen-30b"</span>, use_fast=<span class="k">False</span>)<br>score = mean_token_logprob(model, tok, d.question)<br><br><span class="c"># 3. keep the best that also passes validators</span><br>best = max(passing(drafts), key=score)</p>
+<div class="col grow">
+<div class="card"><p class="tag">WHY</p><p class="body">MultiBLiMP grammar test: 99.7% lt, 99.1% lv, 98.3% et, against 95.3 / 91.6 / 92.0% for Gemma 2 27b. Ranking drafts is the same task.</p></div>
+<div class="card"><p class="tag">COST</p><p class="body">30.7B params, about 61 GB in bf16: one 80 GB GPU, served with vLLM. Scoring needs one forward pass per draft, no generation.</p></div>
+<div class="card"><p class="tag">LIMITS</p><p class="body">Base model, CC-BY-4.0, no instruction tuning or safety alignment. Ranker only. Success bar: fewer grammar flags on the golden set at equal latency.</p></div>
+</div>
+</div>
+<aside class="notes">Model card: huggingface.co/TildeAI/TildeOpen-30b. The tokenizer must load with use_fast=False. Tilde says a translation model built on it is next, which would be worth re-testing as a writer.</aside>
+</section>
+<section id="asks" class="accent">
+<p class="eyebrow">DECISIONS NEEDED</p>
+<h2>Four calls for the team</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:28px" class="in fill big-body">
+<div class="card" style="background:#F3F4EE; border-color:#12132B"><p class="tag" style="color:#3A30F0">1 · MERGE ORDER</p><p class="body" style="color:#2A2C44">OK to ship PRs 1 and 2 this week, before the rest is built?</p></div>
+<div class="card" style="background:#F3F4EE; border-color:#12132B"><p class="tag" style="color:#3A30F0">2 · LIVE BUDGET</p><p class="body" style="color:#2A2C44">How many seconds may a buff take from moment to proposal? That decides whether review runs inline or after the operator sees a draft.</p></div>
+<div class="card" style="background:#F3F4EE; border-color:#12132B"><p class="tag" style="color:#3A30F0">3 · SECOND PROVIDER</p><p class="body" style="color:#2A2C44">Fix the OpenAI key scope or pay for a Gemini tier? The free tier was too unreliable for the native-ear reviewer.</p></div>
+<div class="card" style="background:#F3F4EE; border-color:#12132B"><p class="tag" style="color:#3A30F0">4 · NATIVE REVIEW</p><p class="body" style="color:#2A2C44">Who owns getting one sports editor per country to check glossaries, case tables and 50 buffs?</p></div>
+</div>
+<aside class="notes">Code, reports and research: baltic-buff-lab/ on feature/baltic-language-research. The comparison deck for non-engineers covers the language findings in more depth.</aside>
+</section>
+</div></div>
+<nav id="nav" aria-label="Slide navigation"><button id="prev" aria-label="Previous slide">← Prev</button><span id="count" aria-live="polite"></span><button id="next" aria-label="Next slide">Next →</button><button id="fitbtn" aria-label="Toggle fit mode">Fit width</button><button id="notes" aria-pressed="false" aria-label="Toggle speaker notes">Notes</button></nav>
+<script>
+const s=[...document.querySelectorAll('#deck>section')];let i=0;const deck=document.getElementById('deck');
+let mode='auto';const MODES=['screen','width','read'];function fit(){const st=document.getElementById('stage');const pad=16;const W=st.clientWidth-2*pad,H=st.clientHeight-2*pad;const kH=Math.min(W/1920,H/1080),kW=Math.min(W/1920,1.25);let m=mode;if(m==='auto')m=W<760?'read':(kH<0.6&&kW>kH*1.2?'width':'screen');document.body.classList.toggle('read',m==='read');document.body.dataset.fit=m;const label={screen:'Fit width',width:'Read',read:'Fit screen'};document.getElementById('fitbtn').textContent=label[m];if(m==='read'){deck.style.transform='';deck.style.left='';deck.style.top='';return;}const k=Math.max(0.05,m==='width'?kW:kH);deck.style.transform='scale('+k+')';deck.style.left=(st.clientWidth-1920*k)/2+'px';deck.style.top=(m==='width'?pad:Math.max(pad,(st.clientHeight-1080*k)/2))+'px';document.getElementById('spacer').style.height=(m==='width'?1080*k+2*pad:0)+'px';}
+function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((e,j)=>{e.classList.toggle('active',j===i);e.setAttribute('aria-hidden',document.body.dataset.fit!=='read'&&j!==i)});
+document.getElementById('count').textContent=(i+1)+' / '+s.length;document.getElementById('bar').style.width=((i+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===s.length-1;history.replaceState(null,'','#'+(i+1));if(document.body.dataset.fit==='read'){s[i].scrollIntoView({block:'start'});}else{document.getElementById('stage').scrollTop=0;}}
+function notes(){const on=document.body.classList.toggle('shownotes');document.getElementById('notes').setAttribute('aria-pressed',on);}
+document.getElementById('prev').onclick=()=>go(i-1);document.getElementById('next').onclick=()=>go(i+1);document.getElementById('notes').onclick=notes;document.getElementById('fitbtn').onclick=()=>{const c=document.body.dataset.fit;mode=MODES[(MODES.indexOf(c)+1)%3];fit();go(i);};
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key))go(i-1);if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1);if(e.key==='n')notes();if(e.key==='f')document.getElementById('fitbtn').click();});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null;});
+addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);new ResizeObserver(fit).observe(document.getElementById('stage'));fit();go((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>

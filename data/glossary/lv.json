@@ -1,0 +1,587 @@
+[
+  {
+    "en": "match / game",
+    "term": "spēle; mačs",
+    "avoid": [
+      "mačš",
+      "geims"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Mačs is normal in sports press (dramatiskā mačā). Spēle is the neutral default.",
+    "source": "https://sportacentrs.com/futbols/latvijas_izlase/02102026-vartu_konstrukcija_un_adzics_sarugtina_la",
+    "verified": true
+  },
+  {
+    "en": "half (football)",
+    "term": "puslaiks",
+    "avoid": [
+      "puse"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "pirmajā / otrajā puslaikā",
+    "source": "https://lsm.lv/raksts/sports/futbols/17.11.2024-latvijas-futbolisti-aizrautiga-spele-zaude-armeniem-naciju-ligas-grupa-paliek-pedejie-galvenie-notikumi.a576773",
+    "verified": true
+  },
+  {
+    "en": "period (ice hockey)",
+    "term": "periods",
+    "avoid": [
+      "trešdaļa"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "otrā perioda ievadā",
+    "source": "https://www.lsm.lv/raksts/sports/hokejs/08.11.2026-latvijas-hokeja-izlase-uzvar-austriju-un-izcina-vacijas-kausu.a670992/",
+    "verified": true
+  },
+  {
+    "en": "quarter (basketball)",
+    "term": "ceturtdaļa",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Not confirmed from a fetched source this pass.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "overtime / extra time",
+    "term": "papildlaiks",
+    "avoid": [
+      "virslaiks",
+      "overtaims"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "LSPA dictionary: overtime = papildlaiks; also seen in LSM (guva uzvaras vārtus papildlaikā).",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "regulation time",
+    "term": "pamatlaiks",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "pirms pamatlaika beigām",
+    "source": "https://www.lsm.lv/sports/hokejs/rigas-dinamo-tresaja-perioda-iemet-cetras-ripas-un-parspej-sanktpeterburgas-ska.a327851/?p=322",
+    "verified": true
+  },
+  {
+    "en": "stoppage time",
+    "term": "kompensācijas laiks",
+    "avoid": [
+      "pievienotais laiks"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "kompensācijas laikā",
+    "source": "https://diena.lv/raksts/sports/futbols/latvijas-futbolisti-naciju-liga-zaude-melnkalnei",
+    "verified": true
+  },
+  {
+    "en": "shoot-out (hockey)",
+    "term": "pēcspēles metieni",
+    "avoid": [
+      "buliti (Russianism)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Metieni (shots), because hockey uses metiens.",
+    "source": "https://www.lsm.lv/sports/hokejs/rigas-dinamo-tresaja-perioda-iemet-cetras-ripas-un-parspej-sanktpeterburgas-ska.a327851/?p=322",
+    "verified": true
+  },
+  {
+    "en": "penalty shoot-out (football)",
+    "term": "pēcspēles sitieni (11 m)",
+    "avoid": [
+      "penāļu sērija"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "LSPA: penalty kicks = pēcspēles (11 m) sitieni.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "penalty kick",
+    "term": "11 metru soda sitiens",
+    "avoid": [
+      "soda sitiens (alone: ambiguous)",
+      "penaltijs"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Colloquial 'pendele' appears in quotes in LFF and press. Bare 'soda sitiens' can also mean a direct free kick (LSPA), so keep '11 metru'.",
+    "source": "https://sportacentrs.com/futbols/latvijas_izlase/25092026-latvijas_izlase_naciju_ligas_jauno_celien",
+    "verified": true
+  },
+  {
+    "en": "penalty area",
+    "term": "soda laukums",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "free kick",
+    "term": "brīvsitiens",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "LSPA lists 'soda sitiens' as rare for direct free kick; brīvsitiens is the clear term.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "corner kick",
+    "term": "stūra sitiens",
+    "avoid": [
+      "korners"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "izpildīt stūra sitienus",
+    "source": "https://lsm.lv/raksts/sports/futbols/17.11.2024-latvijas-futbolisti-aizrautiga-spele-zaude-armeniem-naciju-ligas-grupa-paliek-pedejie-galvenie-notikumi.a576773",
+    "verified": true
+  },
+  {
+    "en": "offside",
+    "term": "aizmugure",
+    "avoid": [
+      "aizsegs",
+      "ofsaids"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "atradās aizmugurē; vārti aizmugures dēļ netika ieskaitīti. LSPA confirms offside = aizmugure.",
+    "source": "https://sportacentrs.com/futbols/spanija/26102025-real_madrid_notikumiem_bagata_klasika_bei",
+    "verified": true
+  },
+  {
+    "en": "offside (ice hockey)",
+    "term": "zona (ieslidošana zonā pirms ripas)",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "LSPA wording; commentators may differ.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "icing",
+    "term": "pārmetiens",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "yellow card",
+    "term": "dzeltenā kartīte",
+    "avoid": [
+      "dzeltenā karte"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "nopelnīja dzelteno kartīti",
+    "source": "https://diena.lv/raksts/sports/futbols/latvijas-futbolisti-naciju-liga-zaude-melnkalnei",
+    "verified": true
+  },
+  {
+    "en": "red card",
+    "term": "sarkanā kartīte",
+    "avoid": [
+      "sarkanā karte"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "goal (scored)",
+    "term": "vārti",
+    "avoid": [
+      "vārts (singular does not exist for this sense)",
+      "gols"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Plural-only. One goal = vieni vārti; 'next goal' = nākamie vārti; 'scored three goals' = guva trīs vārtus.",
+    "source": "https://www.lsm.lv/sports/futbols?p=136",
+    "verified": true
+  },
+  {
+    "en": "to score a goal",
+    "term": "gūt vārtus; iesist / iemest vārtus",
+    "avoid": [
+      "skorot"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": "iesist (football), iemest (hockey/handball).",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "goalkeeper",
+    "term": "vārtsargs",
+    "avoid": [
+      "golkīpers"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://www.lsm.lv/sports/hokejs?p=38",
+    "verified": true
+  },
+  {
+    "en": "save",
+    "term": "atvairīt (sitienu / metienu)",
+    "avoid": [
+      "izglābt sitienu"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": "atvairīja 24 metienus (hockey).",
+    "source": "https://www.lsm.lv/sports/hokejs?p=38",
+    "verified": true
+  },
+  {
+    "en": "assist",
+    "term": "rezultatīva piespēle",
+    "avoid": [
+      "asists"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/basketbols/latvijas-basketbolistes-eiropas-cempionata-kvalifikacijas-otro-posmu-sak-ar-parliecinosu-uzvaru",
+    "verified": true
+  },
+  {
+    "en": "substitution",
+    "term": "spēlētāju maiņa",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "draw",
+    "term": "neizšķirts",
+    "avoid": [
+      "izlīdzinājums"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "nospēlēja neizšķirti; rezultatīvs neizšķirts 2:2.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "win / beat",
+    "term": "uzvara; uzvarēt, pārspēt, pieveikt",
+    "avoid": [],
+    "pos": "verb",
+    "sport": "general",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/hokejs/latvijas-hokejisti-vacijas-kausa-parspej-austriju-un-izcina-pirmo-vietu",
+    "verified": true
+  },
+  {
+    "en": "lose",
+    "term": "zaudēt; zaudējums; piekāpties",
+    "avoid": [],
+    "pos": "verb",
+    "sport": "general",
+    "note": "piekāpjas Melnkalnei (dat.).",
+    "source": "https://sportacentrs.com/futbols/latvijas_izlase/02102026-vartu_konstrukcija_un_adzics_sarugtina_la",
+    "verified": true
+  },
+  {
+    "en": "final score",
+    "term": "galīgais rezultāts",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "man of the match",
+    "term": "spēles vērtīgākais spēlētājs",
+    "avoid": [
+      "mača cilvēks (calque)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "hat-trick",
+    "term": "hettriks",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "LSM glosses as 'trīs vārtus jeb \"hat-trick\"'.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "national team",
+    "term": "izlase; valstsvienība",
+    "avoid": [
+      "nacionālā komanda"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://www.lsm.lv/raksts/sports/hokejs/08.11.2026-latvijas-hokeja-izlase-uzvar-austriju-un-izcina-vacijas-kausu.a670992/",
+    "verified": true
+  },
+  {
+    "en": "footballer",
+    "term": "futbolists",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://lsm.lv/raksts/sports/futbols/17.11.2024-latvijas-futbolisti-aizrautiga-spele-zaude-armeniem-naciju-ligas-grupa-paliek-pedejie-galvenie-notikumi.a576773",
+    "verified": true
+  },
+  {
+    "en": "basketball",
+    "term": "basketbols",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/basketbols/latvijas-basketbolistes-eiropas-cempionata-kvalifikacijas-otro-posmu-sak-ar-parliecinosu-uzvaru",
+    "verified": true
+  },
+  {
+    "en": "basketball player",
+    "term": "basketbolists / basketboliste",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/basketbols/latvijas-basketbolistes-eiropas-cempionata-kvalifikacijas-otro-posmu-sak-ar-parliecinosu-uzvaru",
+    "verified": true
+  },
+  {
+    "en": "three-pointer",
+    "term": "trīspunktnieks; tālmetiens",
+    "avoid": [
+      "trīspunktu šāviens"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "2 no 5 trīspunktniekiem",
+    "source": "https://rigatv.com/lv/raksts/latvietis-vavers-guva-15-punktus-memfisas-uzvara-par-luivilu-7745511",
+    "verified": true
+  },
+  {
+    "en": "two-point shot",
+    "term": "divu punktu metiens",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://rigatv.com/lv/raksts/latvietis-vavers-guva-15-punktus-memfisas-uzvara-par-luivilu-7745511",
+    "verified": true
+  },
+  {
+    "en": "free throw",
+    "term": "soda metiens",
+    "avoid": [
+      "brīvmetiens (rare in press)"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "3 no 3 soda metieniem",
+    "source": "https://rigatv.com/lv/raksts/latvietis-vavers-guva-15-punktus-memfisas-uzvara-par-luivilu-7745511",
+    "verified": true
+  },
+  {
+    "en": "rebound",
+    "term": "atlēkusī bumba",
+    "avoid": [
+      "rebaunds"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "izcīnīt atlēkušās bumbas",
+    "source": "https://sportacentrs.com/basketbols/eirokausi/13102026-lomaza_komandas_trenerim_un_speletajam_pi",
+    "verified": true
+  },
+  {
+    "en": "steal",
+    "term": "pārtverta bumba",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://www.lsm.lv/raksts/sports/basketbols/02.04.2023-basko-metiens-priekspedeja-sekunde-atnes-ttt-riga-basketbolistem-cempiontitulu-baltijas-liga.a503364/",
+    "verified": true
+  },
+  {
+    "en": "blocked shot",
+    "term": "bloķēts metiens",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/basketbols/latvijas-basketbolistes-eiropas-cempionata-kvalifikacijas-otro-posmu-sak-ar-parliecinosu-uzvaru",
+    "verified": true
+  },
+  {
+    "en": "dunk",
+    "term": "bumbas ietriekšana grozā",
+    "avoid": [
+      "danks (slang)"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "points",
+    "term": "punkti; gūt punktus",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "guva 15 punktus",
+    "source": "https://rigatv.com/lv/raksts/latvietis-vavers-guva-15-punktus-memfisas-uzvara-par-luivilu-7745511",
+    "verified": true
+  },
+  {
+    "en": "ice hockey",
+    "term": "hokejs",
+    "avoid": [
+      "ledus hokejs (redundant)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Latvia's top spectator sport alongside basketball.",
+    "source": "https://www.lsm.lv/sports/hokejs?p=38",
+    "verified": true
+  },
+  {
+    "en": "hockey player",
+    "term": "hokejists",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://lsm.lv/sports/hokejs",
+    "verified": true
+  },
+  {
+    "en": "puck",
+    "term": "ripa",
+    "avoid": [
+      "šaiba (Russianism)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "shot (hockey)",
+    "term": "metiens",
+    "avoid": [
+      "sitiens (football word)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://diena.lv/raksts/sports/hokejs/latvijas-hokejisti-vacijas-kausa-parspej-austriju-un-izcina-pirmo-vietu",
+    "verified": true
+  },
+  {
+    "en": "power play",
+    "term": "vairākums (spēlēt vairākumā)",
+    "avoid": [
+      "jaudas spēle"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "iemesti trīs vārti vairākumā",
+    "source": "https://www.lsm.lv/raksts/sports/hokejs/08.11.2026-latvijas-hokeja-izlase-uzvar-austriju-un-izcina-vacijas-kausu.a670992/",
+    "verified": true
+  },
+  {
+    "en": "short-handed",
+    "term": "mazākums (spēlēt mazākumā)",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "mazākumā gūti vārti = short-handed goal",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "empty net",
+    "term": "spēle bez vārtsarga; tukši vārti",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "LSPA gives 'spēle bez vārtsarga'; 'tukšos vārtos' is common in press but not confirmed here.",
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": false
+  },
+  {
+    "en": "faceoff",
+    "term": "iemetiens",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://rsu.lv/sites/default/files/imce/Bibliot%C4%93ka/Resursi/sporta_vardnica_angliski.pdf",
+    "verified": true
+  },
+  {
+    "en": "who will score next?",
+    "term": "Kurš gūs nākamos vārtus?",
+    "avoid": [
+      "Kurš gūs nākamo vārtu?"
+    ],
+    "pos": "phrase",
+    "sport": "general",
+    "note": "Draft. Vārti is plural-only, so the adjective is plural too.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "who will win?",
+    "term": "Kurš uzvarēs?",
+    "avoid": [
+      "Kas uzvarēs? (acceptable but less idiomatic for a person/team pick)"
+    ],
+    "pos": "phrase",
+    "sport": "general",
+    "note": null,
+    "source": "https://strawpoll.com/GPgV3E1qzZa/results",
+    "verified": true
+  }
+]

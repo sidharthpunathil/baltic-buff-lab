@@ -1,0 +1,14 @@
+<section id="caching" class="light">
+<p class="eyebrow">DATA PLACEMENT · follows the Redis-first rule in CLAUDE.md</p>
+<h2>Nothing new hits Postgres on a polled path</h2>
+<table class="in" style="--i:0; font-size:31px">
+<tr><th style="width:24%">Data</th><th style="width:24%">System of record</th><th style="width:26%">Read path</th><th>Written when</th></tr>
+<tr><td>Glossary, style, examples</td><td>prompt pack files</td><td>process memory</td><td>deploy / PR</td></tr>
+<tr><td>Name case tables</td><td>Postgres, new table</td><td>Redis per event, then Postgres fallback</td><td>event create (worker), native edit</td></tr>
+<tr><td>Press evidence</td><td>Postgres, same table</td><td>Redis with the case tables</td><td>nightly refresh job</td></tr>
+<tr><td>Decision log per buff</td><td>Postgres, proposal JSON</td><td>admin UI only, not polled</td><td>proposal write (existing path)</td></tr>
+<tr><td>Operator edits (flywheel)</td><td>Postgres, new table</td><td>analytics only</td><td>write-behind via Redis stream</td></tr>
+</table>
+<p class="small in" style="--i:1">Viewers never read any of this: they get the finished buff through the existing delivery path. Only the generator and the admin UI read the new data.</p>
+<aside>Edit capture is a user-generated write, so it follows the ScoreStore / award_persistence write-behind pattern and needs the data-loss tests from CLAUDE.md rule 8.</aside>
+</section>

@@ -1,0 +1,56 @@
+[
+ {
+  "lang": "lt",
+  "generate_s": 12.5,
+  "validators_ms": 255,
+  "review_team_s": 52.3,
+  "total_s": 65.0,
+  "tokens_in": 2071,
+  "tokens_out": 1153,
+  "cost_usd": 0.0313,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "gemini-3.5-flash-lite",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ },
+ {
+  "lang": "lv",
+  "generate_s": 11.6,
+  "validators_ms": 331,
+  "review_team_s": 30.8,
+  "total_s": 42.8,
+  "tokens_in": 1887,
+  "tokens_out": 1019,
+  "cost_usd": 0.0279,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "gemini-3.5-flash-lite",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ },
+ {
+  "lang": "et",
+  "generate_s": 11.7,
+  "validators_ms": 1140,
+  "review_team_s": 199.9,
+  "total_s": 212.7,
+  "tokens_in": 1881,
+  "tokens_out": 1029,
+  "cost_usd": 0.0281,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "gemini-3.6-flash",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ }
+]

@@ -1,0 +1,78 @@
+{
+  "lemma": "Sylvain Francisco",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Sylvain Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "omastav",
+      "singular": "Sylvain Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "osastav",
+      "singular": "Sylvain Franciscot",
+      "short": "Franciscot"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Sylvain Franciscosse",
+      "short": "Franciscosse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Sylvain Franciscos",
+      "short": "Franciscos"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Sylvain Franciscost",
+      "short": "Franciscost"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Sylvain Franciscole",
+      "short": "Franciscole"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Sylvain Franciscol",
+      "short": "Franciscol"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Sylvain Franciscolt",
+      "short": "Franciscolt"
+    },
+    {
+      "case": "saav",
+      "singular": "Sylvain Franciscoks",
+      "short": "Franciscoks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Sylvain Francisconi",
+      "short": "Francisconi"
+    },
+    {
+      "case": "olev",
+      "singular": "Sylvain Franciscona",
+      "short": "Franciscona"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Sylvain Franciscota",
+      "short": "Franciscota"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Sylvain Franciscoga",
+      "short": "Franciscoga"
+    }
+  ],
+  "usage_note": "French basketball player (Kaunase Žalgiris). In the full name only the surname takes case endings; the first name stays in the nominative. The surname is vowel-final (-o) and pronounced as spelled, so endings attach directly without an apostrophe (Franciscot, Franciscoga). The first name, if used alone, would take the vowel-joined stem Sylvaini- (omastav Sylvaini, osastav Sylvainit). Sports copy usually uses the surname alone."
+}

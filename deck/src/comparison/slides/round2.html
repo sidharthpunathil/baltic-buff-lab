@@ -1,0 +1,13 @@
+<section id="round2" class="accent">
+<p class="eyebrow">ROUND 2</p>
+<h2>Round 2 removed the last name errors and stopped false alarms</h2>
+<table class="in" style="--i:0; font-size:32px; color:#12132B">
+<tr><th style="width:38%">Round 1 problem</th><th>Round 2 change</th></tr>
+<tr><td>Case tables were LLM guesses (lt “Merzlikinas” lost its ļ)</td><td>Name forms checked against LRT, 15min, ERR, LSM and Delfi, with a source URL per form</td></tr>
+<tr><td>The judge “corrected” a right name (lv Donnarumma)</td><td>Judges and reviewers see the press evidence, so correct forms aren’t flagged</td></tr>
+<tr><td>One generalist judge did everything</td><td>Five specialist review agents plus an orchestrator (arm D)</td></tr>
+<tr><td>Arm C was scored by the judge it repaired against</td><td>Every arm gets a fresh, independent panel score</td></tr>
+<tr><td>Gemini second judge failed 38 of 54 calls</td><td>Pooled-key proxy with model fallback: 38 of 54 now scored</td></tr>
+</table>
+<aside>The OpenAI key in backend/.env has no model.request scope, so GPT could not be the second judge. Gemini runs through the Acnologia pooled-key proxy, which rotates keys on 429s.</aside>
+</section>

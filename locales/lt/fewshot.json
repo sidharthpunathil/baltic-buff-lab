@@ -1,0 +1,65 @@
+[
+ {
+  "sport": "basketball",
+  "type": "poll",
+  "question": "Kas laimės šias rungtynes?",
+  "options": [
+   "„Žalgiris“",
+   "„Rytas“"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Kas pelnys kitą įvartį?",
+  "options": [
+   "Lietuva",
+   "Islandija",
+   "Niekas"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "basketball",
+  "type": "prediction",
+  "question": "Ar rungtynės baigsis pratęsimu?",
+  "options": [
+   "Taip",
+   "Ne"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "basketball",
+  "type": "prediction",
+  "question": "Kiek tritaškių „Žalgiris“ pataikys per trečiąjį kėlinį?",
+  "options": [
+   "Iki 2",
+   "3–4",
+   "5 ir daugiau"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Ar Lietuva realizuos baudinį?",
+  "options": [
+   "Taip, įmuš",
+   "Ne, vartininkas atrems"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "basketball",
+  "type": "quiz",
+  "question": "Kuri komanda per pirmąjį kėlinį atkovojo daugiau kamuolių?",
+  "options": [
+   "„Žalgiris“",
+   "„Partizan“",
+   "Po lygiai"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ }
+]

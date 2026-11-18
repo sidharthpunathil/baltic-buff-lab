@@ -1,0 +1,16 @@
+<section id="today" class="light compact">
+<p class="eyebrow">HOW BUFFS REACH BALTIC VIEWERS TODAY</p>
+<h2>Fans get word-for-word translations because the model has nothing local to work from</h2>
+<div class="row">
+<div class="card grow in" style="--i:0"><p class="tag">A: TRANSLATE BUTTON</p><h3>English first, then a literal translation</h3><p class="body">The translate step never sees the match, so it can’t catch a wrong fact. It is also told to keep names unchanged.</p></div>
+<div class="card grow in" style="--i:1"><p class="tag">B: SPORTS_NATIVE PACK</p><h3>“Write natively” in one call</h3><p class="body">The right instruction, but the model has no glossary, no reference names, no examples and no checks, so it guesses.</p></div>
+</div>
+<table class="in" style="--i:2; font-size:30px">
+<tr><th style="width:46%">Missing in both</th><th>Effect seen in the run</th></tr>
+<tr><td>Sports glossary per language</td><td>Calques: “soda kaste” for the penalty box, “pārsvars” for a power play</td></tr>
+<tr><td>Reference names and case forms</td><td>Names left in the wrong form, e.g. “Messi” in Latvian copy instead of “Mesi”</td></tr>
+<tr><td>Teams from <span class="mono">Event.teams</span></td><td>Never reach the prompt; only the event name and sport do</td></tr>
+<tr><td>Any language check</td><td>Nothing flags missing diacritics, English words or the wrong register</td></tr>
+</table>
+<aside>B is the sports_native prompt pack, version 0.1.0. A is the manual translate endpoint. Both write through flatten_native_languages, which only checks structure.</aside>
+</section>

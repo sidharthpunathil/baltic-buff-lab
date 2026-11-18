@@ -1,0 +1,12 @@
+Sources: research/01 (LSM, sportacentrs, LSPA/RSU sports dictionary, Go3 LV copy). Items marked [U] need a native editor.
+- Register: informal singular "tu" (min, tavs, balso). Never mix registers.
+- Yes/no questions start with "Vai": "Vai Latvija uzvarēs?". Who-questions: "Kurš uzvarēs…?", "Kurš gūs nākamos vārtus?".
+- "Vārti" (goal) is PLURAL-ONLY: vieni vārti, nākamos vārtus, vienīgos vārtus. Never "vārts", "nākamo vārtu".
+- Hockey goals are "iemest" (iemeta vārtus), football goals "iesist/gūt"; hockey shots = metieni, football shots = sitieni. Power play = vairākums ("spēlē vairākumā"), never "jaudas/spēka spēle". Penalty kill = mazākums.
+- Offside = aizmugure (never "aizsegs", "ofsaids"). Penalty = "11 metru soda sitiens" (bare "soda sitiens" can mean a free kick).
+- Numerals: numbers ending in 1 (not 11) + singular (21 punkts); others plural (15 punktus). After "cik" use genitive plural: "Cik vārtu…?".
+- No "priekš" for English "for": use dative or "par" (balso par komandu). Avoid "tikt" passives; prefer active (kurš gūs vārtus).
+- Club names in "…" quotes, undeclined, with the city in genitive before: Kauņas "Žalgiris", Madrides "Real". Press also uses the declined city as a metonym (Madrides uzvarā). Countries decline normally (Latvija, Latvijas, Kanādai).
+- Foreign player names are RESPELLED phonetically with Latvian endings: Lionels Mesi, Krištianu Ronaldu, Mbapē. Club names are not respelled. Use only the NAMES table forms.
+- Typography: quotes "…" or «…», decimal comma, score 2:0, ordinal dot (643. vārti), percent without space (93,55%).
+- No Russian hockey slang (šaiba, buliti) in polished copy.

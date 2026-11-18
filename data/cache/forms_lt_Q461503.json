@@ -1,0 +1,43 @@
+{
+  "lemma": "Kanados vyrų ledo ritulio rinktinė",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktinė",
+      "short": "Kanada"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktinės",
+      "short": "Kanados"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktinei",
+      "short": "Kanadai"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktinę",
+      "short": "Kanadą"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktine",
+      "short": "Kanada"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktinėje",
+      "short": "Kanadoje"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Kanados vyrų ledo ritulio rinktine",
+      "short": "Kanada"
+    }
+  ],
+  "usage_note": "Only the head noun 'rinktinė' declines (feminine ė-stem). The genitive modifiers 'Kanados vyrų ledo ritulio' stay unchanged. In running copy, 'Kanados rinktinė' or simply the country name 'Kanada' is used. The country name declines regularly (feminine a-stem), e.g. 'pralaimėjo Kanadai' (lost to Canada) and 'žaidė su Kanada' (played against Canada). No quotation marks are used, because this is a national team, not a club."
+}

@@ -1,0 +1,14 @@
+<section id="observability" class="light">
+<p class="eyebrow">OBSERVABILITY · ai_request_logs + proposal JSON</p>
+<h2>Six numbers tell us if Baltic quality is holding</h2>
+<table class="in" style="--i:0; font-size:34px">
+<tr><th style="width:34%">Metric</th><th style="width:30%">Source</th><th>Alert when</th></tr>
+<tr><td>Operator edit rate (HTER)</td><td>edit capture table</td><td>rises 2 weeks running, per language</td></tr>
+<tr><td>Blocked-by-review rate</td><td>decision log</td><td>above 20% of buffs</td></tr>
+<tr><td>Dismissed findings by reason</td><td>decision log</td><td>hallucinated spans climb (reviewer drift)</td></tr>
+<tr><td>Validator errors by code</td><td>issues[]</td><td>new code appears in top 3</td></tr>
+<tr><td>Generate + review latency p95</td><td>ai_request_logs</td><td>above the live budget</td></tr>
+<tr><td>Nightly judge approval</td><td>eval job</td><td>drops more than 2 buffs in 18</td></tr>
+</table>
+<aside>Every stage already writes through the existing ai_request_logger. The decision log adds reviewer, severity, span and dismissal reason per finding.</aside>
+</section>

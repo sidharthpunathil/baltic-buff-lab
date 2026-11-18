@@ -1,0 +1,43 @@
+{
+  "lemma": "Madrido „Real“",
+  "gender": "none",
+  "declines": false,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Madrido „Real“",
+      "short": "„Real“"
+    }
+  ],
+  "usage_note": "Lithuanian sports media write foreign club names in Lithuanian quotation marks („…“) and leave them undeclined. The city stays in the genitive before the name (Madrido). The curated label 'Madrido Real' should be written with quotes: Madrido „Real“. Case is often shown through a declined head noun, for example „Real“ klubas/komanda, „Real“ klubo, „Real“ krepšininkams. Running copy shortens it to „Real“. For this basketball club, adding krepšininkai or krepšinio klubas helps avoid confusion with the football club of the same name. Examples: „Žalgiris“ nusileido Madrido „Real“; žaidė prieš „Real“; pergalė su „Real“."
+}

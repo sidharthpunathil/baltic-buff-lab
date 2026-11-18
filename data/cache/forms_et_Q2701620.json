@@ -1,0 +1,78 @@
+{
+  "lemma": "Facundo Campazzo",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "omastav",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "osastav",
+      "singular": "Facundo Campazzot",
+      "short": "Campazzot"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Facundo Campazzosse",
+      "short": "Campazzosse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Facundo Campazzos",
+      "short": "Campazzos"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Facundo Campazzost",
+      "short": "Campazzost"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Facundo Campazzole",
+      "short": "Campazzole"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Facundo Campazzol",
+      "short": "Campazzol"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Facundo Campazzolt",
+      "short": "Campazzolt"
+    },
+    {
+      "case": "saav",
+      "singular": "Facundo Campazzoks",
+      "short": "Campazzoks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Facundo Campazzoni",
+      "short": "Campazzoni"
+    },
+    {
+      "case": "olev",
+      "singular": "Facundo Campazzona",
+      "short": "Campazzona"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Facundo Campazzota",
+      "short": "Campazzota"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Facundo Campazzoga",
+      "short": "Campazzoga"
+    }
+  ],
+  "usage_note": "In the full name only the surname takes case endings; the first name Facundo stays unchanged. Campazzo is vowel-final and its spelling matches its pronunciation closely enough, so endings attach directly without an apostrophe (Campazzot, Campazzoga). Sports copy usually uses the surname alone."
+}

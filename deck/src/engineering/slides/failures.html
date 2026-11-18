@@ -1,0 +1,15 @@
+<section id="failures" class="light">
+<p class="eyebrow">FAILURE MODES SEEN IN THE LAB</p>
+<h2>Every one of these happened during the runs</h2>
+<table class="in" style="--i:0; font-size:25px">
+<tr><th style="width:30%">What happened</th><th style="width:36%">Effect</th><th>Handling</th></tr>
+<tr><td>Gemini 3.6 Flash 503 overload</td><td>One review took 200 s; 16 of 54 panel scores missing</td><td>Model chain with fallback to Claude; hard per-reviewer timeout needed in prod</td></tr>
+<tr><td>Gemini free-tier 429 quota</td><td>Round 1 second judge failed 38 of 54</td><td>Pooled-key proxy rotates keys</td></tr>
+<tr><td>OpenAI key lacks model.request scope</td><td>No GPT judge possible</td><td>Fix the key, or keep Gemini as cross-family</td></tr>
+<tr><td>Wikidata 403 for the httpx client</td><td>Entity lookup blocked</td><td>urllib with a descriptive User-Agent; precompute, never live</td></tr>
+<tr><td>Validator false positive (substring of preferred term)</td><td>2 wasted repair rounds per buff</td><td>Mask preferred terms first; regression tests</td></tr>
+<tr><td>Judge flags a press-correct name</td><td>False major error</td><td>Press evidence in judge and reviewer prompts</td></tr>
+<tr><td>A reviewer fails or times out</td><td>Missing signal</td><td>Treat as advisory, never block publish on it</td></tr>
+</table>
+<aside>Design rule for prod: the review team can only hold a buff for the operator; it can never drop or auto-publish one on its own.</aside>
+</section>

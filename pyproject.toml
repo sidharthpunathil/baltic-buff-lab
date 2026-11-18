@@ -1,0 +1,19 @@
+[project]
+name = "baltic-buff-lab"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.9.0",
+    "google-genai>=3.4.0",
+    "httpx>=0.28.1",
+    "openai>=3.52.0",
+    "phunspell>=0.1.6",
+    "pydantic>=2.14.3",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "rich>=15.0.0",
+    "spylls>=0.1.7",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

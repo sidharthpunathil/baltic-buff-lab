@@ -1,0 +1,43 @@
+{
+  "lemma": "Karolis Metsas",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Karolis Metsas",
+      "short": "Metsas"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Karolio Metso",
+      "short": "Metso"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Karoliui Metsui",
+      "short": "Metsui"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Karolį Metsą",
+      "short": "Metsą"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Karoliu Metsu",
+      "short": "Metsu"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Karolyje Metse",
+      "short": "Metse"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Karoli Metsai",
+      "short": "Metsai"
+    }
+  ],
+  "usage_note": "Estonian footballer (defender). Following VLKK norms, the consonant-final Estonian surname takes the Lithuanian ending -as on the original spelling: Metsas, Metso, Metsui. The first name is adapted as Karolis. The curated label 'Karol Mets' is the original form. In running sports copy the surname alone is usual (Metsas) or initial plus surname (K. Metsas). The original form may appear in parentheses on first mention: Karolis Metsas (Karol Mets)."
+}

@@ -1,0 +1,38 @@
+{
+  "lemma": "Elvis Merzļikins",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Elvis Merzļikins",
+      "short": "Merzļikins"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Elvja Merzļikina",
+      "short": "Merzļikina"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Elvim Merzļikinam",
+      "short": "Merzļikinam"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Elvi Merzļikinu",
+      "short": "Merzļikinu"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Elvī Merzļikinā",
+      "short": "Merzļikinā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Elvi Merzļikin",
+      "short": "Merzļikin"
+    }
+  ],
+  "usage_note": "Latvian native name, declined normally: Merzļikins follows the 1st declension (-s), and Elvis follows the 2nd declension (-is), giving gen. Elvja. Sports copy usually uses the surname alone (Merzļikins, Merzļikina vārti) or the initial plus surname (E. Merzļikins). The vocative is rare in running copy; the forms Merzļikin! and Elvi! follow the standard pattern. | Tēzaurs morpho-api applied (agreed)"
+}

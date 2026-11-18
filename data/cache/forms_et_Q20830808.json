@@ -1,0 +1,78 @@
+{
+  "lemma": "Gianluigi Donnarumma",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Gianluigi Donnarumma",
+      "short": "Donnarumma"
+    },
+    {
+      "case": "omastav",
+      "singular": "Gianluigi Donnarumma",
+      "short": "Donnarumma"
+    },
+    {
+      "case": "osastav",
+      "singular": "Gianluigi Donnarummat",
+      "short": "Donnarummat"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Gianluigi Donnarummasse",
+      "short": "Donnarummasse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Gianluigi Donnarummas",
+      "short": "Donnarummas"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Gianluigi Donnarummast",
+      "short": "Donnarummast"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Gianluigi Donnarummale",
+      "short": "Donnarummale"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Gianluigi Donnarummal",
+      "short": "Donnarummal"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Gianluigi Donnarummalt",
+      "short": "Donnarummalt"
+    },
+    {
+      "case": "saav",
+      "singular": "Gianluigi Donnarummaks",
+      "short": "Donnarummaks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Gianluigi Donnarummani",
+      "short": "Donnarummani"
+    },
+    {
+      "case": "olev",
+      "singular": "Gianluigi Donnarummana",
+      "short": "Donnarummana"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Gianluigi Donnarummata",
+      "short": "Donnarummata"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Gianluigi Donnarummaga",
+      "short": "Donnarummaga"
+    }
+  ],
+  "usage_note": "Original Italian spelling kept; the surname ends in a pronounced vowel -a, so case endings attach directly without an apostrophe (Donnarummat, Donnarummaga). In the full name only the surname declines; the first name Gianluigi stays unchanged. Sports copy usually uses the surname alone."
+}

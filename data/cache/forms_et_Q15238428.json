@@ -1,0 +1,78 @@
+{
+  "lemma": "Elvis Merzļikins",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Elvis Merzļikins",
+      "short": "Merzļikins"
+    },
+    {
+      "case": "omastav",
+      "singular": "Elvise Merzļikinsi",
+      "short": "Merzļikinsi"
+    },
+    {
+      "case": "osastav",
+      "singular": "Elvist Merzļikinsit",
+      "short": "Merzļikinsit"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Elvisesse Merzļikinsisse",
+      "short": "Merzļikinsisse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Elvises Merzļikinsis",
+      "short": "Merzļikinsis"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Elvisest Merzļikinsist",
+      "short": "Merzļikinsist"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Elvisele Merzļikinsile",
+      "short": "Merzļikinsile"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Elvisel Merzļikinsil",
+      "short": "Merzļikinsil"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Elviselt Merzļikinsilt",
+      "short": "Merzļikinsilt"
+    },
+    {
+      "case": "saav",
+      "singular": "Elviseks Merzļikinsiks",
+      "short": "Merzļikinsiks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Elviseni Merzļikinsini",
+      "short": "Merzļikinsini"
+    },
+    {
+      "case": "olev",
+      "singular": "Elvisena Merzļikinsina",
+      "short": "Merzļikinsina"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Elviseta Merzļikinsita",
+      "short": "Merzļikinsita"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Elvisega Merzļikinsiga",
+      "short": "Merzļikinsiga"
+    }
+  ],
+  "usage_note": "Latvian original spelling is kept (including ļ). The name gets Estonian case endings without an apostrophe, because spelling and pronunciation agree. The surname takes the i-stem: Merzļikinsi, Merzļikinsit, Merzļikinsiga. The first name follows the -is pattern: Elvise, Elvist. Some outlets simplify the spelling to Merzlikins, which declines the same way (Merzlikinsi)."
+}

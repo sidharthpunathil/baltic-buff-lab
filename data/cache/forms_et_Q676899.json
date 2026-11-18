@@ -1,0 +1,78 @@
+{
+  "lemma": "Itaalia jalgpallikoondis",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Itaalia jalgpallikoondis",
+      "short": "Itaalia"
+    },
+    {
+      "case": "omastav",
+      "singular": "Itaalia jalgpallikoondise",
+      "short": "Itaalia"
+    },
+    {
+      "case": "osastav",
+      "singular": "Itaalia jalgpallikoondist",
+      "short": "Itaaliat"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Itaalia jalgpallikoondisesse",
+      "short": "Itaaliasse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Itaalia jalgpallikoondises",
+      "short": "Itaalias"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Itaalia jalgpallikoondisest",
+      "short": "Itaaliast"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Itaalia jalgpallikoondisele",
+      "short": "Itaaliale"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Itaalia jalgpallikoondisel",
+      "short": "Itaalial"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Itaalia jalgpallikoondiselt",
+      "short": "Itaalialt"
+    },
+    {
+      "case": "saav",
+      "singular": "Itaalia jalgpallikoondiseks",
+      "short": "Itaaliaks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Itaalia jalgpallikoondiseni",
+      "short": "Itaaliani"
+    },
+    {
+      "case": "olev",
+      "singular": "Itaalia jalgpallikoondisena",
+      "short": "Itaaliana"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Itaalia jalgpallikoondiseta",
+      "short": "Itaaliata"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Itaalia jalgpallikoondisega",
+      "short": "Itaaliaga"
+    }
+  ],
+  "usage_note": "In the full name only the head noun 'jalgpallikoondis' declines (koondis : koondise : koondist); 'Itaalia' stays in genitive as an attribute. In running sports copy the country name alone (Itaalia, Itaaliat, Itaaliaga) or 'Itaalia koondis' is standard; no quotes, no apostrophe."
+}

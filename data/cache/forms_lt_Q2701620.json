@@ -1,0 +1,43 @@
+{
+  "lemma": "Facundo Campazzo",
+  "gender": "masculine",
+  "declines": false,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Facundo Campazzo",
+      "short": "Campazzo"
+    }
+  ],
+  "usage_note": "Argentine basketball player. Both the first name and the surname end in -o, so under VLKK practice they stay undeclined in every case, following the pattern of Ronaldo. Lithuanian sports media (15min, LRT, krepsinis.net) write \"Facundo Campazzo\" or just \"Campazzo\", sometimes \"F. Campazzo\", and show the case through the surrounding words (e.g. \"Campazzo perdavimas\", \"prieš Campazzo\"). Adapted forms such as *Facundas, *Campazzas or *Campazzui are not used."
+}

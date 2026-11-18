@@ -1,0 +1,13 @@
+<section id="spike" class="light">
+<p class="eyebrow">SPIKE PROPOSAL: TildeAI/TildeOpen-30b AS A GRAMMAR RANKER</p>
+<h2>Pick the most grammatical of three drafts with a model built for Baltic grammar</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code" style="width:900px"><span class="c"># 1. generate 3 candidate buffs (Claude, temperature varied)</span><br>drafts = [generate(moment) <span class="k">for</span> _ <span class="k">in</span> range(3)]<br><br><span class="c"># 2. score each with TildeOpen log-probability</span><br>tok = AutoTokenizer.from_pretrained(<br>&#160;&#160;<span class="s">"TildeAI/TildeOpen-30b"</span>, use_fast=<span class="k">False</span>)<br>score = mean_token_logprob(model, tok, d.question)<br><br><span class="c"># 3. keep the best that also passes validators</span><br>best = max(passing(drafts), key=score)</p>
+<div class="col grow">
+<div class="card"><p class="tag">WHY</p><p class="body">MultiBLiMP grammar test: 99.7% lt, 99.1% lv, 98.3% et, against 95.3 / 91.6 / 92.0% for Gemma 2 27b. Ranking drafts is the same task.</p></div>
+<div class="card"><p class="tag">COST</p><p class="body">30.7B params, about 61 GB in bf16: one 80 GB GPU, served with vLLM. Scoring needs one forward pass per draft, no generation.</p></div>
+<div class="card"><p class="tag">LIMITS</p><p class="body">Base model, CC-BY-4.0, no instruction tuning or safety alignment. Ranker only. Success bar: fewer grammar flags on the golden set at equal latency.</p></div>
+</div>
+</div>
+<aside>Model card: huggingface.co/TildeAI/TildeOpen-30b. The tokenizer must load with use_fast=False. Tilde says a translation model built on it is next, which would be worth re-testing as a writer.</aside>
+</section>

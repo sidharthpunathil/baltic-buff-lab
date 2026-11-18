@@ -1,0 +1,62 @@
+[
+ {
+  "lang": "lt",
+  "generate_s": 13.2,
+  "validators_ms": 250,
+  "review_team_s": 4.0,
+  "total_s": 17.4,
+  "tokens_in": 1405,
+  "tokens_out": 1662,
+  "cache_write": 1773,
+  "cache_read": 12989,
+  "cost_usd": 0.0503,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "claude-opus-5-5",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ },
+ {
+  "lang": "lv",
+  "generate_s": 11.0,
+  "validators_ms": 364,
+  "review_team_s": 2.2,
+  "total_s": 13.5,
+  "tokens_in": 1328,
+  "tokens_out": 1011,
+  "cache_write": 1588,
+  "cache_read": 11574,
+  "cost_usd": 0.0358,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "claude-opus-5-5",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ },
+ {
+  "lang": "et",
+  "generate_s": 10.5,
+  "validators_ms": 875,
+  "review_team_s": 2.1,
+  "total_s": 13.5,
+  "tokens_in": 1274,
+  "tokens_out": 1026,
+  "cache_write": 1552,
+  "cache_read": 13323,
+  "cost_usd": 0.036,
+  "models": {
+   "grammar": "claude-opus-5-5",
+   "terms": "claude-opus-5-5",
+   "names": "claude-opus-5-5",
+   "native": "claude-opus-5-5",
+   "facts": "claude-opus-5-5"
+  },
+  "blocking": 0
+ }
+]

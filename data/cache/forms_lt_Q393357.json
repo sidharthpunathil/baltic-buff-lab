@@ -1,0 +1,43 @@
+{
+  "lemma": "Kauno „Žalgiris“",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Kauno „Žalgiris“",
+      "short": "„Žalgiris“"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Kauno „Žalgirio“",
+      "short": "„Žalgirio“"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Kauno „Žalgiriui“",
+      "short": "„Žalgiriui“"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Kauno „Žalgirį“",
+      "short": "„Žalgirį“"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Kauno „Žalgiriu“",
+      "short": "„Žalgiriu“"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Kauno „Žalgiryje“",
+      "short": "„Žalgiryje“"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Kauno „Žalgiri“",
+      "short": "„Žalgiri“"
+    }
+  ],
+  "usage_note": "Lithuanian club name: written in Lithuanian quotation marks „…“ and declined inside the quotes like a masculine io-stem noun (žalgiris → žalgirio). The city stays in the genitive (Kauno) and does not change. In sports copy the short form „Žalgiris“ is standard. The plural „žalgiriečiai“ is used for the players. Do not use the forms BC Zalgiris or BC Žalgiris in Lithuanian running text."
+}

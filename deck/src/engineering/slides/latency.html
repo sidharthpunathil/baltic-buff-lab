@@ -1,0 +1,17 @@
+<section id="latency" class="big-body">
+<p class="eyebrow">MEASURED · tools/timing.py · one moment per language · claude-opus-5-5</p>
+<h2>About 14 seconds and 4 cents per buff, if Gemini stays off the live path</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:34%">Stage</th><th style="text-align:right">All Claude (lt / lv / et)</th><th style="text-align:right">Native ear on Gemini</th></tr>
+<tr><td>Generate (medium effort)</td><td style="text-align:right">13.2 / 11.0 / 10.5 s</td><td style="text-align:right">10 to 15 s</td></tr>
+<tr><td>Validators</td><td style="text-align:right">0.25 / 0.36 / 0.88 s</td><td style="text-align:right">same</td></tr>
+<tr><td>Five reviewers, parallel, low effort</td><td class="win" style="text-align:right">4.0 / 2.2 / 2.1 s</td><td class="bad" style="text-align:right">3 s to 200 s</td></tr>
+<tr><td>End to end, first draft</td><td class="win" style="text-align:right">median 13.5 s</td><td style="text-align:right">median 27.7 s, tail 213 s</td></tr>
+<tr><td>Cost per buff, warm prompt cache</td><td class="win" style="text-align:right">$0.036 to $0.050</td><td style="text-align:right">similar</td></tr>
+</table>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">DECISION</p><p class="body">Native-ear review runs on Claude live. Gemini moves to the offline panel only, where a slow answer costs nothing.</p></div>
+<div class="card grow"><p class="tag">COST NOTE</p><p class="body">The first buff per event and language writes ~13k cached prompt tokens (about $0.10). Every later buff reads the cache.</p></div>
+</div>
+<aside>Cost uses $4 / $20 per million input / output tokens, cache writes at 1.25x and reads at 0.05x input. A repair round adds roughly one generate plus the affected reviewers. Lower generation effort or a smaller model was not measured yet.</aside>
+</section>

@@ -1,0 +1,38 @@
+{
+  "lemma": "Kanādas hokeja izlase",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Kanādas hokeja izlase",
+      "short": "Kanāda"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Kanādas hokeja izlases",
+      "short": "Kanādas"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Kanādas hokeja izlasei",
+      "short": "Kanādai"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Kanādas hokeja izlasi",
+      "short": "Kanādu"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Kanādas hokeja izlasē",
+      "short": "Kanādā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Kanādas hokeja izlase",
+      "short": "Kanāda"
+    }
+  ],
+  "usage_note": "Only the head noun 'izlase' (feminine, 5th declension) declines; 'Kanādas hokeja' is a fixed genitive attribute. In running sports copy the country name alone is common (Kanāda – Kanādas – Kanādai – Kanādu – Kanādā), also 'kanādieši' (plural) for the players, e.g. 'Latvija pret Kanādu', 'zaudējums kanādiešiem'. No quotes, since this is a national team, not a club."
+}

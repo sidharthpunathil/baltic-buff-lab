@@ -1,0 +1,20 @@
+{
+  "id": "fb-est-ita",
+  "sport": "football",
+  "competition": "FIFA World Cup qualifier (simulated)",
+  "home": "Estonia",
+  "away": "Italy",
+  "entities": [
+    {"name": "Estonia", "kind": "team", "qid": "Q186914"},
+    {"name": "Italy", "kind": "team", "qid": "Q676899"},
+    {"name": "Karol Mets", "kind": "player", "qid": "Q12366513"},
+    {"name": "Gianluigi Donnarumma", "kind": "player", "qid": "Q20830808"}
+  ],
+  "facts": ["Match played at A. Le Coq Arena, Tallinn."],
+  "moments": [
+    {"id": "m1", "buff_type": "prediction", "state": "67', Estonia 0 - 1 Italy",
+     "text": "VAR review: the referee awards Estonia a penalty after a foul in the box. Donnarumma is in goal for Italy."},
+    {"id": "m2", "buff_type": "poll", "state": "Half-time, Estonia 0 - 1 Italy",
+     "text": "Half-time. Karol Mets has won 6 aerial duels and blocked two shots."}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "lemma": "Sylvainas Francisco",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Sylvainas Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Sylvaino Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Sylvainui Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Sylvainą Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Sylvainu Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Sylvaine Francisco",
+      "short": "Francisco"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Sylvainai Francisco",
+      "short": "Francisco"
+    }
+  ],
+  "usage_note": "Lithuanian sports media (including the press covering Kauno „Žalgiris“, his club) usually adapt the first name with the -as ending on the original spelling: Sylvainas, Sylvaino, Sylvainui. The vowel-final surname Francisco stays undeclined in every case. In running copy the surname alone, or the initial plus surname (S. Francisco), is standard. The unadapted form „Sylvain Francisco“ appears only in reference or label contexts."
+}

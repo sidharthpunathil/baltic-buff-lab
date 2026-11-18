@@ -1,0 +1,75 @@
+{
+  "_about": "Name forms checked against native sports press on 2026-11-17 (Tavily search, site-filtered). 'substitute' rewrites every form in the LLM table; 'cases' pins individual case forms; 'evidence' is shown to reviewers and judges so a correct press form is not flagged as an error.",
+  "lv": {
+    "Q20830808": {
+      "lemma": "Džanluidži Donnarumma",
+      "cases": {"nominatīvs": "Donnarumma", "ģenitīvs": "Donnarummas"},
+      "evidence": "Latvian press keeps the Italian double letters: 'vārtsargs Džanluidži Donnarumma', genitive 'Donnarummas vārtus'.",
+      "sources": ["https://www.delfi.lv/temas/53389161/dzanluidzi-donnarumma", "https://sportacentrs.com/futbols/italija/12062021-donnarumma_pievienosies_psg_un_drizuma_ve"]
+    },
+    "Q2701620": {
+      "lemma": "Fakundo Kampaco",
+      "evidence": "Latvian press respells: 'aizsargs Fakundo Kampaco', 'Kampaco'.",
+      "sources": ["https://sportacentrs.com/basketbols/29122024-basketbola_el_clasico_uzvaru_notur_real"]
+    },
+    "Q54922": {
+      "lemma": "Madrides \"Real\"",
+      "evidence": "Latvian press: 'Madrides \"Real\"', city in genitive, club in quotes, undeclined.",
+      "sources": ["https://sportacentrs.com/07112025-madrides_real_spanijas_klasika_triumfe_ar"]
+    }
+  },
+  "lt": {
+    "Q15238428": {
+      "lemma": "Elvis Merzļikinas",
+      "substitute": {"Merzlikin": "Merzļikin"},
+      "cases": {"vardininkas": "Merzļikinas", "naudininkas": "Merzļikinui", "galininkas": "Merzļikiną"},
+      "evidence": "Lithuanian press keeps the Latvian ļ and adds Lithuanian endings: 'Merzļikiną', 'Merzļikinui', 'Merzļikinas'.",
+      "sources": ["https://www.sportas.lt/naujiena/535516/latviai-amerikieciams-priesinosi-kelini-patys-pelne-ivarti-o-olimpiadoje-debiutavo-18-metis"]
+    },
+    "Q47494985": {
+      "lemma": "Sylvainas Francisco",
+      "evidence": "Lithuanian press: 'Sylvainas Francisco', genitive 'Sylvaino Francisco', short 'S. Francisco'; the vowel-final surname stays undeclined.",
+      "sources": ["https://www.15min.lt/24sek/naujiena/europa/buvusi-kluba-sudraskes-sylvainas-francisco-mvp-esu-ne-as-o-visa-komanda-874-2581932", "https://www.basketnews.lt/news-249500-francisco-vieta-uzpildyta-zalgiris-kvieciasi-eurolygos-tasku-masina.html"]
+    },
+    "Q20830808": {
+      "lemma": "Gianluigi Donnarumma",
+      "evidence": "Lithuanian press writes 'Gianluigi Donnarumma' in original spelling.",
+      "sources": ["https://www.15min.lt/tema/gianluigi-donnarumma-80962", "https://www.lrt.lt/naujienos/sportas/10/1451064/oficialu-geriausias-euro-2020-zaidejas-jungiasi-prie-psg"]
+    }
+  },
+  "et": {
+    "Q15238428": {
+      "lemma": "Elvis Merzlikins",
+      "substitute": {"Merzļikins": "Merzlikins"},
+      "cases": {"nimetav": "Merzlikins", "omastav": "Merzlikinse"},
+      "evidence": "ERR writes 'Elvis Merzlikins' without ļ, genitive 'Merzlikinse' ('Merzlikinse 24 tõrje'); Postimees keeps 'Merzļikins'. Both are accepted.",
+      "sources": ["https://sport.err.ee/1609931435/olumpiaks-valmistuv-merzlikins-tegi-esimese-nullimangu", "https://sport.postimees.ee/8418261/olumpiahoki-selgusid-veerandfinaalpaarid-rootsi-sai-meedialt-hurjutada-soome-hea-vastase"]
+    },
+    "Q393357": {
+      "lemma": "Kaunase Žalgiris",
+      "cases": {"omastav": "Žalgirise"},
+      "evidence": "ERR: 'Kaunase Žalgiris', 'Žalgirise mängujuht', no quotes.",
+      "sources": ["https://sport.err.ee/1609883305/zalgiris-voitis-pariisis-ponevusmangu-hispaania-tipud-koguvad-hoogu"]
+    },
+    "Q54922": {
+      "lemma": "Madridi Real",
+      "evidence": "ERR: 'Madridi Real', no quotes, declined.",
+      "sources": ["https://sport.err.ee/1609883305/zalgiris-voitis-pariisis-ponevusmangu-hispaania-tipud-koguvad-hoogu"]
+    },
+    "Q47494985": {
+      "lemma": "Sylvain Francisco",
+      "evidence": "ERR: 'Žalgirise mängujuht Sylvain Francisco', original spelling.",
+      "sources": ["https://sport.err.ee/1609883305/zalgiris-voitis-pariisis-ponevusmangu-hispaania-tipud-koguvad-hoogu"]
+    },
+    "Q2701620": {
+      "lemma": "Facundo Campazzo",
+      "evidence": "ERR: 'Facundo Campazzo 16 ... punkti', original spelling.",
+      "sources": ["https://sport.err.ee/1609883305/zalgiris-voitis-pariisis-ponevusmangu-hispaania-tipud-koguvad-hoogu"]
+    },
+    "Q20830808": {
+      "lemma": "Gianluigi Donnarumma",
+      "evidence": "ERR: 'Sappinen karistas Donnarumma eksimuse', original spelling, genitive unchanged.",
+      "sources": ["https://sport.err.ee/1609839021/naiste-jalgpallikoondis-kaotas-balti-turniiri-poolfinaali"]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "lemma": "Läti jäähokikoondis",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Läti jäähokikoondis",
+      "short": "Läti"
+    },
+    {
+      "case": "omastav",
+      "singular": "Läti jäähokikoondise",
+      "short": "Läti"
+    },
+    {
+      "case": "osastav",
+      "singular": "Läti jäähokikoondist",
+      "short": "Lätit"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Läti jäähokikoondisesse",
+      "short": "Lätisse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Läti jäähokikoondises",
+      "short": "Lätis"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Läti jäähokikoondisest",
+      "short": "Lätist"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Läti jäähokikoondisele",
+      "short": "Lätile"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Läti jäähokikoondisel",
+      "short": "Lätil"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Läti jäähokikoondiselt",
+      "short": "Lätilt"
+    },
+    {
+      "case": "saav",
+      "singular": "Läti jäähokikoondiseks",
+      "short": "Lätiks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Läti jäähokikoondiseni",
+      "short": "Lätini"
+    },
+    {
+      "case": "olev",
+      "singular": "Läti jäähokikoondisena",
+      "short": "Lätina"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Läti jäähokikoondiseta",
+      "short": "Lätita"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Läti jäähokikoondisega",
+      "short": "Lätiga"
+    }
+  ],
+  "usage_note": "Only the head noun 'koondis' declines (koondis : koondise : koondist); 'Läti' stays as a genitive attribute. In match reports the country name alone is common and declines normally (Lätit, Lätile, Lätiga). Illative of Läti also has the short form 'Lätti' (ÕS: Lätti ~ Lätisse); 'Lätisse' is the more neutral choice in sports copy. Alternative full forms: 'Läti hokikoondis', 'Läti meeskond'."
+}

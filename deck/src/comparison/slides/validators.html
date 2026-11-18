@@ -1,0 +1,16 @@
+<section id="validators" class="light">
+<p class="eyebrow">OUTCOME: THE MISTAKES FANS SPOT FIRST NEVER GO LIVE</p>
+<h2>Errors a native fan notices in a second are caught in milliseconds</h2>
+<table class="in" style="--i:0; font-size:28px">
+<tr><th style="width:26%">Check</th><th style="width:40%">Example it catches</th><th>Fix</th></tr>
+<tr><td>Hunspell spelling</td><td>lv “vartus” (dropped macron)</td><td>vārtus</td></tr>
+<tr><td>Diacritic density</td><td>lt “laimes treciaji kelini”</td><td>laimės trečiąjį kėlinį</td></tr>
+<tr><td>Wrong Baltic alphabet</td><td>a Latvian “ā” inside Lithuanian copy</td><td>use the language’s own letters</td></tr>
+<tr><td>Plural-only nouns</td><td>lv “nākamo vārtu”</td><td>nākamos vārtus</td></tr>
+<tr><td>Translationese</td><td>lt “sekantis”, et “X-i poolt löödud”</td><td>kitas, X lõi</td></tr>
+<tr><td>Glossary calques</td><td>lv “spēka spēle” (power play)</td><td>vairākums</td></tr>
+<tr><td>Register</td><td>lt “Jūs”, et “Vaadake”</td><td>tu, vaata (Go3 uses informal)</td></tr>
+<tr><td>Card fit + options</td><td>title over 35 characters, duplicate options, a quiz with no answer</td><td>shorten or regenerate</td></tr>
+</table>
+<aside>All rules live in locales/&lt;lang&gt;/locale.json and data/glossary/&lt;lang&gt;.json, so a linguist can add one without touching code. Spelling unknowns and validator errors go back to the repair step.</aside>
+</section>

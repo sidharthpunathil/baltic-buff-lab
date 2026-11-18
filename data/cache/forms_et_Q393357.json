@@ -1,0 +1,78 @@
+{
+  "lemma": "Kaunase Žalgiris",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Kaunase Žalgiris",
+      "short": "Žalgiris"
+    },
+    {
+      "case": "omastav",
+      "singular": "Kaunase Žalgirise",
+      "short": "Žalgirise"
+    },
+    {
+      "case": "osastav",
+      "singular": "Kaunase Žalgirist",
+      "short": "Žalgirist"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Kaunase Žalgirisesse",
+      "short": "Žalgirisesse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Kaunase Žalgirises",
+      "short": "Žalgirises"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Kaunase Žalgirisest",
+      "short": "Žalgirisest"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Kaunase Žalgirisele",
+      "short": "Žalgirisele"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Kaunase Žalgirisel",
+      "short": "Žalgirisel"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Kaunase Žalgiriselt",
+      "short": "Žalgiriselt"
+    },
+    {
+      "case": "saav",
+      "singular": "Kaunase Žalgiriseks",
+      "short": "Žalgiriseks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Kaunase Žalgiriseni",
+      "short": "Žalgiriseni"
+    },
+    {
+      "case": "olev",
+      "singular": "Kaunase Žalgirisena",
+      "short": "Žalgirisena"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Kaunase Žalgiriseta",
+      "short": "Žalgiriseta"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Kaunase Žalgirisega",
+      "short": "Žalgirisega"
+    }
+  ],
+  "usage_note": "Estonian sports media write the club without quotes and decline it like an -is noun (Žalgiris : Žalgirise : Žalgirist), e.g. 'Kaunase Žalgirise vastu', 'kaotas Žalgirisele'. The city stays in the genitive (Kaunase) and only Žalgiris takes case endings. The original Lithuanian spelling is kept, with the letter Ž. In running copy the short form 'Žalgiris' is usual after the first mention."
+}

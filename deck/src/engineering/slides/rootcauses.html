@@ -1,0 +1,14 @@
+<section id="rootcauses" class="light">
+<p class="eyebrow">ROOT CAUSES IN CODE</p>
+<h2>Each Baltic failure maps to a specific line</h2>
+<table class="in" style="--i:0; font-size:26px">
+<tr><th style="width:30%">Symptom in the run</th><th style="width:36%">Where</th><th>Cause</th></tr>
+<tr><td>Names left undeclined</td><td class="mono">viewer_api_routes.py:9365</td><td>Prompt says “Preserve … team names, player names … as-is”</td></tr>
+<tr><td>Calqued sport terms</td><td class="mono">packs/sports_native/…/system_prompt.txt</td><td>Asks for native terms but supplies no glossary</td></tr>
+<tr><td>Invented name spellings</td><td class="mono">models/event.py:66</td><td>Event.teams exists but never reaches the prompt; only name and sport do</td></tr>
+<tr><td>Bad copy reaches operators</td><td class="mono">buff_translation.py:280</td><td>Normalizer checks structure only: no language, length or term checks</td></tr>
+<tr><td>English text in Baltic buffs</td><td class="mono">feed/agent.py:1178, 1188</td><td>Hard-coded fallbacks “Rate this moment”, “Agree / Disagree”</td></tr>
+<tr><td>Wrong facts after translation</td><td class="mono">viewer_api_routes.py:9317</td><td>Translate call never sees the match state</td></tr>
+</table>
+<aside>None of these need a model change. Rows 1 to 4 are fixed by PRs 1 to 4 in the plan; row 5 needs localized fallbacks from the i18n catalog.</aside>
+</section>

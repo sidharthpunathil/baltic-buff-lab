@@ -1,0 +1,38 @@
+{
+  "lemma": "Karols Metss",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Karols Metss",
+      "short": "Metss"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Karola Metsa",
+      "short": "Metsa"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Karolam Metsam",
+      "short": "Metsam"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Karolu Metsu",
+      "short": "Metsu"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Karolā Metsā",
+      "short": "Metsā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Karol Mets",
+      "short": "Mets"
+    }
+  ],
+  "usage_note": "Estonian footballer Karol Mets. Latvian press adapts the stem 'Mets' with the 1st-declension ending -s, giving 'Metss' (double s), and declines it regularly: Metsa, Metsam, Metsu, Metsā. The first name follows the same pattern: Karols, Karola. Sports copy usually uses the surname alone or 'K. Metss'. The vocative is rare in practice. | Tēzaurs morpho-api applied (agreed)"
+}

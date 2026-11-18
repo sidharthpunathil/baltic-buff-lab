@@ -1,0 +1,12 @@
+Sources: research/01 (ERR, soccernet.ee, EKI teatmik, Go3/TV3 EE copy). Items marked [U] need a native editor.
+- Register: informal "sina" (arva, sinu, vaata). Never Teie/"Vaadake" in a fan app.
+- Yes/no questions start with "Kas": "Kas Eesti võidab?". Who-questions: "Kes võidab?", "Kes lööb järgmise värava?". Which-of-two: "Kumb…".
+- No future tense: "Kes võidab?" is "who will win". Never force futurity with "hakkab" (hakkab võitma).
+- Numerals in nominative take PARTITIVE singular: kolm väravat, 12 punkti; "Mitu väravat?". In other cases the noun agrees (viie mänguga). Options like "0 / 1–2 / 3 või rohkem" need no noun.
+- Object case: total object for a completed result (lööb värava), partitive for negation/ongoing (ei löö väravat). Negation is always partitive.
+- No "poolt" passives (X-i poolt löödud värav): write "X lõi värava". "Arvulises ülekaalus", not "arvuliselt ülekaalus".
+- Penalty = penalti (karistuslöök is a FREE KICK). Hockey/basketball shot = vise (football shot = löök).
+- Club and team names: NO quotes, fully declined like nouns (Real -> Reali vastu, Žalgiris -> Žalgirise), city parts Estonianized (Madridi Real, Kaunase Žalgiris). Countries decline (Eesti, Itaaliat, Kanadaga).
+- Foreign player names keep original spelling and take endings by pronunciation; apostrophe ONLY when spelling and pronunciation conflict (Messist, Ronaldost; Jane'il). No reflexive apostrophes.
+- Typography: quotes „…“, decimal comma (2,4), score 2:0, ordinal dot (24. juuni), times 19.30 / "kell 19".
+- Watch õ vs ö (lõi, not löi) and never drop ä/ü/õ.

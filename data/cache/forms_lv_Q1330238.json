@@ -1,0 +1,38 @@
+{
+  "lemma": "Latvijas hokeja izlase",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Latvijas hokeja izlase",
+      "short": "Latvija"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Latvijas hokeja izlases",
+      "short": "Latvijas"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Latvijas hokeja izlasei",
+      "short": "Latvijai"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Latvijas hokeja izlasi",
+      "short": "Latviju"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Latvijas hokeja izlasē",
+      "short": "Latvijā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Latvijas hokeja izlase",
+      "short": "Latvija"
+    }
+  ],
+  "usage_note": "Only the head noun 'izlase' (feminine, 5th declension) declines. 'Latvijas hokeja' is a fixed genitive modifier and does not change. The synonym 'Latvijas hokeja valstsvienība' declines the same way: valstsvienība, -as, -ai, -u, -ā. In running copy the team is usually just 'Latvija', which declines as a country (e.g. 'Latvija uzvarēja Kanādu', 'spēlē pret Latviju'). It is also often called 'Latvijas izlase' or simply 'izlase'. No quotation marks are used, since this is a national team, not a club. The vocative is identical to the nominative and is used in chants and headlines ('Latvija, uz priekšu!')."
+}

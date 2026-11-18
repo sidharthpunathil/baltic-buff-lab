@@ -1,0 +1,65 @@
+[
+ {
+  "sport": "hockey",
+  "type": "poll",
+  "question": "Kurš uzvarēs šajā spēlē?",
+  "options": [
+   "Latvija",
+   "Kanāda"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Kurš gūs nākamos vārtus?",
+  "options": [
+   "Latvija",
+   "Vācija",
+   "Neviens"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "hockey",
+  "type": "prediction",
+  "question": "Vai spēle beigsies papildlaikā?",
+  "options": [
+   "Jā",
+   "Nē"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "hockey",
+  "type": "prediction",
+  "question": "Cik vārtu Latvija iemetīs vairākumā?",
+  "options": [
+   "0",
+   "1",
+   "2 un vairāk"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Vai Latvija realizēs 11 metru soda sitienu?",
+  "options": [
+   "Jā, iesitīs",
+   "Nē, vārtsargs atvairīs"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "quiz",
+  "question": "Kurš pirmajā puslaikā izpildīja vairāk stūra sitienu?",
+  "options": [
+   "Latvija",
+   "Armēnija",
+   "Vienādi"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ }
+]

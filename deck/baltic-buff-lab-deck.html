@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baltic Buff Lab</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+:root {
+  --ink: #12132B;
+  --ink-2: #1C1E40;
+  --paper: #F4F5EE;
+  --paper-2: #E7E9DD;
+  --yellow: #D4FF00;
+  --blue: #3A30F0;
+  --blue-soft: #9C96FF;
+  --orange: #FF8A3D;
+  --muted-dark: #B9BCD6;
+  --muted-light: #4A4D66;
+  --line-dark: #34375E;
+  --line-light: #C9CCBC;
+}
+
+body { font-family: 'Public Sans', Arial, sans-serif; }
+
+section {
+  padding: 128px;
+  background: var(--ink);
+  color: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  counter-increment: page;
+}
+section.light { background: var(--paper); color: var(--ink); }
+section.accent { background: var(--yellow); color: var(--ink); }
+section.footer { padding: 128px 128px 160px; }
+
+h1, h2, h3 { font-family: 'Oswald', Arial, sans-serif; font-weight: 600; }
+h1 { font-size: 120px; line-height: 1.02; letter-spacing: -1px; }
+h2 { font-size: 64px; line-height: 1.08; }
+h3 { font-size: 32px; line-height: 1.2; }
+p { font-size: 32px; line-height: 1.4; }
+
+.eyebrow { font-family: 'Oswald', Arial, sans-serif; font-size: 24px; letter-spacing: 3px; color: var(--yellow); font-weight: 600; }
+section.light .eyebrow { color: var(--blue); }
+section.accent .eyebrow { color: var(--blue); }
+.lede { font-size: 32px; color: var(--muted-dark); max-width: 1400px; }
+section.light .lede { color: var(--muted-light); }
+.small { font-size: 28px; line-height: 1.4; color: var(--muted-dark); }
+section.light .small { color: var(--muted-light); }
+.src { position: absolute; left: 128px; bottom: 64px; width: 1664px; font-size: 24px; color: var(--muted-dark); }
+section.light .src { color: var(--muted-light); }
+
+.row { display: flex; gap: 32px; }
+.col { display: flex; flex-direction: column; gap: 20px; }
+.grow { flex: 1; }
+
+.card { background: var(--ink-2); border: 2px solid var(--line-dark); border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px; }
+section.light .card { background: #FBFBF6; border-color: var(--line-light); }
+.card .tag { font-family: 'Oswald', Arial, sans-serif; font-size: 26px; letter-spacing: 2px; color: var(--yellow); }
+section.light .card .tag { color: var(--blue); }
+.card .body { font-size: 30px; line-height: 1.4; color: var(--muted-dark); }
+section.light .card .body { color: var(--muted-light); }
+.card.hot { border-color: var(--yellow); }
+section.light .card.hot { border-color: var(--blue); }
+
+.quote { font-family: 'Oswald', Arial, sans-serif; font-size: 56px; line-height: 1.15; color: var(--paper); border-left: 8px solid var(--orange); padding-left: 40px; }
+.big { font-family: 'Oswald', Arial, sans-serif; font-size: 200px; line-height: 1; font-weight: 700; }
+.big.yellow { color: var(--yellow); }
+.big.dim { color: var(--muted-dark); }
+.biglabel { font-size: 28px; color: var(--muted-dark); line-height: 1.35; }
+
+table { font-size: 28px; color: var(--paper); width: 100%; }
+section.light table { color: var(--ink); }
+.win { color: var(--yellow); font-weight: 700; }
+section.light .win { color: var(--blue); }
+.bad { color: var(--orange); }
+
+.pill { font-size: 24px; background: var(--yellow); color: var(--ink); padding: 6px 18px; border-radius: 999px; font-weight: 700; }
+.mono { font-family: 'Courier New', monospace; }
+
+/* motion: content arrives staged */
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.in { animation: rise 600ms cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: calc(var(--i, 0) * 110ms); }
+
+/* layout: let the main block take the free height so slides aren't top-heavy */
+.fill { flex: 1; min-height: 0; }
+.center { justify-content: center; }
+.fill.center { display: flex; flex-direction: column; justify-content: center; }
+.bar { height: 44px; border-radius: 8px; }
+.barlabel { font-size: 28px; color: var(--muted-dark); }
+
+/* dense slides: cards hold more text */
+.compact .card { padding: 28px; gap: 12px; }
+.compact .card .body { font-size: 26px; line-height: 1.35; }
+.compact .card h3 { font-size: 30px; }
+
+html,body{margin:0;height:100%;background:#0B0C1C;overflow:hidden}
+/* same base the Slides renderer applies: no default margins, its own table hairlines */
+#deck *{margin:0}
+#deck p,#deck li,#deck h1,#deck h2,#deck h3,#deck td,#deck th{overflow-wrap:break-word}
+#deck table{border-collapse:collapse}
+#deck th,#deck td{padding:.35em .6em;text-align:left;vertical-align:top;border-bottom:1px solid rgba(140,144,170,.35)}
+#deck th{font-weight:600;border-bottom:2px solid rgba(140,144,170,.6)}
+#stage{position:fixed;left:0;right:0;top:0;bottom:var(--navh);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+#spacer{width:1px}
+:root{--navh:72px}
+#deck{width:1920px;height:1080px;position:absolute;left:0;top:0;transform-origin:0 0;border-radius:6px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.45)}
+#deck>section{position:absolute;inset:0;box-sizing:border-box;display:none}
+#deck>section.active{display:flex}
+#deck>section .in{animation:none}
+#deck>section.active .in{animation:rise 600ms cubic-bezier(0.16,1,0.3,1) both;animation-delay:calc(var(--i,0)*110ms)}
+x-shape{display:block} x-shape[kind="arrow-right"]{clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%)}
+aside.notes{display:none}
+body.shownotes aside.notes{display:block;position:absolute;left:128px;right:128px;bottom:24px;font-size:22px;line-height:1.4;background:rgba(10,11,24,.92);color:#F4F5EE;padding:16px 20px;border-radius:12px}
+#nav{position:fixed;left:0;right:0;bottom:0;height:var(--navh);display:flex;gap:10px;align-items:center;justify-content:center;font:600 15px system-ui,sans-serif;color:#F4F5EE;z-index:9;background:#0B0C1C;border-top:1px solid #23264A}
+#nav button{background:#1C1E40;color:#F4F5EE;border:1px solid #34375E;border-radius:999px;padding:10px 18px;font:inherit;cursor:pointer;min-width:44px;min-height:44px}
+#nav button:hover{background:#3A30F0} #nav button:focus-visible{outline:2px solid #D4FF00;outline-offset:2px}
+#count{padding:0 8px;font-variant-numeric:tabular-nums}
+#bar{position:fixed;top:0;left:0;height:4px;background:#D4FF00;z-index:9;transition:width .3s}
+/* Read mode: reflow slides into one column for phones */
+body.read #deck{position:static;transform:none!important;width:auto;height:auto;border-radius:0;box-shadow:none;overflow:visible}
+body.read #spacer{display:none}
+body.read #deck>section{display:flex!important;position:relative;inset:auto;height:auto;min-height:0;padding:28px 18px 32px;gap:16px;border-bottom:1px solid #2A2D4A}
+body.read #deck .row{flex-direction:column;gap:12px;align-items:stretch!important}
+body.read #deck [style*="grid-template-columns"]{grid-template-columns:1fr!important;grid-template-rows:auto!important}
+body.read #deck .fill{flex:none}
+body.read #deck x-shape{display:none}
+body.read #deck p,body.read #deck li,body.read #deck td,body.read #deck th,body.read #deck .body,body.read #deck .small,body.read #deck .lede{font-size:16px!important;line-height:1.45!important}
+body.read #deck .eyebrow,body.read #deck .tag,body.read #deck .meta,body.read #deck .path,body.read #deck .barlabel{font-size:12px!important;letter-spacing:.5px}
+body.read #deck h1{font-size:40px!important} body.read #deck h2{font-size:26px!important;line-height:1.2} body.read #deck h3{font-size:19px!important}
+body.read #deck .big{font-size:64px!important} body.read #deck .quote{font-size:24px!important;padding-left:14px;border-left-width:4px}
+body.read #deck .code{font-size:13px!important;padding:14px;overflow-x:auto}
+body.read #deck .card,body.read #deck .stage{padding:16px!important;border-radius:14px}
+body.read #deck table{display:block;overflow-x:auto;width:100%}
+body.read #deck th,body.read #deck td{width:auto!important;min-width:90px}
+body.read #deck [style*="width:"]:not(table):not(th):not(td){max-width:100%}
+body.read #deck .in{animation:none!important}
+body.read aside.notes{display:block!important;position:static;font-size:14px;background:#191C33;color:#B7BAD4;padding:10px 12px;border-radius:10px}
+@media (prefers-reduced-motion:reduce){#deck>section.active .in{animation:none}#bar{transition:none}}
+</style></head><body>
+<div id="bar"></div>
+<div id="stage"><div id="spacer"></div><div id="deck" role="region" aria-roledescription="slideshow" aria-label="Baltic Buff Lab">
+<section id="cover" style="justify-content:space-between" data-transition="fade">
+<p class="eyebrow in" style="--i:0">JOININLIVE RESEARCH AND POC, 17 NOV 2026</p>
+<div class="col">
+<h1 class="in" style="--i:1">Buffs Baltic fans read as their own</h1>
+<p class="lede in" style="--i:2; font-size:44px; line-height:1.3">Lithuanian, Latvian and Estonian fans get live buffs that read like their own sports press, and operators can check every buff in English before it goes out.</p>
+</div>
+<div class="row in" style="--i:3; align-items:center">
+<p class="pill">17 of 18 publishable</p>
+<p class="small">by a strict native-language review, against 8 of 18 today on the same model</p>
+</div>
+<aside class="notes">"Publishable" means the blind judge found no major or critical errors. Everything here comes from the run reports in baltic-buff-lab/out.</aside>
+</section>
+<section id="problem" class="compact">
+<p class="eyebrow">WHAT FANS SEE TODAY</p>
+<h2>Fans see their own players’ names in broken grammar</h2>
+<div class="row" style="align-items:center">
+<div class="col grow">
+<p class="quote in" style="--i:0; font-size:64px">“Preserve numbers, team names, player names, and emoji as-is.”</p>
+<p class="small in" style="--i:1">JIL’s Translate button prompt in <span class="mono">viewer_api_routes.py</span> (translate_buff_content)</p>
+</div>
+<div class="col" style="width:760px">
+<div class="card in" style="--i:2"><p class="tag">LITHUANIAN, 7 CASES</p><p class="body">Foreign clubs stay in „…“ quotes and undeclined („Real“), while Lithuanian clubs decline: Kauno „Žalgiris“, „Žalgirio“.</p></div>
+<div class="card in" style="--i:3"><p class="tag">LATVIAN, 7 CASES</p><p class="body">Foreign names are respelled: Messi → Mesi, Ronaldo → Ronaldu. Keeping “Messi” is an error.</p></div>
+<div class="card in" style="--i:4"><p class="tag">ESTONIAN, 14 CASES</p><p class="body">Clubs have no quotes and decline like nouns: Reali vastu, Messist.</p></div>
+</div>
+</div>
+<aside class="notes">Names have to change form when they are the object of a verb, follow a preposition or follow a number. An instruction to keep names "as-is" guarantees broken grammar.</aside>
+</section>
+<section id="today" class="light compact">
+<p class="eyebrow">HOW BUFFS REACH BALTIC VIEWERS TODAY</p>
+<h2>Fans get word-for-word translations because the model has nothing local to work from</h2>
+<div class="row">
+<div class="card grow in" style="--i:0"><p class="tag">A: TRANSLATE BUTTON</p><h3>English first, then a literal translation</h3><p class="body">The translate step never sees the match, so it can’t catch a wrong fact. It is also told to keep names unchanged.</p></div>
+<div class="card grow in" style="--i:1"><p class="tag">B: SPORTS_NATIVE PACK</p><h3>“Write natively” in one call</h3><p class="body">The right instruction, but the model has no glossary, no reference names, no examples and no checks, so it guesses.</p></div>
+</div>
+<table class="in" style="--i:2; font-size:30px">
+<tr><th style="width:46%">Missing in both</th><th>Effect seen in the run</th></tr>
+<tr><td>Sports glossary per language</td><td>Calques: “soda kaste” for the penalty box, “pārsvars” for a power play</td></tr>
+<tr><td>Reference names and case forms</td><td>Names left in the wrong form, e.g. “Messi” in Latvian copy instead of “Mesi”</td></tr>
+<tr><td>Teams from <span class="mono">Event.teams</span></td><td>Never reach the prompt; only the event name and sport do</td></tr>
+<tr><td>Any language check</td><td>Nothing flags missing diacritics, English words or the wrong register</td></tr>
+</table>
+<aside class="notes">B is the sports_native prompt pack, version 0.1.0. A is the manual translate endpoint. Both write through flatten_native_languages, which only checks structure.</aside>
+</section>
+<section id="pipeline" class="compact">
+<p class="eyebrow">WHAT CHANGES FOR FANS AND OPERATORS</p>
+<h2>Every buff reaches the operator the way a local sports editor would write it</h2>
+<div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px">
+<div class="card in" style="--i:0"><p class="tag">NAMES</p><h3>Spelled like local press</h3><p class="body">Teams and players appear the way local sports press writes them.</p></div>
+<div class="card in" style="--i:1"><p class="tag">GRAMMAR</p><h3>Names fit the sentence</h3><p class="body">Every case form is prepared once per match, so a name never breaks the grammar.</p></div>
+<div class="card in" style="--i:2"><p class="tag">SPORT TERMS</p><h3>Fans hear their own sport</h3><p class="body">Local terms per sport, kept current by a linguist without an engineer.</p></div>
+<div class="card hot in" style="--i:3"><p class="tag">WRITING</p><h3>Written, not translated</h3><p class="body">Copy starts from the match facts in the fan’s language.</p></div>
+<div class="card in" style="--i:4"><p class="tag">CHECKS</p><h3>Obvious errors never reach review</h3><p class="body">Spelling, missing accents and literal translations are caught in milliseconds.</p></div>
+<div class="card in" style="--i:5"><p class="tag">MEASUREMENT</p><h3>Quality you can track</h3><p class="body">Every buff gets an error list and a score, per language.</p></div>
+<div class="card in" style="--i:6"><p class="tag">REPAIR</p><h3>Fixed before anyone sees it</h3><p class="body">Blocking errors are corrected automatically, at most twice.</p></div>
+<div class="card hot in" style="--i:7"><p class="tag">OPERATOR</p><h3>Approves with confidence</h3><p class="body">Native buff, its English meaning and open flags in one card.</p></div>
+</div>
+<aside class="notes">Under the hood: Wikidata labels, case tables (Tēzaurs for Latvian), a style sheet, glossary and gold examples per language, deterministic validators, a blind MQM judge and a repair loop. The appendix lists the libraries.</aside>
+</section>
+<section id="casetables">
+<p class="eyebrow">OUTCOME: NAMES THAT FIT EVERY SENTENCE</p>
+<h2>A goalkeeper’s name comes out right whether he saves, is beaten or is praised</h2>
+<div class="row fill" style="align-items:center">
+<div class="col grow in" style="--i:0">
+<p class="small">Latvian, from the Tēzaurs morphology service</p>
+<table style="font-size:36px">
+<tr><th style="width:40%">Case</th><th>Elvis Merzļikins</th></tr>
+<tr><td>nominatīvs</td><td>Elvis Merzļikins</td></tr>
+<tr><td>ģenitīvs</td><td>Elvja Merzļikina</td></tr>
+<tr><td>datīvs</td><td>Elvim Merzļikinam</td></tr>
+<tr><td>akuzatīvs</td><td>Elvi Merzļikinu</td></tr>
+<tr><td>lokatīvs</td><td>Elvī Merzļikinā</td></tr>
+</table>
+</div>
+<div class="col" style="width:720px">
+<div class="card in" style="--i:1"><p class="tag">HOW IT’S USED</p><p class="body">The generator gets the table and picks the case the sentence needs. The validator flags any name spelling that isn’t in the table.</p></div>
+<div class="card in" style="--i:2"><p class="tag">WHERE FORMS COME FROM</p><p class="body">Wikidata gives the nominative (lt “Kauno Žalgiris”, lv Kauņas “Žalgiris”). An LLM drafts the other cases under researched rules, Tēzaurs replaces the Latvian ones, and a native editor checks each table once.</p></div>
+</div>
+</div>
+<aside class="notes">Duolingo and Babbel never let free text decide a word form: they store a lemma and its paradigm. Sportradar does the same with typed name slots. One known miss: Latvian kept "Donnarumma" where Latvian press respells it, which is fixed by building the Latvian lemma from press usage before Tēzaurs runs.</aside>
+</section>
+<section id="validators" class="light">
+<p class="eyebrow">OUTCOME: THE MISTAKES FANS SPOT FIRST NEVER GO LIVE</p>
+<h2>Errors a native fan notices in a second are caught in milliseconds</h2>
+<table class="in" style="--i:0; font-size:28px">
+<tr><th style="width:26%">Check</th><th style="width:40%">Example it catches</th><th>Fix</th></tr>
+<tr><td>Hunspell spelling</td><td>lv “vartus” (dropped macron)</td><td>vārtus</td></tr>
+<tr><td>Diacritic density</td><td>lt “laimes treciaji kelini”</td><td>laimės trečiąjį kėlinį</td></tr>
+<tr><td>Wrong Baltic alphabet</td><td>a Latvian “ā” inside Lithuanian copy</td><td>use the language’s own letters</td></tr>
+<tr><td>Plural-only nouns</td><td>lv “nākamo vārtu”</td><td>nākamos vārtus</td></tr>
+<tr><td>Translationese</td><td>lt “sekantis”, et “X-i poolt löödud”</td><td>kitas, X lõi</td></tr>
+<tr><td>Glossary calques</td><td>lv “spēka spēle” (power play)</td><td>vairākums</td></tr>
+<tr><td>Register</td><td>lt “Jūs”, et “Vaadake”</td><td>tu, vaata (Go3 uses informal)</td></tr>
+<tr><td>Card fit + options</td><td>title over 35 characters, duplicate options, a quiz with no answer</td><td>shorten or regenerate</td></tr>
+</table>
+<aside class="notes">All rules live in locales/&lt;lang&gt;/locale.json and data/glossary/&lt;lang&gt;.json, so a linguist can add one without touching code. Spelling unknowns and validator errors go back to the repair step.</aside>
+</section>
+<section id="experiment" class="compact">
+<p class="eyebrow">THE EXPERIMENT</p>
+<h2>Three approaches, judged blind on the same live moments</h2>
+<div class="row">
+<div class="card grow in" style="--i:0"><p class="tag">INPUT</p><h3>3 simulated matches</h3><p class="body">Žalgiris vs Real Madrid (EuroLeague basketball), Latvia vs Canada (IIHF hockey), Estonia vs Italy (World Cup qualifier). 2 live moments each, real Wikidata entities.</p></div>
+<div class="card grow in" style="--i:1"><p class="tag">OUTPUT</p><h3>18 buffs per approach</h3><p class="body">6 moments × Lithuanian, Latvian, Estonian. Every buff is validated and judged the same way.</p></div>
+<div class="card grow in" style="--i:2"><p class="tag">JUDGE</p><h3>MQM, blind</h3><p class="body">Sees only the match facts and the card. Lists errors (minor, major, critical) and scores grammar, naturalness, terminology, facts and engagement.</p></div>
+</div>
+<div class="card hot in" style="--i:3"><p class="tag">ABLATION</p><p class="body" style="font-size:28px">First run: A and B on Sonnet 5.5 (this repo’s backend model), C on Opus 5.5. Second run: A and B on Opus 5.5 too, so the model and the pipeline can be separated.</p></div>
+<aside class="notes">The MQM method is what WMT uses for human and LLM evaluation of translation (GEMBA-MQM). An approved verdict means no major or critical errors.</aside>
+</section>
+<section id="headline" class="accent" style="justify-content:space-between">
+<p class="eyebrow">OUTCOME: BUFFS READY TO PUBLISH, OUT OF 18</p>
+<div class="row" style="align-items:flex-end; gap:96px">
+<div class="col in" style="--i:0"><p class="big" style="color:#12132B">17/18</p><p style="font-size:28px; font-weight:700">New pipeline (C), Opus 5.5</p></div>
+<div class="col in" style="--i:1"><p class="big" style="color:#3A30F0">8/18</p><p style="font-size:28px">Today’s native prompt (B), same model</p></div>
+<div class="col in" style="--i:2"><p class="big" style="color:#5A5D78">3/36</p><p style="font-size:28px">Today’s two paths on Sonnet 5.5</p></div>
+</div>
+<p class="in" style="--i:3; font-size:44px; line-height:1.3; max-width:1600px">A stronger model closes about half the gap. The language pack, reference names and checks close the rest.</p>
+<aside class="notes">3 of 36 is the translate button (1 of 18) plus the native prompt (2 of 18) on Sonnet 5.5, the model this repo's backend config uses.</aside>
+</section>
+<section id="scores" class="light">
+<p class="eyebrow">JUDGE MEAN SCORE (1 TO 5) BY LANGUAGE</p>
+<h2>Fans in all three countries get better buffs, whichever model writes them</h2>
+<table class="in" style="--i:0; font-size:38px">
+<tr><th style="width:22%">Language</th><th style="text-align:right">A translate<br>Sonnet</th><th style="text-align:right">B native<br>Sonnet</th><th style="text-align:right">A translate<br>Opus</th><th style="text-align:right">B native<br>Opus</th><th style="text-align:right">C pipeline<br>Opus</th></tr>
+<tr><td>Lithuanian</td><td style="text-align:right">3.07</td><td style="text-align:right">3.87</td><td style="text-align:right">3.50</td><td style="text-align:right">4.50</td><td class="win" style="text-align:right">4.73</td></tr>
+<tr><td>Latvian</td><td style="text-align:right">3.23</td><td style="text-align:right">3.47</td><td style="text-align:right">3.70</td><td style="text-align:right">4.07</td><td class="win" style="text-align:right">4.70</td></tr>
+<tr><td>Estonian</td><td style="text-align:right">3.63</td><td style="text-align:right">3.80</td><td style="text-align:right">4.13</td><td style="text-align:right">4.23</td><td class="win" style="text-align:right">4.77</td></tr>
+<tr><td>Approved</td><td style="text-align:right">1/18</td><td style="text-align:right">2/18</td><td style="text-align:right">5/18</td><td style="text-align:right">8/18</td><td class="win" style="text-align:right">17/18</td></tr>
+</table>
+<p class="small in" style="--i:1">Runs out/run-20261117-231912 (main) and out/run-20261117-232937 (ablation). The highest score in each row is in the last column.</p>
+<aside class="notes">Naturalness moves most: on Sonnet the current paths score 2.67 to 3.33 on naturalness, the pipeline 4.50 to 4.67.</aside>
+</section>
+<section id="errors">
+<p class="eyebrow">MAJOR AND CRITICAL ERRORS FOUND BY THE JUDGE, 18 BUFFS PER APPROACH</p>
+<h2>The sport terms fans notice most stop being wrong</h2>
+<div class="row fill" style="gap:96px; align-items:center">
+<div class="col grow in" style="--i:0">
+<h3>All major errors</h3>
+<div class="col" style="gap:16px">
+<p class="barlabel">A translate on Sonnet: 54</p><div style="height:44px; width:760px; background:#FF8A3D; border-radius:6px"></div>
+<p class="barlabel">B native on Sonnet: 39</p><div style="height:44px; width:549px; background:#9C96FF; border-radius:6px"></div>
+<p class="barlabel">A translate on Opus: 30</p><div style="height:44px; width:422px; background:#FF8A3D; border-radius:6px"></div>
+<p class="barlabel">B native on Opus: 15</p><div style="height:44px; width:211px; background:#9C96FF; border-radius:6px"></div>
+<p class="barlabel">C pipeline on Opus: 2 (both name forms)</p><div style="height:44px; width:28px; background:#D4FF00; border-radius:6px"></div>
+</div>
+</div>
+<div class="col grow in" style="--i:1">
+<h3>Terminology errors only</h3>
+<div class="col" style="gap:16px">
+<p class="barlabel">A translate on Sonnet: 23</p><div style="height:44px; width:760px; background:#FF8A3D; border-radius:6px"></div>
+<p class="barlabel">B native on Sonnet: 14</p><div style="height:44px; width:463px; background:#9C96FF; border-radius:6px"></div>
+<p class="barlabel">A translate on Opus: 9</p><div style="height:44px; width:297px; background:#FF8A3D; border-radius:6px"></div>
+<p class="barlabel">B native on Opus: 10</p><div style="height:44px; width:330px; background:#9C96FF; border-radius:6px"></div>
+<p class="barlabel">C pipeline on Opus: 0</p><div style="height:44px; width:6px; background:#D4FF00; border-radius:2px"></div>
+</div>
+</div>
+</div>
+<aside class="notes">Translate on Opus still made 8 name-form errors, because its prompt forbids declension. On Sonnet the translate path also made 6 factual errors, such as swapping which team was ahead.</aside>
+</section>
+<section id="sidebyside" class="light">
+<p class="eyebrow">ONE MOMENT: CANADA TAKES A MINOR AND LATVIA GOES ON THE POWER PLAY</p>
+<h2>What a fan in each country would actually read</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:12%"></th><th style="width:29%">Lithuanian</th><th style="width:29%">Latvian</th><th>Estonian</th></tr>
+<tr><td>A</td><td>“…per šią Latvijos <span class="bad">persvarą</span>?”</td><td>“Kanāda sēž <span class="bad">soda kastē</span>”</td><td>“Läti <span class="bad">ülekaalumängus</span>”</td></tr>
+<tr><td>B</td><td>“Ar Latvija pasinaudos <span class="bad">persvara</span>?”</td><td>“Vai Latvija izmantos <span class="bad">pārsvaru</span>?”</td><td>“Kas Läti <span class="bad">lööb</span> ülekaalus värava?”</td></tr>
+<tr><td class="win">C</td><td>“Ar Latvija pelnys įvartį žaisdama <b>daugumoje</b>?”</td><td>“Vai Latvija <b>iemetīs</b> vārtus šajā <b>vairākumā</b>?”</td><td>“Kas Läti <b>viskab</b> <b>arvulises ülekaalus</b> värava?”</td></tr>
+</table>
+<div class="row in" style="--i:1">
+<p class="small grow">A and B: generic “advantage”, a calqued “penalty box”, and the football verb for scoring.</p>
+<p class="small grow">C: the hockey terms local broadcasters use, from the glossary (dauguma, vairākums and arvuline ülekaal, plus the hockey scoring verbs iemest and viskama).</p>
+</div>
+<aside class="notes">Judge scores for this moment, Sonnet run: Lithuanian A 2.2, B 4.2, C 4.8. Latvian A 3.0, B 3.8, C 4.8. Estonian A 3.8, B 3.4, C 4.8.</aside>
+</section>
+<section id="round2" class="accent">
+<p class="eyebrow">ROUND 2</p>
+<h2>Round 2 removed the last name errors and stopped false alarms</h2>
+<table class="in" style="--i:0; font-size:32px; color:#12132B">
+<tr><th style="width:38%">Round 1 problem</th><th>Round 2 change</th></tr>
+<tr><td>Case tables were LLM guesses (lt “Merzlikinas” lost its ļ)</td><td>Name forms checked against LRT, 15min, ERR, LSM and Delfi, with a source URL per form</td></tr>
+<tr><td>The judge “corrected” a right name (lv Donnarumma)</td><td>Judges and reviewers see the press evidence, so correct forms aren’t flagged</td></tr>
+<tr><td>One generalist judge did everything</td><td>Five specialist review agents plus an orchestrator (arm D)</td></tr>
+<tr><td>Arm C was scored by the judge it repaired against</td><td>Every arm gets a fresh, independent panel score</td></tr>
+<tr><td>Gemini second judge failed 38 of 54 calls</td><td>Pooled-key proxy with model fallback: 38 of 54 now scored</td></tr>
+</table>
+<aside class="notes">The OpenAI key in backend/.env has no model.request scope, so GPT could not be the second judge. Gemini runs through the Acnologia pooled-key proxy, which rotates keys on 429s.</aside>
+</section>
+<section id="team" class="compact">
+<p class="eyebrow">OUTCOME: A SECOND OPINION ON EVERY BUFF, IN SECONDS</p>
+<h2>Each buff is checked the way five different editors would check it</h2>
+<div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:20px">
+<div class="card in" style="--i:0"><p class="tag">GRAMMAR</p><p class="body">No broken cases, agreement or numerals.</p></div>
+<div class="card in" style="--i:1"><p class="tag">SPORT TERMS</p><p class="body">The words this country’s commentators use for this sport.</p></div>
+<div class="card in" style="--i:2"><p class="tag">NAMES</p><p class="body">The form the local press prints.</p></div>
+<div class="card in" style="--i:3"><p class="tag">NATIVE EAR</p><p class="body">Nothing that sounds translated or too formal.</p></div>
+<div class="card in" style="--i:4"><p class="tag">FACTS</p><p class="body">Score, leader and quiz answer match the match.</p></div>
+</div>
+<div class="card hot in" style="--i:5"><p class="tag">WHAT THE OPERATOR GETS</p><p class="body">Only real problems hold a buff: checks that contradict the press, quote text that isn’t on the card or repeat another check are dropped. In round 2, 14 of 18 buffs needed no fix at all. All five checks run at once, in 2 to 4 seconds.</p></div>
+<aside class="notes">The checks never produce the score. An independent panel (a fresh Claude judge plus Gemini) scores every approach the same way.</aside>
+</section>
+<section id="round2results" class="light">
+<p class="eyebrow">ROUND 2 RESULTS ON ONE MODEL (OPUS 5.5), SCORED BY AN INDEPENDENT PANEL</p>
+<h2>Fewest errors yet, and a judge from another vendor agrees</h2>
+<table class="in" style="--i:0; font-size:34px">
+<tr><th style="width:34%">Measure, 18 buffs each</th><th style="text-align:right">B today’s native</th><th style="text-align:right">C round-1 pipeline</th><th style="text-align:right">D review team</th></tr>
+<tr><td>Claude judge, approved</td><td style="text-align:right">7/18</td><td style="text-align:right">17/18</td><td class="win" style="text-align:right">17/18</td></tr>
+<tr><td>Gemini judge, approved</td><td style="text-align:right">6/11</td><td style="text-align:right">7/10</td><td class="win" style="text-align:right">15/17</td></tr>
+<tr><td>Both judges approve</td><td style="text-align:right">4/11</td><td style="text-align:right">7/10</td><td class="win" style="text-align:right">14/17</td></tr>
+<tr><td>Major + critical errors</td><td style="text-align:right">21</td><td style="text-align:right">3</td><td class="win" style="text-align:right">1</td></tr>
+<tr><td>Mean MQM penalty (lower is better)</td><td style="text-align:right">7.7</td><td style="text-align:right">1.5</td><td class="win" style="text-align:right">0.8</td></tr>
+</table>
+<p class="small in" style="--i:1">The Gemini judge scored 38 of 54 buffs; the rest hit overload errors. The two judges agreed on approve or not for 29 of 38. Run: out/run-20261117-235224.</p>
+<aside class="notes">Mean judge scores by language, D vs C: Lithuanian 4.67 vs 4.83, Latvian 4.80 vs 4.70, Estonian 4.73 vs 4.67. On means alone C and D are close; the gap shows in error counts and in the cross-family judge.</aside>
+</section>
+<section id="round2fixes">
+<p class="eyebrow">WHAT ROUND 2 CAUGHT</p>
+<h2>Four problems found and fixed before any fan saw them</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px">
+<div class="card in" style="--i:0"><p class="tag">NAME TABLE ERROR, FIXED</p><p class="body">Arm C still wrote lt “Merzlikinas atrėmė jau 31 metimą” (3 major errors). With press forms, D wrote Merzļikinas, as sportas.lt does.</p></div>
+<div class="card in" style="--i:1"><p class="tag">JUDGE FALSE POSITIVE, PREVENTED</p><p class="body">Latvian press prints “Džanluidži Donnarumma” (delfi.lv, sportacentrs.com). With that evidence, no reviewer or judge flagged it this time.</p></div>
+<div class="card in" style="--i:2"><p class="tag">GRAMMAR, CAUGHT BY THE TEAM</p><p class="body">et “Realile kolme punkti kaugusele” was blocked by the grammar reviewer and repaired to “Realist kolme punkti kaugusele”.</p></div>
+<div class="card in" style="--i:3"><p class="tag">VALIDATOR BUG, FOUND AND FIXED</p><p class="body">The calque check fired on “soda sitiens” inside the correct “11 metru soda sitiens”, and on “pool” inside “poolaeg”. It cost two repair rounds each. Now masked, with tests.</p></div>
+</div>
+<p class="small in" style="--i:4">Open question for a native: is Lithuanian “prieš Donnarummą” right? The judge says vowel-final names stay undeclined; the press search found only the nominative.</p>
+<aside class="notes">All four are in out/run-20261117-235224/report.html under each card's team-round details.</aside>
+</section>
+<section id="models">
+<p class="eyebrow">MODEL CHOICE</p>
+<h2>Choosing the best model per language is the next quality gain</h2>
+<div class="row">
+<div class="col grow in" style="--i:0">
+<h3>EKI Estonian leaderboard, Nov 2026</h3>
+<table style="font-size:34px">
+<tr><th style="width:20%">Rank</th><th>Model</th></tr>
+<tr><td>#1</td><td class="win">claude-fable-5.2</td></tr>
+<tr><td>#14</td><td>claude-opus-5.5 (used for arm C)</td></tr>
+<tr><td>#30</td><td>claude-sonnet-5.5 (this repo’s backend model)</td></tr>
+</table>
+</div>
+<div class="col grow in" style="--i:1">
+<h3>WMT25 human eval, English to Estonian</h3>
+<table style="font-size:34px">
+<tr><th>System</th><th style="text-align:right">Score</th></tr>
+<tr><td>Human reference</td><td style="text-align:right">83.1</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td style="text-align:right">78.8</td></tr>
+<tr><td>GPT-4.1</td><td style="text-align:right">72.2</td></tr>
+<tr><td>Claude-4</td><td style="text-align:right">53.0</td></tr>
+</table>
+</div>
+</div>
+<p class="small in" style="--i:2">WMT25 had no English to Lithuanian or Latvian task, so for those two the lab is the only measurement. Set BBL_GEN_MODEL per language and rerun before picking a model.</p>
+<aside class="notes">EuroEval (April 2026 snapshot) puts Gemini 3 Pro first for Lithuanian and Estonian and GPT-5 first for Latvian. Open-weight models trail far behind on EKI's idiom and language-norm tasks.</aside>
+</section>
+<section id="caveats" class="light">
+<p class="eyebrow">WHAT THESE NUMBERS CAN’T TELL YOU YET</p>
+<h2>Native raters still have to confirm the result</h2>
+<div class="fill" style="display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:32px">
+<div class="card in" style="--i:0"><p class="tag">SAME-FAMILY JUDGE</p><p class="body">The judge is a Claude model and reads the same style sheet as arm C, which can favour C.</p></div>
+<div class="card in" style="--i:1"><p class="tag">SECOND JUDGE IS PARTIAL</p><p class="body">Round 2 scored 38 of 54 buffs with Gemini (round 1: 16). Overloaded models also pushed most native-ear reviews back to Claude.</p></div>
+<div class="card in" style="--i:2"><p class="tag">DRAFT LANGUAGE PACKS</p><p class="body">No native has reviewed the example buffs or several style rules. Glossary rows are marked verified only when seen in a source.</p></div>
+<div class="card in" style="--i:3"><p class="tag">SMALL SAMPLE</p><p class="body">18 buffs per approach from three simulated matches. Enough to show the direction. A benchmark needs the golden set.</p></div>
+</div>
+<aside class="notes">The protocol for the real test is in research/03, section 4: 150 golden buffs per language and two native raters scoring six rubric dimensions.</aside>
+</section>
+<section id="jilsteps">
+<p class="eyebrow">WHAT TO CHANGE IN JIL, SMALLEST FIRST</p>
+<h2>Fans can see the first improvement after two prompt-only changes</h2>
+<table class="in" style="--i:0; font-size:30px">
+<tr><th style="width:6%">#</th><th style="width:40%">Change</th><th>Where</th></tr>
+<tr><td>1</td><td>Replace the translate prompt with a native rewrite that sees the match</td><td class="mono">viewer_api_routes.translate_buff_content</td></tr>
+<tr><td>2</td><td>Add a locale pack block: style, glossary, examples</td><td class="mono">build_sports_feed_agent_user_prompt</td></tr>
+<tr><td>3</td><td>Pass real teams and players, with cached case tables</td><td>Event.teams, cached in Redis</td></tr>
+<tr><td>4</td><td>Run the validators on every generated language</td><td>after flatten_native_languages</td></tr>
+<tr><td>5</td><td>Judge a nightly sample offline before going inline</td><td>worker job</td></tr>
+<tr><td>6</td><td>Choose the generator model per language</td><td>per-org model assignment</td></tr>
+<tr><td>7</td><td>Store AI output next to what operators publish</td><td>write-behind, tested into Postgres</td></tr>
+</table>
+<aside class="notes">Step 3 must follow the play-screen rule: Redis first, never a Postgres read per poll. Step 7 is a write path, so it needs the data-loss tests in CLAUDE.md.</aside>
+</section>
+<section id="trynext" class="light compact">
+<p class="eyebrow">WHAT TO TRY NEXT, BY EXPECTED GAIN</p>
+<h2>Five experiments that could lift quality further</h2>
+<table class="in" style="--i:0; font-size:27px">
+<tr><th style="width:30%">Try</th><th style="width:40%">What fans or operators would get</th><th>Cost to find out</th></tr>
+<tr><td>TildeOpen-30b as a grammar ranker</td><td>The most grammatical of several drafts, chosen by a model built for these languages</td><td>One GPU box, a few days</td></tr>
+<tr><td>Best model per language</td><td>Higher quality where Claude ranks lower (Estonian: Fable 5.2 is #1 on EKI)</td><td>One lab run per model</td></tr>
+<tr><td>Native-written templates for common moments</td><td>Next goal, who wins the half, rate the play: grammatical by construction</td><td>50 to 100 lines per language from an editor</td></tr>
+<tr><td>Estonian morphology from Vabamorf</td><td>Rule-based Estonian name forms, like Tēzaurs gives Latvian</td><td>Small: estnltk is pip-installable</td></tr>
+<tr><td>Learn from operator edits</td><td>Every correction improves the glossary and examples</td><td>Needs edit capture first</td></tr>
+</table>
+<aside class="notes">Ranked by how much each is likely to move fan-visible quality, from the research in baltic-buff-lab/research/02 and 03.</aside>
+</section>
+<section id="tildeopen" class="compact">
+<p class="eyebrow">TRY: TildeAI/TildeOpen-30b (CC-BY-4.0, open weights)</p>
+<h2>Built for our three languages: best used to pick the most grammatical draft</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:52%">Grammar test (MultiBLiMP), from the model card</th><th style="text-align:right">Lithuanian</th><th style="text-align:right">Latvian</th><th style="text-align:right">Estonian</th></tr>
+<tr><td>TildeOpen 1.1 30b</td><td class="win" style="text-align:right">99.7%</td><td class="win" style="text-align:right">99.1%</td><td class="win" style="text-align:right">98.3%</td></tr>
+<tr><td>Gemma 2 27b</td><td style="text-align:right">95.3%</td><td style="text-align:right">91.6%</td><td style="text-align:right">92.0%</td></tr>
+</table>
+<p class="small in" style="--i:1">The test asks which of two near-identical sentences is grammatical. Choosing between our drafts is the same job.</p>
+<div class="row in" style="--i:2">
+<div class="card grow"><p class="tag">WHY IT FITS</p><p class="body">Its tokeniser treats Baltic text as fairly as English, and self-hosted open weights keep data in our own infrastructure.</p></div>
+<div class="card grow"><p class="tag">WHY NOT AS THE WRITER</p><p class="body">It is a base model: no instruction following or safety alignment yet. Tilde says a translation model built on it is next.</p></div>
+<div class="card grow"><p class="tag">WHAT IT TAKES</p><p class="body">About 61 GB of weights in bf16 (30.7B parameters): one 80 GB GPU for short prompts. Score 3 drafts per buff, keep the best.</p></div>
+</div>
+<aside class="notes">Source: huggingface.co/TildeAI/TildeOpen-30b. Caveat from our own research: as a base model it ranked #119 of 217 on EuroEval Latvian, which tests instruction-style tasks, so it should rank drafts rather than write them.</aside>
+</section>
+<section id="next" class="accent" style="justify-content:space-between">
+<p class="eyebrow">NEXT</p>
+<h2 class="in" style="--i:0; font-size:88px; max-width:1500px">Get a native sports editor in each country to review 50 buffs</h2>
+<div class="row in" style="--i:1">
+<div class="col grow"><h3>Ask for</h3><p style="font-size:28px">Corrections to the glossaries, style sheets and case tables, plus 20 approved buffs per language for the example pool.</p></div>
+<div class="col grow"><h3>Then run</h3><p style="font-size:28px">The same lab against their golden set, with a second judge on a working quota, to check the judge agrees with natives.</p></div>
+</div>
+<p class="in" style="--i:2; font-size:24px">Code and reports: baltic-buff-lab/ on feature/baltic-language-research (gitignored)</p>
+<aside class="notes">Go3 copy in all three markets uses informal you; ask the reviewers to confirm that for fan buffs.</aside>
+</section>
+<section id="stack" class="light">
+<p class="eyebrow">APPENDIX</p>
+<h2>What the POC runs on</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:30%">Piece</th><th style="width:30%">Library or service</th><th>What it does here</th></tr>
+<tr><td>Generator + judge</td><td>anthropic SDK, claude-opus-5-5</td><td>messages.parse into pydantic schemas</td></tr>
+<tr><td>Reference names</td><td>Wikidata wbgetentities API</td><td>lt / lv / et labels, aliases and the “mul” fallback</td></tr>
+<tr><td>Latvian morphology</td><td>Tēzaurs morpho-api (no key)</td><td>Rule-based case forms for player names</td></tr>
+<tr><td>Spell check</td><td>spylls + phunspell</td><td>Hunspell lt_LT, lv_LV, et_EE in pure Python</td></tr>
+<tr><td>Second judge</td><td>google-genai, Gemini</td><td>Cross-family check on the main judge</td></tr>
+<tr><td>Tooling</td><td>uv, pytest and rich</td><td>Environment, 12 offline tests, terminal tables</td></tr>
+</table>
+<p class="small in" style="--i:1">Language sources: VLKK and 15min/LRT (lt), LSPA/RSU sports dictionary and LSM (lv), EKI and ERR/soccernet (et). Model evidence: EuroEval, the EKI leaderboard, WMT25.</p>
+<aside class="notes">No LanguageTool: it has no Lithuanian, Latvian or Estonian. COMET-Kiwi is non-commercial, so MetricX-24 is the license-safe option for later automatic quality estimation.</aside>
+</section>
+</div></div>
+<nav id="nav" aria-label="Slide navigation"><button id="prev" aria-label="Previous slide">← Prev</button><span id="count" aria-live="polite"></span><button id="next" aria-label="Next slide">Next →</button><button id="fitbtn" aria-label="Toggle fit mode">Fit width</button><button id="notes" aria-pressed="false" aria-label="Toggle speaker notes">Notes</button></nav>
+<script>
+const s=[...document.querySelectorAll('#deck>section')];let i=0;const deck=document.getElementById('deck');
+let mode='auto';const MODES=['screen','width','read'];function fit(){const st=document.getElementById('stage');const pad=16;const W=st.clientWidth-2*pad,H=st.clientHeight-2*pad;const kH=Math.min(W/1920,H/1080),kW=Math.min(W/1920,1.25);let m=mode;if(m==='auto')m=W<760?'read':(kH<0.6&&kW>kH*1.2?'width':'screen');document.body.classList.toggle('read',m==='read');document.body.dataset.fit=m;const label={screen:'Fit width',width:'Read',read:'Fit screen'};document.getElementById('fitbtn').textContent=label[m];if(m==='read'){deck.style.transform='';deck.style.left='';deck.style.top='';return;}const k=Math.max(0.05,m==='width'?kW:kH);deck.style.transform='scale('+k+')';deck.style.left=(st.clientWidth-1920*k)/2+'px';deck.style.top=(m==='width'?pad:Math.max(pad,(st.clientHeight-1080*k)/2))+'px';document.getElementById('spacer').style.height=(m==='width'?1080*k+2*pad:0)+'px';}
+function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach((e,j)=>{e.classList.toggle('active',j===i);e.setAttribute('aria-hidden',document.body.dataset.fit!=='read'&&j!==i)});
+document.getElementById('count').textContent=(i+1)+' / '+s.length;document.getElementById('bar').style.width=((i+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===s.length-1;history.replaceState(null,'','#'+(i+1));if(document.body.dataset.fit==='read'){s[i].scrollIntoView({block:'start'});}else{document.getElementById('stage').scrollTop=0;}}
+function notes(){const on=document.body.classList.toggle('shownotes');document.getElementById('notes').setAttribute('aria-pressed',on);}
+document.getElementById('prev').onclick=()=>go(i-1);document.getElementById('next').onclick=()=>go(i+1);document.getElementById('notes').onclick=notes;document.getElementById('fitbtn').onclick=()=>{const c=document.body.dataset.fit;mode=MODES[(MODES.indexOf(c)+1)%3];fit();go(i);};
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(i+1)}if(['ArrowLeft','PageUp'].includes(e.key))go(i-1);if(e.key==='Home')go(0);if(e.key==='End')go(s.length-1);if(e.key==='n')notes();if(e.key==='f')document.getElementById('fitbtn').click();});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)go(i+(d<0?1:-1));x0=null;});
+addEventListener('resize',fit);if(window.visualViewport)visualViewport.addEventListener('resize',fit);new ResizeObserver(fit).observe(document.getElementById('stage'));fit();go((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>

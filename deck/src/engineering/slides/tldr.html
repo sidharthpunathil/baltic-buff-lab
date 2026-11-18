@@ -1,0 +1,16 @@
+<section id="tldr" class="light">
+<p class="eyebrow">TL;DR FOR ENGINEERS</p>
+<h2>Same model, better inputs and checks: 21 major errors down to 1</h2>
+<table class="in" style="--i:0; font-size:30px">
+<tr><th style="width:40%">Round 2, claude-opus-5-5, 18 buffs per arm</th><th style="text-align:right">B: today’s native prompt</th><th style="text-align:right">D: review-team pipeline</th></tr>
+<tr><td>Major + critical errors (blind judge)</td><td style="text-align:right">21</td><td class="win" style="text-align:right">1</td></tr>
+<tr><td>Approved by Claude judge</td><td style="text-align:right">7/18</td><td class="win" style="text-align:right">17/18</td></tr>
+<tr><td>Approved by both Claude and Gemini judges</td><td style="text-align:right">4/11</td><td class="win" style="text-align:right">14/17</td></tr>
+<tr><td>Mean MQM penalty (lower is better)</td><td style="text-align:right">7.7</td><td class="win" style="text-align:right">0.8</td></tr>
+</table>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">WHAT CHANGED</p><p class="body">Glossary + style sheet + gold examples in the prompt, press-verified name case tables, deterministic validators, five specialist reviewers.</p></div>
+<div class="card grow"><p class="tag">WHAT DIDN’T</p><p class="body">The model. B and D both generate with claude-opus-5-5, so the gap is the pipeline.</p></div>
+</div>
+<aside>Run out/run-20261117-235224. Gemini scored 38 of 54 buffs; the rest were overload errors, hence the n/11 and n/17 denominators.</aside>
+</section>

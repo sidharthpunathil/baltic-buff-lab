@@ -1,0 +1,11 @@
+<section id="dataflow" class="light">
+<p class="eyebrow">ARM D: REQUEST FLOW FOR ONE BUFF</p>
+<h2>Live buffs pay only for writing and review; name work happens before kickoff</h2>
+<div class="row in" style="--i:0; align-items:stretch">
+<div class="card grow"><p class="tag">PRECOMPUTE · per event</p><p class="body">1. Resolve teams + players on Wikidata<br>2. Case tables per language<br>3. Apply press overrides + Tēzaurs<br>4. Cache, native editor checks once</p></div>
+<div class="card grow hot"><p class="tag">LIVE · per moment</p><p class="body">5. Assemble prompt: style + glossary(sport) + names + 6 examples<br>6. Generate <span class="mono">BuffDraft</span> (structured output)<br>7. Validators, ms<br>8. Five reviewers in parallel</p></div>
+<div class="card grow"><p class="tag">DECIDE</p><p class="body">9. Orchestrator: dismiss, block or advise<br>10. Routed repair, max 2 rounds, re-run only affected reviewers<br>11. Proposal + English gloss + decision log to the operator</p></div>
+</div>
+<p class="small in" style="--i:1">The evaluation panel (fresh Claude judge + Gemini) only runs in the lab and in an offline nightly job. It never gates a live buff.</p>
+<aside>Steps 1 to 4 run once per event at event creation, so the live path pays nothing for Wikidata, Tēzaurs or press lookups.</aside>
+</section>

@@ -1,0 +1,66 @@
+[
+ {
+  "sport": "football",
+  "type": "poll",
+  "question": "Kuidas mäng lõpeb?",
+  "options": [
+   "Eesti võit",
+   "Viik",
+   "Läti võit"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Kes lööb järgmise värava?",
+  "options": [
+   "Eesti",
+   "Bulgaaria",
+   "Keegi ei löö"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Mitu väravat lüüakse teisel poolajal?",
+  "options": [
+   "0",
+   "1–2",
+   "3 või rohkem"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "football",
+  "type": "prediction",
+  "question": "Kas Eesti realiseerib penalti?",
+  "options": [
+   "Jah",
+   "Ei, väravavaht tõrjub"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "basketball",
+  "type": "prediction",
+  "question": "Kas mäng läheb lisaajale?",
+  "options": [
+   "Jah",
+   "Ei"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ },
+ {
+  "sport": "basketball",
+  "type": "quiz",
+  "question": "Kumb meeskond võttis avapoolajal rohkem lauapalle?",
+  "options": [
+   "Kalev",
+   "Läti Ülikool",
+   "Võrdselt"
+  ],
+  "status": "research draft, not yet native-reviewed"
+ }
+]

@@ -1,0 +1,43 @@
+{
+  "lemma": "Latvijos vyrų ledo ritulio rinktinė",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktinė",
+      "short": "Latvija"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktinės",
+      "short": "Latvijos"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktinei",
+      "short": "Latvijai"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktinę",
+      "short": "Latviją"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktine",
+      "short": "Latvija"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktinėje",
+      "short": "Latvijoje"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Latvijos vyrų ledo ritulio rinktine",
+      "short": "Latvija"
+    }
+  ],
+  "usage_note": "Only the head noun 'rinktinė' declines (feminine ė-stem); the genitive modifiers 'Latvijos vyrų ledo ritulio' stay fixed. In running sports copy the team is usually called 'Latvijos rinktinė' (rinktinės, rinktinei, rinktinę…), simply 'Latvija' (declined as a normal country name), or 'latviai' (plural, masculine) for the players. 'Vyrų' is usually omitted unless needed to distinguish the team from the women's team."
+}

@@ -1,0 +1,15 @@
+<section id="prplan">
+<p class="eyebrow">INTEGRATION PLAN · each a feature/* branch → develop</p>
+<h2>Seven PRs, smallest risk first</h2>
+<table class="in" style="--i:0; font-size:25px">
+<tr><th style="width:5%">#</th><th style="width:38%">Change</th><th style="width:37%">Touches</th><th>Size</th></tr>
+<tr><td>1</td><td>Native rewrite replaces the translate prompt; pass match context</td><td class="mono">viewer_api_routes.translate_buff_content</td><td>S</td></tr>
+<tr><td>2</td><td>{{LOCALE_PACK}} token: style + sport glossary + examples</td><td class="mono">feed_buff_gen_prompts.py:416, packs/</td><td>S</td></tr>
+<tr><td>3</td><td>Validators as a pure module, results into issues[]</td><td class="mono">buff_translation.flatten_native_languages</td><td>M</td></tr>
+<tr><td>4</td><td>Entity case tables: model, worker, Redis cache, prompt token</td><td class="mono">models/, worker/, feed_buff_gen_prompts</td><td>L</td></tr>
+<tr><td>5</td><td>Review team + orchestrator, shadow mode first</td><td class="mono">new services/buff_review/</td><td>L</td></tr>
+<tr><td>6</td><td>Per-language model assignment</td><td class="mono">llm/factory.py build_for_org</td><td>S</td></tr>
+<tr><td>7</td><td>Operator edit capture + nightly MQM eval job</td><td class="mono">write-behind stream, worker beat</td><td>M</td></tr>
+</table>
+<aside>PRs 1 and 2 are prompt and string changes only and can ship this week. PR 3 has no LLM dependency. PRs 4 and 5 are where the real engineering is.</aside>
+</section>

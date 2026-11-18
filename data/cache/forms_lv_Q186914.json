@@ -1,0 +1,38 @@
+{
+  "lemma": "Igaunijas futbola izlase",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Igaunijas futbola izlase",
+      "short": "Igaunija"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Igaunijas futbola izlases",
+      "short": "Igaunijas"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Igaunijas futbola izlasei",
+      "short": "Igaunijai"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Igaunijas futbola izlasi",
+      "short": "Igauniju"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Igaunijas futbola izlasē",
+      "short": "Igaunijā"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Igaunijas futbola izlase",
+      "short": "Igaunija"
+    }
+  ],
+  "usage_note": "Only the head noun 'izlase' declines (5th declension, feminine); 'Igaunijas futbola' stays in genitive. In running copy the team is usually just 'Igaunija' or 'Igaunijas izlase' (e.g. 'spēle pret Igauniju', 'Igaunijas izlasei uzvara'). The vocative is rare and matches the nominative. In Baltic Cup copy, 'igauņi' (plural, masculine) is also common."
+}

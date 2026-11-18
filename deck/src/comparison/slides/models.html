@@ -1,0 +1,27 @@
+<section id="models">
+<p class="eyebrow">MODEL CHOICE</p>
+<h2>Choosing the best model per language is the next quality gain</h2>
+<div class="row">
+<div class="col grow in" style="--i:0">
+<h3>EKI Estonian leaderboard, Nov 2026</h3>
+<table style="font-size:34px">
+<tr><th style="width:20%">Rank</th><th>Model</th></tr>
+<tr><td>#1</td><td class="win">claude-fable-5.2</td></tr>
+<tr><td>#14</td><td>claude-opus-5.5 (used for arm C)</td></tr>
+<tr><td>#30</td><td>claude-sonnet-5.5 (this repo’s backend model)</td></tr>
+</table>
+</div>
+<div class="col grow in" style="--i:1">
+<h3>WMT25 human eval, English to Estonian</h3>
+<table style="font-size:34px">
+<tr><th>System</th><th style="text-align:right">Score</th></tr>
+<tr><td>Human reference</td><td style="text-align:right">83.1</td></tr>
+<tr><td>Gemini 2.5 Pro</td><td style="text-align:right">78.8</td></tr>
+<tr><td>GPT-4.1</td><td style="text-align:right">72.2</td></tr>
+<tr><td>Claude-4</td><td style="text-align:right">53.0</td></tr>
+</table>
+</div>
+</div>
+<p class="small in" style="--i:2">WMT25 had no English to Lithuanian or Latvian task, so for those two the lab is the only measurement. Set BBL_GEN_MODEL per language and rerun before picking a model.</p>
+<aside>EuroEval (April 2026 snapshot) puts Gemini 3 Pro first for Lithuanian and Estonian and GPT-5 first for Latvian. Open-weight models trail far behind on EKI's idiom and language-norm tasks.</aside>
+</section>

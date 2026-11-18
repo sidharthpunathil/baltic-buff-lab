@@ -1,0 +1,43 @@
+{
+  "lemma": "Estijos vyrų futbolo rinktinė",
+  "gender": "feminine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "vardininkas",
+      "singular": "Estijos vyrų futbolo rinktinė",
+      "short": "Estija"
+    },
+    {
+      "case": "kilmininkas",
+      "singular": "Estijos vyrų futbolo rinktinės",
+      "short": "Estijos"
+    },
+    {
+      "case": "naudininkas",
+      "singular": "Estijos vyrų futbolo rinktinei",
+      "short": "Estijai"
+    },
+    {
+      "case": "galininkas",
+      "singular": "Estijos vyrų futbolo rinktinę",
+      "short": "Estiją"
+    },
+    {
+      "case": "įnagininkas",
+      "singular": "Estijos vyrų futbolo rinktine",
+      "short": "Estija"
+    },
+    {
+      "case": "vietininkas",
+      "singular": "Estijos vyrų futbolo rinktinėje",
+      "short": "Estijoje"
+    },
+    {
+      "case": "šauksmininkas",
+      "singular": "Estijos vyrų futbolo rinktine",
+      "short": "Estija"
+    }
+  ],
+  "usage_note": "Only the head noun 'rinktinė' declines; 'Estijos vyrų futbolo' stays in the genitive. In running sports copy the short form is the country name 'Estija' (feminine, declined normally: Estijos, Estijai, Estiją, su Estija, Estijoje). This is common in scorelines such as 'Lietuva – Estija 1:0'. 'Estijos rinktinė' (Estijos rinktinės, Estijos rinktinei…) is also widely used as a mid-length form. Include 'vyrų' only when it is needed to distinguish the team from the women's or youth teams."
+}

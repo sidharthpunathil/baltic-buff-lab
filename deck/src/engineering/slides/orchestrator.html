@@ -1,0 +1,12 @@
+<section id="orchestrator">
+<p class="eyebrow">bbl/reviewers.py · orchestrate()</p>
+<h2>Every hold or publish decision can be explained and replayed</h2>
+<div class="row in" style="--i:0; align-items:flex-start">
+<p class="code" style="width:980px"><span class="k">for</span> finding <span class="k">in</span> all_reviews:<br>&#160;&#160;<span class="k">if</span> finding.span ⊆ press_verified_forms:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"contradicts press evidence"</span>)<br>&#160;&#160;<span class="k">elif</span> finding.span <span class="k">not in</span> card_text:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"hallucinated span"</span>)<br>&#160;&#160;<span class="k">elif</span> finding.span <span class="k">in</span> seen:<br>&#160;&#160;&#160;&#160;dismiss(<span class="s">"duplicate"</span>)<br>&#160;&#160;<span class="k">elif</span> major_or_critical <span class="k">and</span> confidence ≥ 0.6:<br>&#160;&#160;&#160;&#160;block(finding)<br>&#160;&#160;<span class="k">else</span>:<br>&#160;&#160;&#160;&#160;advise(finding)<br><br>repair(route_by_reviewer(blocking))<br>rerun = blocking_reviewers ∪ {<span class="s">"grammar"</span>}</p>
+<div class="col grow">
+<div class="card"><p class="tag">ROUND 2 BEHAVIOUR</p><p class="body">18 buffs: 14 published on the first draft, 2 needed one repair, 2 hit the 2-repair cap. Validator false positives, since fixed, drove both cap hits.</p></div>
+<div class="card"><p class="tag">TESTED OFFLINE</p><p class="body">tests/test_press_and_orchestrator.py drives the real orchestrate() with real Review objects; only the LLM call is replaced.</p></div>
+</div>
+</div>
+<aside>Grammar always re-runs after a repair because any edit can break case agreement elsewhere in the sentence.</aside>
+</section>

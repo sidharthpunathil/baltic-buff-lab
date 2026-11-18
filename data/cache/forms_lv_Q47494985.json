@@ -1,0 +1,38 @@
+{
+  "lemma": "Silvēns Fransisko",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Silvēns Fransisko",
+      "short": "Fransisko"
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Silvēna Fransisko",
+      "short": "Fransisko"
+    },
+    {
+      "case": "datīvs",
+      "singular": "Silvēnam Fransisko",
+      "short": "Fransisko"
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Silvēnu Fransisko",
+      "short": "Fransisko"
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Silvēnā Fransisko",
+      "short": "Fransisko"
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Silvēn Fransisko",
+      "short": "Fransisko"
+    }
+  ],
+  "usage_note": "This is a French basketball player. In Latvian his name is respelled by its French pronunciation: Sylvain becomes Silvēns and Francisco becomes Fransisko. The first name declines as a 1st-declension masculine noun (Silvēna, Silvēnam). The surname ends in -o, so it stays undeclined in every case. As a result, the surname-only form 'Fransisko' used in running sports copy never changes. Do not keep the original spelling 'Sylvain Francisco' in Latvian text. | Tēzaurs morpho-api applied (agreed)"
+}

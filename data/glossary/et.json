@@ -1,0 +1,483 @@
+[
+  {
+    "en": "match / game",
+    "term": "mäng; kohtumine; matš",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "All three appear in soccernet/ERR. Mäng is the safe default.",
+    "source": "https://soccernet.ee/artikkel/henn-tahame-aasta-lopetada-samasuguse-meeskonnana-keda-on-alates-suvest-naha-olnud",
+    "verified": true
+  },
+  {
+    "en": "half (football)",
+    "term": "poolaeg",
+    "avoid": [
+      "pool"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "avapoolaeg (first half), teine poolaeg.",
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-vendade-penalti-juhtis-paide-unitedi-vastu-voidule",
+    "verified": true
+  },
+  {
+    "en": "period (ice hockey)",
+    "term": "periood",
+    "avoid": [
+      "kolmandik (rare)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "avaperiood = first period",
+    "source": "https://sport.err.ee/1610188915/eesti-jaahokikoondis-viskas-otsustaval-perioodil-rumeeniale-kolm-varavat",
+    "verified": true
+  },
+  {
+    "en": "quarter (basketball)",
+    "term": "veerandaeg",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Standard term; not confirmed in a fetched source this pass.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "overtime (basketball / hockey)",
+    "term": "lisaaeg",
+    "avoid": [
+      "üleaeg"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "teisel lisaajal võitnud",
+    "source": "https://sport.err.ee/1610038555/teisel-lisaajal-voitnud-kalev-cramo-viis-finaalseeria-otsustavasse-mangu",
+    "verified": true
+  },
+  {
+    "en": "stoppage time",
+    "term": "lisaminutid",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "lisaminutite võiduvärav",
+    "source": "https://soccernet.ee/artikkel/videokohtunik-kontrollitud-hupe-voi-porge-lisaminutite-voiduvarav-tekitas-suure-segaduse",
+    "verified": true
+  },
+  {
+    "en": "penalty kick",
+    "term": "penalti",
+    "avoid": [
+      "karistuslöök (= FREE KICK)",
+      "11 m karistuslöök (formal, rare in press)"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Biggest trap: karistuslöök means free kick in Estonian press.",
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-vendade-penalti-juhtis-paide-unitedi-vastu-voidule",
+    "verified": true
+  },
+  {
+    "en": "penalty shoot-out",
+    "term": "penaltiseeria; (pääses) penaltitega",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Source shows 'pääses penaltitega'; 'penaltiseeria' is common but not seen in a fetched page.",
+    "source": "https://soccernet.ee/artikkel/loe-jarele-flora-jai-lopuminutitel-edust-ilma-aga-paases-penaltitega-jargmisesse-ringi",
+    "verified": true
+  },
+  {
+    "en": "penalty area",
+    "term": "karistusala",
+    "avoid": [
+      "penaltikast (slang)"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://sport.err.ee/1610155444/eesti-jalgpallikoondis-teenis-rahvuste-liigas-esimese-voidu",
+    "verified": true
+  },
+  {
+    "en": "free kick",
+    "term": "karistuslöök",
+    "avoid": [
+      "vabalöök (only for indirect free kick, rarely used)"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "skooris otse karistuslöögist",
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-transi-seljatanud-kuressaare-astus-suure-sammu-pusimajaamise-suunas",
+    "verified": true
+  },
+  {
+    "en": "corner kick",
+    "term": "nurgalöök",
+    "avoid": [
+      "korner"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-vendade-penalti-juhtis-paide-unitedi-vastu-voidule",
+    "verified": true
+  },
+  {
+    "en": "offside",
+    "term": "suluseis",
+    "avoid": [
+      "ofsaid"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Confirmed: the other LLM was right on this one.",
+    "source": "https://soccernet.ee/artikkel/videokohtunik-var-i-puudumine-roovis-transilt-varava-paides-jai-markamata-suluseis",
+    "verified": true
+  },
+  {
+    "en": "VAR / video referee",
+    "term": "VAR; videokohtunik",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/videokohtunik-var-i-puudumine-roovis-transilt-varava-paides-jai-markamata-suluseis",
+    "verified": true
+  },
+  {
+    "en": "yellow card",
+    "term": "kollane kaart",
+    "avoid": [
+      "kollane kaardike"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/videokohtunik-var-i-puudumine-roovis-transilt-varava-paides-jai-markamata-suluseis",
+    "verified": true
+  },
+  {
+    "en": "red card",
+    "term": "punane kaart",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "jäi kümnekesi = was down to ten men",
+    "source": "https://soccernet.ee/artikkel/loe-jarele-harju-voitis-kodus-kindlalt-transi-ning-lopetas-voidupoua",
+    "verified": true
+  },
+  {
+    "en": "goal (scored) / goal frame",
+    "term": "värav",
+    "avoid": [
+      "gool (slang)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Same word for the frame and the goal scored.",
+    "source": "https://soccernet.ee/artikkel/henn-tahame-aasta-lopetada-samasuguse-meeskonnana-keda-on-alates-suvest-naha-olnud",
+    "verified": true
+  },
+  {
+    "en": "to score a goal",
+    "term": "lööma väravat; skoorima",
+    "avoid": [
+      "väravat tegema"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": "Hockey: viskama väravat (viskas kolm väravat).",
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-transi-seljatanud-kuressaare-astus-suure-sammu-pusimajaamise-suunas",
+    "verified": true
+  },
+  {
+    "en": "goalkeeper",
+    "term": "väravavaht",
+    "avoid": [
+      "kipper (slang)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://sport.err.ee/1610189461/eesti-varavavaht-meil-oli-palju-noori-aga-suutsime-ikka-taset-sailitada",
+    "verified": true
+  },
+  {
+    "en": "save",
+    "term": "tõrjuma",
+    "avoid": [
+      "päästma lööki"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": "Väravavaht tõrjus löögi.",
+    "source": "https://sport.err.ee/1610155444/eesti-jalgpallikoondis-teenis-rahvuste-liigas-esimese-voidu",
+    "verified": true
+  },
+  {
+    "en": "shot (football)",
+    "term": "pealelöök; löök",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://sport.err.ee/1610155639/voiduvarava-autor-peetson-kodustaadionil-voit-mis-saaks-parem-olla",
+    "verified": true
+  },
+  {
+    "en": "header",
+    "term": "pealöök",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-flora-ei-suutnud-end-harju-laviini-alt-valja-kaevata",
+    "verified": true
+  },
+  {
+    "en": "assist",
+    "term": "resultatiivne sööt",
+    "avoid": [
+      "assist (slang)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://sport.err.ee/1610196493",
+    "verified": true
+  },
+  {
+    "en": "substitution / substitute",
+    "term": "vahetus; vahetusmängija",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "vahetusest sekkunud = came on as a sub",
+    "source": "https://soccernet.ee/artikkel/loe-jarele-harju-voitis-kodus-kindlalt-transi-ning-lopetas-voidupoua",
+    "verified": true
+  },
+  {
+    "en": "draw",
+    "term": "viik",
+    "avoid": [
+      "viigiline tulemus (stiff)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "leppisid väravateta viiki",
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-kuressaare-ja-kalju-leppisid-varavateta-viiki",
+    "verified": true
+  },
+  {
+    "en": "win / to beat",
+    "term": "võit; võitma, alistama",
+    "avoid": [],
+    "pos": "verb",
+    "sport": "general",
+    "note": "alistas Luksemburgi",
+    "source": "https://sport.err.ee/1610195209/vaata-otse-kas-eesti-saab-ka-voorsil-luksemburgist-jagu",
+    "verified": true
+  },
+  {
+    "en": "loss / to lose",
+    "term": "kaotus; kaotama",
+    "avoid": [],
+    "pos": "verb",
+    "sport": "general",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/vaata-jarele-eesti-u21-koondis-kaotas-ka-valiksarja-viimase-mangu",
+    "verified": true
+  },
+  {
+    "en": "national team",
+    "term": "koondis",
+    "avoid": [
+      "rahvusmeeskond"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/henn-tahame-aasta-lopetada-samasuguse-meeskonnana-keda-on-alates-suvest-naha-olnud",
+    "verified": true
+  },
+  {
+    "en": "football",
+    "term": "jalgpall",
+    "avoid": [
+      "futbol"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://soccernet.ee/artikkel/henn-tahame-aasta-lopetada-samasuguse-meeskonnana-keda-on-alates-suvest-naha-olnud",
+    "verified": true
+  },
+  {
+    "en": "basketball",
+    "term": "korvpall",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Confirmed: the other LLM was right.",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "three-pointer",
+    "term": "kolmepunktivise; (colloq.) kolmene",
+    "avoid": [
+      "kolmepunktiline löök"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "ERR stat line: 'kolmesed 1/3'.",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "two-pointer",
+    "term": "kahepunktivise; (colloq.) kahene",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "'kahesed 4/4'",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "free throw",
+    "term": "vabavise",
+    "avoid": [
+      "karistusvise"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "'vabavisked 1/2'",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "rebound",
+    "term": "lauapall",
+    "avoid": [
+      "tagasipõrge"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "võttis kolm lauapalli",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "points",
+    "term": "punktid; viskama punkte",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "viskas 12 punkti (partitive sg after numeral)",
+    "source": "https://sport.err.ee/1610196871",
+    "verified": true
+  },
+  {
+    "en": "double-double",
+    "term": "kaksikduubel",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://sport.err.ee/1610196493",
+    "verified": true
+  },
+  {
+    "en": "ice hockey",
+    "term": "jäähoki",
+    "avoid": [
+      "hoki (colloquial, fine in headlines)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://sport.err.ee/1610188915/eesti-jaahokikoondis-viskas-otsustaval-perioodil-rumeeniale-kolm-varavat",
+    "verified": true
+  },
+  {
+    "en": "puck",
+    "term": "litter",
+    "avoid": [
+      "seib"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "saatis litri väravasse",
+    "source": "https://sport.err.ee/1610188915/eesti-jaahokikoondis-viskas-otsustaval-perioodil-rumeeniale-kolm-varavat",
+    "verified": true
+  },
+  {
+    "en": "power play",
+    "term": "arvuline ülekaal (mängima arvulises ülekaalus)",
+    "avoid": [
+      "arvuliselt ülekaalus"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "EKI's style guide corrects 'arvuliselt ülekaalus' to 'arvulises ülekaalus'.",
+    "source": "https://arhiiv.eki.ee/dict/ametnik/ametnik.pdf",
+    "verified": true
+  },
+  {
+    "en": "short-handed",
+    "term": "vähemus (mängima vähemuses)",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Source shows football 'jättis Transi vähemusse'; hockey usage not confirmed.",
+    "source": "https://soccernet.ee/artikkel/loe-jarele-harju-voitis-kodus-kindlalt-transi-ning-lopetas-voidupoua",
+    "verified": false
+  },
+  {
+    "en": "shot (hockey)",
+    "term": "pealevise",
+    "avoid": [
+      "pealelöök (football word)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Hockey and basketball 'throw' (vise), football 'kick' (löök).",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "who will score next?",
+    "term": "Kes lööb järgmise värava?",
+    "avoid": [
+      "Kes skoorib järgmisena värava?"
+    ],
+    "pos": "phrase",
+    "sport": "general",
+    "note": "Draft. Hockey variant: Kes viskab järgmise värava?",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "who will win?",
+    "term": "Kes võidab?",
+    "avoid": [],
+    "pos": "phrase",
+    "sport": "general",
+    "note": "TV3 Estonia uses 'Kes võidab “Ajujahi” saate?'",
+    "source": "https://tv3.ee/tv3-kanalileht/ajujaht",
+    "verified": true
+  },
+  {
+    "en": "how will the match end?",
+    "term": "Kuidas mäng lõpeb?",
+    "avoid": [],
+    "pos": "phrase",
+    "sport": "general",
+    "note": "Draft; options: Eesti võit / Viik / Läti võit.",
+    "source": null,
+    "verified": false
+  }
+]

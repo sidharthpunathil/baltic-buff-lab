@@ -1,0 +1,41 @@
+{
+ "quotes": "\"…\" or «…»",
+ "bad_quotes": [
+  "„"
+ ],
+ "decimal": ",",
+ "yesno_particle": "Vai",
+ "min_diacritic_density": 0.035,
+ "forbidden_patterns": [
+  {
+   "pattern": "\\bvārts\\b|\\bnākamo vārtu\\b|\\bnākamais vārts",
+   "message": "'vārti' is plural-only (nākamos vārtus)",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\bpriekš\\b",
+   "message": "'priekš' calque of English 'for'; use dative or 'par'",
+   "severity": "warn"
+  },
+  {
+   "pattern": "\\b(aizsegs|ofsaid)",
+   "message": "offside is 'aizmugure'",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\b(jaudas|spēka) spēl",
+   "message": "power play is 'vairākums'",
+   "severity": "error"
+  },
+  {
+   "pattern": "\\b(šaiba|buliti)\\b",
+   "message": "Russian hockey slang",
+   "severity": "warn"
+  },
+  {
+   "pattern": "\\b(Messi|Ronaldo)\\b",
+   "message": "LV respells foreign names (Mesi, Ronaldu)",
+   "severity": "error"
+  }
+ ]
+}

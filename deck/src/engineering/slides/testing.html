@@ -1,0 +1,12 @@
+<section id="testing" class="big-body">
+<p class="eyebrow">QUALITY GATES · mapped to the repo’s CLAUDE.md rules</p>
+<h2>What each PR must prove before merge</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px" class="in fill">
+<div class="card"><p class="tag">100% COVERAGE, NO MOCKS</p><p class="body">Validators run against real Hunspell dictionaries and real glossary files. Only the LLM and Wikidata HTTP boundary is stubbed, which the rules allow.</p></div>
+<div class="card"><p class="tag">EDGE CASES</p><p class="body">Empty options, quiz without an answer, NFC vs NFD text, avoid-term inside the preferred term, foreign letters inside names, hallucinated review spans.</p></div>
+<div class="card"><p class="tag">DATA LOSS (RULE 8)</p><p class="body">Edit capture: assert the Postgres row exists after the drain, the drain task is in the beat schedule, and a re-delivered message doesn’t double-write.</p></div>
+<div class="card"><p class="tag">QUALITY REGRESSION</p><p class="body">Nightly golden-set eval (150 buffs per language once natives provide them). A PR that drops approval or raises MQM penalty is flagged, not auto-blocked.</p></div>
+</div>
+<p class="small in" style="--i:1">The lab already has 22 offline tests for validators, press overrides and the orchestrator that can be ported as-is.</p>
+<aside>CI runs without Redis, so the Redis branch of the case-table cache must be covered by unit tests on the cache helpers, as the play-screen section of CLAUDE.md already requires.</aside>
+</section>

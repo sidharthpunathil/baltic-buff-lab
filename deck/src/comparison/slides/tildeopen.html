@@ -1,0 +1,16 @@
+<section id="tildeopen" class="compact">
+<p class="eyebrow">TRY: TildeAI/TildeOpen-30b (CC-BY-4.0, open weights)</p>
+<h2>Built for our three languages: best used to pick the most grammatical draft</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:52%">Grammar test (MultiBLiMP), from the model card</th><th style="text-align:right">Lithuanian</th><th style="text-align:right">Latvian</th><th style="text-align:right">Estonian</th></tr>
+<tr><td>TildeOpen 1.1 30b</td><td class="win" style="text-align:right">99.7%</td><td class="win" style="text-align:right">99.1%</td><td class="win" style="text-align:right">98.3%</td></tr>
+<tr><td>Gemma 2 27b</td><td style="text-align:right">95.3%</td><td style="text-align:right">91.6%</td><td style="text-align:right">92.0%</td></tr>
+</table>
+<p class="small in" style="--i:1">The test asks which of two near-identical sentences is grammatical. Choosing between our drafts is the same job.</p>
+<div class="row in" style="--i:2">
+<div class="card grow"><p class="tag">WHY IT FITS</p><p class="body">Its tokeniser treats Baltic text as fairly as English, and self-hosted open weights keep data in our own infrastructure.</p></div>
+<div class="card grow"><p class="tag">WHY NOT AS THE WRITER</p><p class="body">It is a base model: no instruction following or safety alignment yet. Tilde says a translation model built on it is next.</p></div>
+<div class="card grow"><p class="tag">WHAT IT TAKES</p><p class="body">About 61 GB of weights in bf16 (30.7B parameters): one 80 GB GPU for short prompts. Score 3 drafts per buff, keep the best.</p></div>
+</div>
+<aside>Source: huggingface.co/TildeAI/TildeOpen-30b. Caveat from our own research: as a base model it ranked #119 of 217 on EuroEval Latvian, which tests instruction-style tasks, so it should rank drafts rather than write them.</aside>
+</section>

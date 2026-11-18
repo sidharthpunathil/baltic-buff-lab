@@ -1,0 +1,38 @@
+{
+  "lemma": "Kauņas \"Žalgiris\"",
+  "gender": "none",
+  "declines": false,
+  "forms": [
+    {
+      "case": "nominatīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    },
+    {
+      "case": "ģenitīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    },
+    {
+      "case": "datīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    },
+    {
+      "case": "akuzatīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    },
+    {
+      "case": "lokatīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    },
+    {
+      "case": "vokatīvs",
+      "singular": "Kauņas \"Žalgiris\"",
+      "short": "\"Žalgiris\""
+    }
+  ],
+  "usage_note": "In Latvian sports media the club name is written in quotation marks and left undeclined, with the city in the genitive placed before it (Kauņas \"Žalgiris\"). Case relations are shown through context or prepositions, for example: pret Kauņas \"Žalgiris\", \"Žalgiris\" spēlētājs, uzvara pār \"Žalgiris\". When a declined form is needed, the generic noun takes the ending instead: Kauņas \"Žalgiris\" komandai or kluba \"Žalgiris\" spēlētāji."
+}

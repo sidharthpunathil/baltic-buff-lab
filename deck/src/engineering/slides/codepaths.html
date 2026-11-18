@@ -1,0 +1,28 @@
+<section id="codepaths">
+<p class="eyebrow">TODAY: BACKEND CODE PATHS</p>
+<h2>One prompt builder feeds every AI buff, so one change reaches all of them</h2>
+<div class="row in" style="--i:0; align-items:center">
+<div class="col grow">
+<div class="stage"><p class="name">Timeline / Temporal</p><p class="meta">feed/agent.py:945 _generate_proposal</p></div>
+<div class="stage"><p class="name">Push ingest</p><p class="meta">feed_ingest_processor.py:434</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage hot"><p class="name">Prompt builder</p><p class="meta">feed_buff_gen_prompts.py:416</p><p class="meta">pack: sports | sports_native</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage"><p class="name">LLMClient<br>Factory</p><p class="meta">temp 0.8, JSON</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:44px; height:28px; background:#33375C"></x-shape>
+<div class="col grow">
+<div class="stage"><p class="name">flatten_native_<br>languages</p><p class="meta">buff_translation.py:214</p></div>
+<div class="stage"><p class="name">normalize_llm_<br>translations</p><p class="meta">buff_translation.py:280</p></div>
+</div>
+</div>
+<div class="row in" style="--i:1">
+<div class="card grow"><p class="tag">MANUAL PATH</p><p class="body">Editor’s Translate button: <span class="mono">viewer_api_routes.py:9317</span> translate_buff_content, platform default model, temp 0.2, English source in, no match context.</p></div>
+<div class="card grow"><p class="tag">LANGUAGE PLAN</p><p class="body"><span class="mono">resolve_language_plan</span> (feed_buff_gen_prompts.py:312): org flag multi_language_buffs + event translation_languages; first listed is primary.</p></div>
+</div>
+<aside>Verified against the current branch. The decision gate (BuffGenDecisionGate, agent.py:878) runs before generation and is unaffected.</aside>
+</section>

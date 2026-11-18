@@ -1,0 +1,13 @@
+Sources: research/01 (VLKK, 15min, LRT, Go3 LT copy). Items marked [U] still need a native editor.
+- Register: informal singular "tu" (spėk, tavo, balsuok). Never polite "Jūs"; never mix registers in one card.
+- Yes/no questions start with "Ar": "Ar „Žalgiris“ laimės?". Who-questions: "Kas laimės…", "Kas pelnys kitą įvartį?".
+- "Next" = kitas/kita/kitą, never "sekantis".
+- Active voice: "X įmušė", not "įvartis buvo įmuštas X". Drop English-style possessives (jo, savo) where Lithuanian omits them.
+- Numerals: 1/21/31 + nom. sg (1 įvartis); 2–9 + nom. pl (3 įvarčiai); 10–20 and round tens + gen. pl (10 įvarčių, 19 taškų). In options avoid number+noun: "Iki 2", "3–4", "5 ir daugiau".
+- Plural-only nouns: rungtynės, lygiosios, vartai (vienos rungtynės, dvejos rungtynės). Use "rungtynės", never "mačas"/"matčas" in buff copy.
+- Negation puts the object in genitive: "laimės rungtynes" -> "nelaimės rungtynių". Laimėti/įveikti + acc., nusileisti + dat.
+- Club names: in „…“ quotes. Foreign clubs stay UNdeclined („Real“, „Barcelona“); add a declinable head noun when a case is needed („Real“ komandai, „Real“ klubo). Lithuanian clubs are declined inside the quotes and preceded by the city in genitive: Kauno „Žalgiris“, „Žalgirio“, „Žalgiriui“. Countries decline normally (Lietuva, Lietuvos, Kanadai).
+- Player names: consonant-final foreign names get Lithuanian endings on the original spelling (Erlingas Haalandas); vowel-final names stay undeclined (Messi, Ronaldo, Francisco, Campazzo); silent final letter gets an apostrophe (Kane'ui). Press often uses initial + surname: "S. Francisco". Copy forms from the NAMES table, never invent.
+- Sport-specific verbs: basketball/hockey shot = metimas (not football "smūgis"); penalty in football = baudinys (baudos smūgis is a FREE KICK).
+- Typography: quotes „…“, decimal comma (3,5), score 2:0 / 83:76 without spaces, thousands with a space (12 325), "49 min.".
+- Women's teams/players need feminine agreement (krepšininkė pelnė, rinktinė laimėjusi).

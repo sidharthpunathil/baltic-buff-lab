@@ -1,0 +1,15 @@
+<section id="jilsteps">
+<p class="eyebrow">WHAT TO CHANGE IN JIL, SMALLEST FIRST</p>
+<h2>Fans can see the first improvement after two prompt-only changes</h2>
+<table class="in" style="--i:0; font-size:30px">
+<tr><th style="width:6%">#</th><th style="width:40%">Change</th><th>Where</th></tr>
+<tr><td>1</td><td>Replace the translate prompt with a native rewrite that sees the match</td><td class="mono">viewer_api_routes.translate_buff_content</td></tr>
+<tr><td>2</td><td>Add a locale pack block: style, glossary, examples</td><td class="mono">build_sports_feed_agent_user_prompt</td></tr>
+<tr><td>3</td><td>Pass real teams and players, with cached case tables</td><td>Event.teams, cached in Redis</td></tr>
+<tr><td>4</td><td>Run the validators on every generated language</td><td>after flatten_native_languages</td></tr>
+<tr><td>5</td><td>Judge a nightly sample offline before going inline</td><td>worker job</td></tr>
+<tr><td>6</td><td>Choose the generator model per language</td><td>per-org model assignment</td></tr>
+<tr><td>7</td><td>Store AI output next to what operators publish</td><td>write-behind, tested into Postgres</td></tr>
+</table>
+<aside>Step 3 must follow the play-screen rule: Redis first, never a Postgres read per poll. Step 7 is a write path, so it needs the data-loss tests in CLAUDE.md.</aside>
+</section>

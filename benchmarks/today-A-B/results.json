@@ -1,0 +1,2675 @@
+[
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kas laimės Q3 pabaigą?",
+      "question": "Francisco tritaškis sumažino skirtumą iki 58-61, o Real Madrid paėmė minutės pertraukėlę. Kas pirmaus po 3-iojo kėlinio?",
+      "options": [
+        "Žalgiris",
+        "Real Madrid",
+        "Lygiosios"
+      ],
+      "correct_index": null,
+      "reveal": "Viską lems 3-iojo kėlinio sirena. Patikrink rezultatą – ar atspėjai?",
+      "english_gloss": "Title: Who Wins the Rest of Q3? Question: Francisco's three cut it to 58-61 and Real Madrid called timeout. Who leads at the end of the 3rd quarter? Options: Žalgiris / Real Madrid / Tied. Reveal: The 3rd-quarter buzzer settles it. Check the score to see if you called it!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "fluency-translationese",
+          "severity": "major",
+          "span": "Kas laimės Q3 pabaigą?",
+          "explanation": "\"Laimėti pabaigą\" is a meaningless calque, and \"Q3\" is an English abbreviation that Lithuanian basketball copy does not use.",
+          "suggested_fix": "Kas pirmaus po 3-iojo kėlinio?"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "paėmė minutės pertraukėlę",
+          "explanation": "This calques \"took a timeout\". Lithuanian commentators say a team \"paprašė minutės pertraukėlės\".",
+          "suggested_fix": "paprašė minutės pertraukėlės"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Real Madrid",
+          "explanation": "Unquoted English-order club name. Lithuanian press writes Madrido „Real“, or „Real“ inside quotes. This applies in both the question and the options.",
+          "suggested_fix": "Madrido „Real“ / „Real“"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "sumažino skirtumą iki 58-61",
+          "explanation": "A gap is reduced to a number of points, not to a score. The score should also use a colon without spaces.",
+          "suggested_fix": "sumažino atsilikimą iki trijų taškų (58:61)"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Žalgiris",
+          "explanation": "Club names must be in „…“ quotes.",
+          "suggested_fix": "„Žalgiris“"
+        },
+        {
+          "category": "name-form",
+          "severity": "minor",
+          "span": "Francisco tritaškis",
+          "explanation": "Press style uses initial + surname for players.",
+          "suggested_fix": "S. Francisco tritaškis"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Lygiosios",
+          "explanation": "\"Lygiosios\" refers to a final match result. For a tied score after a quarter, \"Bus lygu\" is more natural.",
+          "suggested_fix": "Bus lygu"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 2,
+      "terminology": 2,
+      "faithfulness": 4,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Kas pirmaus po 3-iojo kėlinio?",
+        "question": "S. Francisco tritaškis sumažino atsilikimą iki trijų taškų (58:61), o Madrido „Real“ paprašė minutės pertraukėlės. Kas pirmaus po trečiojo kėlinio?",
+        "options": [
+          "„Žalgiris“",
+          "„Real“",
+          "Bus lygu"
+        ],
+        "correct_index": null,
+        "reveal": "Viską lems trečiojo kėlinio sirena – patikrink, ar atspėjai!",
+        "english_gloss": "Title: Who will lead after the 3rd quarter? Question: S. Francisco's three-pointer cut the deficit to three points (58:61), and Madrid's 'Real' called a timeout. Who will lead after the third quarter? Options: 'Žalgiris' / 'Real' / It will be tied. Reveal: The third-quarter buzzer will decide everything – check whether you guessed right!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 2.8,
+    "mqm_penalty": 19,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kas laimės kitas minutes?",
+      "question": "Po Francisco tritaškio skirtumas – 3 taškai. Kuri komanda pirmoji pelnys kitus taškus?",
+      "options": [
+        "Žalgiris",
+        "Madrido „Real“"
+      ],
+      "correct_index": null,
+      "reveal": "Žiūrėkite, kas pirmasis pasižymėjo po minutės pertraukėlės!",
+      "english_gloss": "Title: Who will win the next minutes? Question: After Francisco's three-pointer the gap is 3 points. Which team will score the next points first? Options: Žalgiris / Madrid's Real."
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "Žiūrėkite",
+          "explanation": "Uses polite/plural 'Jūs' imperative, which violates the house rule of informal singular 'tu' throughout every card.",
+          "suggested_fix": "Žiūrėk"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kas laimės kitas minutes?",
+          "explanation": "'Laimėti minutes' reads as a calque. It also does not match the question, which asks about the next points rather than the next minutes.",
+          "suggested_fix": "Kas pelnys kitus taškus?"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kuri komanda pirmoji pelnys kitus taškus?",
+          "explanation": "'Pirmoji' and 'kitus' are redundant here, since both mean 'next'. The phrasing is slightly stiff.",
+          "suggested_fix": "Kuri komanda pelnys kitus taškus?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Žalgiris",
+          "explanation": "The club name should be in „…“ quotes, consistent with the other option (Madrido „Real“).",
+          "suggested_fix": "„Žalgiris“"
+        },
+        {
+          "category": "name-form",
+          "severity": "minor",
+          "span": "Po Francisco tritaškio",
+          "explanation": "Press style prefers initial + surname (S. Francisco). Leaving the name undeclined is correct.",
+          "suggested_fix": "S. Francisco tritaškis sumažino skirtumą iki 3 taškų."
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 3,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Kas pelnys kitus taškus?",
+        "question": "S. Francisco tritaškis sumažino skirtumą iki 3 taškų. Kuri komanda pelnys kitus taškus?",
+        "options": [
+          "„Žalgiris“",
+          "Madrido „Real“"
+        ],
+        "correct_index": null,
+        "reveal": "Žiūrėk, kuri komanda pirmoji pasižymėjo po minutės pertraukėlės!",
+        "english_gloss": "Title: Who will score the next points? Question: S. Francisco's three-pointer cut the gap to 3 points. Which team will score the next points? Options: 'Žalgiris' / Madrid 'Real'. Reveal: Watch which team scored first after the timeout!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.2,
+    "mqm_penalty": 9,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kurš gūs pirmais pēc pārtraukuma?",
+      "question": "Fransisko trījnieks – 61-58, Real Madrid ņem pārtraukumu. Kurš gūs nākamos punktus?",
+      "options": [
+        "Žalgiris",
+        "Real Madrid"
+      ],
+      "correct_index": null,
+      "reveal": "Rezultāts zināms. Skaties, kurš atbildēja pirmais pēc pārtraukuma!",
+      "english_gloss": "Title: Who will score first after the timeout? | Question: Francisco's three – 61-58, Real Madrid takes a timeout. Who will score the next points? | Options: Žalgiris / Real Madrid | Reveal: The result is known. See who answered first after the timeout!"
+    },
+    "issues": [
+      "[warn] spell.unknown: 'trījnieks' not in lv dictionary; suggestions ['trijnieks', 'strīdnieks', 'rīkstnieks']"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "trījnieks",
+          "explanation": "'Trījnieks' is not the Latvian basketball term for a three-pointer; it reads as a slang calque. Broadcasters say 'trīspunktnieks' or 'tālmetiens'.",
+          "suggested_fix": "tālmetiens"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Real Madrid ņem pārtraukumu",
+          "explanation": "House style requires the club name in quotes, undeclined, with the city in the genitive: Madrides \"Real\". The bare English 'Real Madrid' reads as untranslated.",
+          "suggested_fix": "Madrides \"Real\" ņem minūtes pārtraukumu"
+        },
+        {
+          "category": "name-form",
+          "severity": "minor",
+          "span": "Žalgiris / Real Madrid (options)",
+          "explanation": "Club names in the options lack quotes and the Latvian city form.",
+          "suggested_fix": "Kauņas \"Žalgiris\" / Madrides \"Real\""
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "61-58",
+          "explanation": "House typography uses a colon for scores. Listing the home team first (58:61) also matches the order of the options.",
+          "suggested_fix": "58:61"
+        },
+        {
+          "category": "grammar-other",
+          "severity": "minor",
+          "span": "Kurš gūs pirmais pēc pārtraukuma?",
+          "explanation": "The verb 'gūt' is left without an object, so the title sounds elliptical and stiff.",
+          "suggested_fix": "Kurš pirmais gūs punktus?"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Rezultāts zināms. Skaties, kurš atbildēja pirmais pēc pārtraukuma!",
+          "explanation": "'Rezultāts zināms' is stiff filler, and the reveal does not address the fan in a natural way.",
+          "suggested_fix": "Pārtraukums beidzies – vai tava prognoze piepildījās?"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Kurš pirmais gūs punktus?",
+        "question": "Fransisko tālmetiens – 58:61, Madrides \"Real\" ņem minūtes pārtraukumu. Kurš gūs nākamos punktus?",
+        "options": [
+          "Kauņas \"Žalgiris\"",
+          "Madrides \"Real\""
+        ],
+        "correct_index": null,
+        "reveal": "Pārtraukums beidzies – vai tava prognoze piepildījās?",
+        "english_gloss": "Title: Who will score points first? Question: Francisco's three-pointer – 58:61, Madrid's \"Real\" takes a timeout. Who will score the next points? Options: Kaunas \"Žalgiris\" / Madrid \"Real\". Reveal: The timeout is over – did your prediction come true?"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.4,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kas vadīs pēc 3. ceturtdaļas?",
+      "question": "Fransisko trīspunktu metiens – 58:61, Madrides \"Real\" ņem pārtraukumu. Kurš vadīs pēc 3. ceturtdaļas?",
+      "options": [
+        "Žalgiris",
+        "Madrides \"Real\"",
+        "Neizšķirts"
+      ],
+      "correct_index": null,
+      "reveal": "Rezultāts pēc trešās ceturtdaļas izšķirs atbildi!",
+      "english_gloss": "Title: Who will lead after the 3rd quarter? Question: Francisco's three-pointer – 58:61, Real Madrid takes a timeout. Who will lead after the 3rd quarter? Options: Žalgiris / Real Madrid / Tied. Reveal: The score after the third quarter will decide the answer!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kas vadīs pēc 3. ceturtdaļas?",
+          "explanation": "House style prefers \"Kurš…?\" for a team pick. The question itself uses \"Kurš vadīs\", so the title and question are inconsistent.",
+          "suggested_fix": "Kurš vadīs pēc 3. ceturtdaļas?"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Fransisko trīspunktu metiens",
+          "explanation": "\"Trīspunktu metiens\" is understandable but not the preferred term (trīspunktnieks / tālmetiens). The verbless nominal phrase also reads a bit telegraphic.",
+          "suggested_fix": "Fransisko iemet trīspunktnieku"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "\"Žalgiris\"",
+          "explanation": "Club names should be in quotes with the city in genitive, consistent with Madrides \"Real\" in the same card.",
+          "suggested_fix": "Kauņas \"Žalgiris\""
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Rezultāts pēc trešās ceturtdaļas izšķirs atbildi!",
+          "explanation": "Flat, slightly stiff reveal that adds no fact or excitement.",
+          "suggested_fix": "Trešā ceturtdaļa galā – vai tavs minējums piepildījās?"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.4,
+    "mqm_penalty": 4,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kes võidab 3. veerandi lõpu?",
+      "question": "Francisco kolmene viib seisu 58-61 ja Real Madrid võtab aja maha. Kes juhib 3. veerandi lõpus?",
+      "options": [
+        "Žalgiris",
+        "Real Madrid",
+        "Viik"
+      ],
+      "correct_index": null,
+      "reveal": "Veerand on läbi. Vaata tabloolt, kes Kaunases juhtis!",
+      "english_gloss": "Title: Who Wins the Rest of Q3? Question: Francisco's three cuts it to 58-61 and Real Madrid calls timeout. Who leads at the end of the 3rd quarter? Options: Žalgiris / Real Madrid / Tied. Reveal: The quarter is over. Check the scoreboard to see who held the lead in Kaunas!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "grammar-other",
+          "severity": "major",
+          "span": "Kes võidab 3. veerandi lõpu?",
+          "explanation": "\"Võitma\" cannot take \"lõpu\" (the end) as an object; you cannot 'win the end of a quarter'. It is a calqued, illogical construction and contradicts the actual question, which asks who leads.",
+          "suggested_fix": "Kes juhib 3. veerandaja lõpus?"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Real Madrid",
+          "explanation": "House style requires Estonianized club names with the city in the genitive: Madridi Real. This applies in both the question and the option.",
+          "suggested_fix": "Madridi Real"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "3. veerandi",
+          "explanation": "The standard term is \"veerandaeg\". \"Veerand\" alone is colloquial.",
+          "suggested_fix": "3. veerandaja"
+        },
+        {
+          "category": "spelling-diacritics",
+          "severity": "minor",
+          "span": "58-61",
+          "explanation": "House style writes scores with a colon.",
+          "suggested_fix": "58:61"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "viib seisu 58-61",
+          "explanation": "This is a stiff rendering. It is more natural to say the three-pointer cut the gap to three points.",
+          "suggested_fix": "vähendas vahe kolmele punktile (58:61)"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Viik",
+          "explanation": "For a lead at the end of a quarter, \"Seis on viigis\" sounds more natural than the bare \"Viik\", which suggests a final match result.",
+          "suggested_fix": "Seis viigis"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 3,
+      "terminology": 3,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Kes juhib 3. veerandaja lõpus?",
+        "question": "Francisco kolmene vähendas vahe kolmele punktile (58:61) ja Madridi Real võttis aja maha. Kes juhib 3. veerandaja lõpus?",
+        "options": [
+          "Žalgiris",
+          "Madridi Real",
+          "Seis viigis"
+        ],
+        "correct_index": null,
+        "reveal": "Kolmas veerandaeg on läbi – vaata tabloolt, kes Kaunases juhib!",
+        "english_gloss": "Title: Who leads at the end of the 3rd quarter? Question: Francisco's three-pointer cut the gap to three points (58:61) and Real Madrid took a timeout. Who leads at the end of the 3rd quarter? Options: Žalgiris / Real Madrid / Score tied. Reveal: The third quarter is over – check the scoreboard to see who leads in Kaunas!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.4,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Kas Žalgiris läheb juhtima?",
+      "question": "Kolmas veerand, 6:12 jäänud, seis 58:61. Kas Žalgiris asub enne veerandi lõppu juhtima?",
+      "options": [
+        "Jah, läheb ette",
+        "Ei, Real peab vastu"
+      ],
+      "correct_index": null,
+      "reveal": "Francisco kolmene vähendas vahe kolmele punktile ja sundis Real Madridi aeg-võtule.",
+      "english_gloss": "Title: Will Žalgiris take the lead? Question: Third quarter, 6:12 left, score 58:61. Will Žalgiris take the lead before the end of the quarter? Options: Yes, they go ahead / No, Real holds on. Reveal: Francisco's three cut the gap to three points and forced Real Madrid to call a timeout."
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Kas'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "sundis Real Madridi aeg-võtule",
+          "explanation": "\"Aeg-võtt\" is not an Estonian word; it is a calque of \"timeout\". Broadcasters say \"võttis aja maha\" or \"minutiline vaheaeg\".",
+          "suggested_fix": "sundis Madridi Reali aja maha võtma"
+        },
+        {
+          "category": "name-form",
+          "severity": "minor",
+          "span": "Real Madridi",
+          "explanation": "House style Estonianizes the city part as \"Madridi Real\".",
+          "suggested_fix": "Madridi Reali"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Kolmas veerand",
+          "explanation": "The standard basketball term is \"veerandaeg\". \"Veerand\" alone is colloquial and slightly clipped.",
+          "suggested_fix": "Kolmas veerandaeg"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 3,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Kas Žalgiris läheb juhtima?",
+        "question": "Kolmas veerandaeg, 6:12 jäänud, seis 58:61. Kas Žalgiris asub enne veerandaja lõppu juhtima?",
+        "options": [
+          "Jah, läheb ette",
+          "Ei, Real peab vastu"
+        ],
+        "correct_index": null,
+        "reveal": "Francisco kolmene vähendas vahe kolmele punktile ja sundis Madridi Reali aja maha võtma.",
+        "english_gloss": "Title: Will Žalgiris take the lead? Question: Third quarter, 6:12 left, score 58:61. Will Žalgiris take the lead before the end of the quarter? Options: Yes, they go ahead / No, Real holds on. Reveal: Francisco's three-pointer cut the gap to three points and forced Real Madrid to take a timeout."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.2,
+    "mqm_penalty": 7,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Pertraukos viktorina: Žalgiris",
+      "question": "Kuriais metais Žalgiris laimėjo Eurolygą?",
+      "options": [
+        "1996",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "Žalgiris iškėlė Eurolygos taurę 1999 metais!",
+      "english_gloss": "Title: Halftime Quiz: Žalgiris. Question: In which year did Žalgiris win the EuroLeague? Options: 1996 / 1999 / 2003 / 2011. Reveal: Žalgiris lifted the EuroLeague trophy in 1999!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Pertraukos viktorina: Žalgiris",
+          "explanation": "House style puts club names in Lithuanian quotes „…“; here the quotes are missing.",
+          "suggested_fix": "Pertraukos viktorina: „Žalgiris“"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kuriais metais Žalgiris laimėjo Eurolygą?",
+          "explanation": "The club name is missing „…“ quotes. On first mention, house style also prefers the city in genitive (Kauno „Žalgiris“).",
+          "suggested_fix": "Kuriais metais Kauno „Žalgiris“ laimėjo Eurolygą?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Žalgiris iškėlė Eurolygos taurę 1999 metais!",
+          "explanation": "The club name is missing quotes. A year with the full word 'metais' is better written as an ordinal (1999-aisiais) or abbreviated (1999 m.).",
+          "suggested_fix": "„Žalgiris“ Eurolygos taurę iškėlė 1999-aisiais!"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 5,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.8,
+    "mqm_penalty": 3,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Didžiosios pertraukos klausimas",
+      "question": "Kuriais metais Kauno „Žalgiris“ tapo Eurolygos čempionu?",
+      "options": [
+        "1997",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "„Žalgiris“ Eurolygos čempionu tapo 1999 metais!",
+      "english_gloss": "Title: Halftime question. Question: In which year did Kaunas Žalgiris become EuroLeague champion? Options: 1997 / 1999 / 2003 / 2011. Correct: 1999. Reveal: Žalgiris became EuroLeague champion in 1999!"
+    },
+    "issues": [
+      "[error] ortho.no_diacritics: diacritic density 3.3% < 4%: looks ASCII-folded"
+    ],
+    "judgement": {
+      "errors": [],
+      "grammar": 5,
+      "naturalness": 5,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.8,
+    "mqm_penalty": 0,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Puslaika viktorīna: Žalgiris vēsture",
+      "question": "Kurā gadā Žalgiris uzvarēja Eirolīgā?",
+      "options": [
+        "1996",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "Žalgiris kļuva par Eirolīgas čempioniem 1999. gadā.",
+      "english_gloss": "Title: Halftime Quiz: Žalgiris History. Question: In which year did Žalgiris win the EuroLeague? Options: 1996, 1999, 2003, 2011. Reveal: Žalgiris became EuroLeague champions in 1999."
+    },
+    "issues": [
+      "[error] len.title: title 36>35 chars"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "grammar-case",
+          "severity": "major",
+          "span": "Žalgiris vēsture",
+          "explanation": "The club name stands undeclined in nominative and without quotes before a noun, so it reads as a case error. House style needs quotes around the undeclined club name, optionally with the city in genitive: \"Žalgiris\" vēsture.",
+          "suggested_fix": "\"Žalgiris\" vēsture"
+        },
+        {
+          "category": "ui-fit",
+          "severity": "minor",
+          "span": "Puslaika viktorīna: Žalgiris vēsture",
+          "explanation": "The title is 36 characters, over the 35-character limit.",
+          "suggested_fix": "Viktorīna: \"Žalgiris\" vēsture"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kurā gadā Žalgiris uzvarēja",
+          "explanation": "The club name lacks quotes and the city prefix required by house style (Kauņas \"Žalgiris\").",
+          "suggested_fix": "Kurā gadā Kauņas \"Žalgiris\""
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "uzvarēja Eirolīgā",
+          "explanation": "'Uzvarēja Eirolīgā' is ambiguous (it can mean won a game in the EuroLeague) and reads like a calque of 'won the EuroLeague'. LV press says 'izcīnīja Eirolīgas titulu' or 'kļuva par Eirolīgas čempioni'.",
+          "suggested_fix": "izcīnīja Eirolīgas titulu"
+        },
+        {
+          "category": "grammar-agreement",
+          "severity": "major",
+          "span": "kļuva par Eirolīgas čempioniem",
+          "explanation": "The subject is a single club (singular), but 'čempioniem' is plural. It should be singular 'čempioni'.",
+          "suggested_fix": "kļuva par Eirolīgas čempioni"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Žalgiris kļuva",
+          "explanation": "The club name in the reveal lacks quotes.",
+          "suggested_fix": "Kauņas \"Žalgiris\" kļuva"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "quiz",
+        "title": "Viktorīna: \"Žalgiris\" vēsture",
+        "question": "Kurā gadā Kauņas \"Žalgiris\" izcīnīja Eirolīgas titulu?",
+        "options": [
+          "1996",
+          "1999",
+          "2003",
+          "2011"
+        ],
+        "correct_index": 1,
+        "reveal": "1999. gadā Kauņas \"Žalgiris\" kļuva par Eirolīgas čempioni!",
+        "english_gloss": "Title: Quiz: \"Žalgiris\" history. Question: In which year did Kaunas \"Žalgiris\" win the EuroLeague title? Options: 1996 / 1999 / 2003 / 2011. Reveal: In 1999 Kaunas \"Žalgiris\" became EuroLeague champion!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Puslaika viktorīna: Žalgiris",
+      "question": "Kampaco jau 7 rezultatīvas piespēles! Kurā gadā Žalgiris kļuva par Eirolīgas čempionu?",
+      "options": [
+        "1995",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "Kauņas Žalgiris Eirolīgu uzvarēja 1999. gadā.",
+      "english_gloss": "Title: Halftime quiz: Žalgiris. Question: Campazzo already has 7 assists! In which year did Žalgiris become EuroLeague champion? Options: 1995 / 1999 / 2003 / 2011. Reveal: Kaunas Žalgiris won the EuroLeague in 1999."
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Puslaika viktorīna: Žalgiris",
+          "explanation": "The house style puts club names in quotes. The title has the name without them.",
+          "suggested_fix": "Puslaika viktorīna: \"Žalgiris\""
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kurā gadā Žalgiris kļuva",
+          "explanation": "The club name in the question has no quotes. House style also prefers the city in genitive (Kauņas \"Žalgiris\").",
+          "suggested_fix": "Kurā gadā Kauņas \"Žalgiris\" kļuva"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "major",
+          "span": "Eirolīgu uzvarēja",
+          "explanation": "This is a calque of English 'won the EuroLeague'. In Latvian, 'uzvarēt' takes the defeated opponent as its object, not the tournament. A native editor would write 'izcīnīja Eirolīgas titulu', 'triumfēja Eirolīgā' or 'kļuva par Eirolīgas čempionu'.",
+          "suggested_fix": "Eirolīgas čempiona titulu izcīnīja"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kauņas Žalgiris",
+          "explanation": "The club name in the reveal has no quotes.",
+          "suggested_fix": "Kauņas \"Žalgiris\""
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kampaco jau 7 rezultatīvas piespēles!",
+          "explanation": "The verbless sentence is a little stiff. It also jumps abruptly from Kampaco's stat to a quiz about Žalgiris. A verb and a linking 'Bet' read more smoothly.",
+          "suggested_fix": "Kampaco jau atdevis 7 rezultatīvas piespēles! Bet kurā gadā…"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "quiz",
+        "title": "Puslaika viktorīna: \"Žalgiris\"",
+        "question": "Kampaco jau atdevis 7 rezultatīvas piespēles! Bet kurā gadā Kauņas \"Žalgiris\" kļuva par Eirolīgas čempionu?",
+        "options": [
+          "1995",
+          "1999",
+          "2003",
+          "2011"
+        ],
+        "correct_index": 1,
+        "reveal": "Kauņas \"Žalgiris\" Eirolīgas čempiona titulu izcīnīja 1999. gadā.",
+        "english_gloss": "Title: Halftime quiz: \"Žalgiris\". Question: Campazzo has already handed out 7 assists! But in which year did Kaunas \"Žalgiris\" become EuroLeague champion? Options: 1995 / 1999 / 2003 / 2011. Reveal: Kaunas \"Žalgiris\" won the EuroLeague champion title in 1999."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.8,
+    "mqm_penalty": 9,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Poolaja viktoriin: Žalgiris",
+      "question": "Mis aastal võitis Žalgiris Euroliiga tiitli?",
+      "options": [
+        "1995",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "Žalgiris tõstis Euroliiga karika 1999. aastal!",
+      "english_gloss": "Title: Halftime Trivia: Žalgiris. Question: In which year did Žalgiris win the EuroLeague title? Options: 1995 / 1999 / 2003 / 2011. Reveal: Žalgiris lifted the EuroLeague trophy in 1999!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [],
+      "grammar": 5,
+      "naturalness": 5,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.8,
+    "mqm_penalty": 0,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "BC Žalgiris vs Real Madrid Baloncesto",
+    "sport": "basketball",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "quiz",
+      "title": "Vaheaja viktoriin",
+      "question": "Real juhib vaheajal 44:41. Aga mis aastal tuli Kaunase Žalgiris Euroliiga meistriks?",
+      "options": [
+        "1996",
+        "1999",
+        "2003",
+        "2011"
+      ],
+      "correct_index": 1,
+      "reveal": "Žalgiris tuli Euroliiga meistriks 1999. aastal.",
+      "english_gloss": "Title: Halftime quiz. Question: Real leads 44:41 at the break. But in what year did Kaunas' Žalgiris become EuroLeague champion? Options: 1996 / 1999 / 2003 / 2011. Reveal: Žalgiris became EuroLeague champion in 1999."
+    },
+    "issues": [
+      "[error] ortho.no_diacritics: diacritic density 0.0% < 2%: looks ASCII-folded"
+    ],
+    "judgement": {
+      "errors": [],
+      "grammar": 5,
+      "naturalness": 5,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.8,
+    "mqm_penalty": 0,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Estijos baudinys: kas bus?",
+      "question": "VAR skiria Estijai baudinį esant 0-1. Ar jie įveiks Donnarumma iš 11 m?",
+      "options": [
+        "Įmuša",
+        "Donnarumma atremia",
+        "Nepataiko į vartus"
+      ],
+      "correct_index": null,
+      "reveal": "Baudinys įvykdytas. Patikrink rezultatą – ar atspėjai?",
+      "english_gloss": "Title: Estonia Penalty: What Happens? | Question: VAR gives Estonia a penalty at 0-1. Can they beat Donnarumma from the spot? | Options: Scores / Donnarumma saves / Misses the target | Reveal: The spot kick is in. Check the result to see if you called it."
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "accuracy-facts",
+          "severity": "major",
+          "span": "VAR skiria Estijai baudinį",
+          "explanation": "VAR does not award penalties. Per the moment, the referee awarded it after a VAR review. The card misattributes the decision.",
+          "suggested_fix": "Po VAR peržiūros teisėjas skyrė Estijai baudinį"
+        },
+        {
+          "category": "grammar-agreement",
+          "severity": "major",
+          "span": "Ar jie įveiks",
+          "explanation": "The plural pronoun 'jie' refers back to the feminine singular 'Estijai'. This is an English-style 'they' for a team, and the agreement is broken. A native editor would write 'estai' or 'Estijos futbolininkai'.",
+          "suggested_fix": "Ar estai įveiks"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "esant 0-1",
+          "explanation": "The participial 'esant' + score construction is stiff and reads as translated.",
+          "suggested_fix": "(0:1) or prie rezultato 0:1"
+        },
+        {
+          "category": "spelling-diacritics",
+          "severity": "minor",
+          "span": "0-1",
+          "explanation": "House style writes scores with a colon and no spaces.",
+          "suggested_fix": "0:1"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "iš 11 m",
+          "explanation": "The abbreviation 'm' is ambiguous and clunky in fan copy. It is redundant, since 'baudinys' already implies the spot.",
+          "suggested_fix": "remove or write 'nuo 11 metrų žymos'"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Įmuša / Donnarumma atremia / Nepataiko į vartus",
+          "explanation": "The options use present tense while the question asks in future ('įveiks'). Future tense would be more consistent for a prediction.",
+          "suggested_fix": "Įmuš / Donnarumma atrems / Nepataikys į vartus"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 3,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Baudinys Estijai!",
+        "question": "Po VAR peržiūros teisėjas skyrė Estijai baudinį (0:1). Ar estai įveiks Donnarummą?",
+        "options": [
+          "Įmuš",
+          "Donnarumma atrems",
+          "Nepataikys į vartus"
+        ],
+        "correct_index": null,
+        "reveal": "Baudinys įvykdytas – patikrink rezultatą ir sužinok, ar atspėjai!",
+        "english_gloss": "After a VAR review the referee awarded Estonia a penalty (0:1). Will the Estonians beat Donnarumma? Options: Will score / Donnarumma will save / Will miss the target"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.4,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Estijai – baudinys!",
+      "question": "67 min.: po VAR peržiūros Estija muša baudinį. Kuo baigsis smūgis prieš Donnarummą?",
+      "options": [
+        "Įvartis – 1:1",
+        "Donnarumma atmuša",
+        "Pro šalį ar į virpstą"
+      ],
+      "correct_index": null,
+      "reveal": "Baudinys įvykdytas – žiūrėkite, ar Estija išlygino rezultatą!",
+      "english_gloss": "Title: 'A penalty for Estonia!' Question: '67 min.: after a VAR review Estonia takes a penalty. How will the shot against Donnarumma end?' Options: 'Goal – 1:1' / 'Donnarumma saves' / 'Wide or off the woodwork'. Reveal: 'The penalty has been taken – see whether Estonia equalized!'"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "žiūrėkite",
+          "explanation": "Plural/polite imperative breaks the house 'tu' register. The rest of the card is register-neutral, so this one form sets the wrong tone.",
+          "suggested_fix": "žiūrėk"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Donnarumma atmuša",
+          "explanation": "The glossary term for a goalkeeper save is 'atremti'. 'Atmušti' is common colloquially but not the house term. The present tense also sits oddly against the future-tense question.",
+          "suggested_fix": "Donnarumma atremia"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kuo baigsis smūgis prieš Donnarummą?",
+          "explanation": "'Smūgis prieš vartininką' sounds slightly translated. Lithuanian copy would more naturally refer to the penalty itself.",
+          "suggested_fix": "Kuo baigsis baudinys prieš Donnarummą?"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Estijai – baudinys!",
+        "question": "67 min.: po VAR peržiūros Estija gauna baudinį. Kuo baigsis baudinys prieš Donnarummą?",
+        "options": [
+          "Įvartis – 1:1",
+          "Donnarumma atremia",
+          "Pro šalį ar į virpstą"
+        ],
+        "correct_index": null,
+        "reveal": "Baudinys įvykdytas – žiūrėk, ar Estijai pavyko išlyginti rezultatą!",
+        "english_gloss": "Q: '67 min.: after the VAR review Estonia gets a penalty. How will the penalty against Donnarumma end?' Options: 'Goal – 1:1' / 'Donnarumma saves' / 'Wide or off the post'. Reveal: 'Penalty taken – see (informal) whether Estonia managed to equalise!'"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.4,
+    "mqm_penalty": 7,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Pendele Igaunijai!",
+      "question": "VAR piešķir Igaunijai pendeli pie 0-1. Vārtos Donnarumma. Kas notiks?",
+      "options": [
+        "Igaunija gūst vārtus",
+        "Donnarumma atvaira",
+        "Sitiens garām vārtiem"
+      ],
+      "correct_index": null,
+      "reveal": "Pendele izpildīta. Vai tu uzminēji pareizi?",
+      "english_gloss": "Title: Penalty for Estonia! | Question: VAR gives Estonia a penalty at 0-1. Donnarumma is in goal. What happens next? | Options: Estonia scores / Donnarumma saves / Shot misses target | Reveal: The spot kick has been taken. Did you call it right?"
+    },
+    "issues": [
+      "[warn] spell.unknown: 'pendeli' not in lv dictionary; suggestions ['Pedeli']"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Pendele Igaunijai!",
+          "explanation": "'Pendele' is colloquial slang. It appears in press only inside quotes, so it does not belong in polished card copy. House style requires '11 metru soda sitiens'. In a short title, '11 metru sitiens' is unambiguous.",
+          "suggested_fix": "11 metru sitiens Igaunijai!"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "pendeli",
+          "explanation": "Same colloquial term in the question. Use the standard term.",
+          "suggested_fix": "11 metru soda sitienu"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Donnarumma",
+          "explanation": "Foreign names must be respelled by Latvian orthography, so the Italian double 'nn' should be simplified. Latvian press writes Donarumma (4th declension, gen. Donarummas). This appears in both the question and the options.",
+          "suggested_fix": "Donarumma"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "minor",
+          "span": "VAR piešķir Igaunijai",
+          "explanation": "VAR does not award the penalty; the referee does after the VAR review. The phrasing is slightly inaccurate and also reads as translated.",
+          "suggested_fix": "Pēc VAR pārskatīšanas tiesnesis nozīmē Igaunijai"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "0-1",
+          "explanation": "House typography for scores uses a colon. The bare 'pie 0-1' is also stiff.",
+          "suggested_fix": "pie rezultāta 0:1"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Pendele izpildīta.",
+          "explanation": "The reveal repeats the colloquial term.",
+          "suggested_fix": "11 metru soda sitiens izpildīts."
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "11 metru sitiens Igaunijai!",
+        "question": "Pēc VAR pārskatīšanas tiesnesis nozīmē 11 metru soda sitienu Igaunijai pie rezultāta 0:1. Vārtos – Donarumma. Kas notiks?",
+        "options": [
+          "Igaunija gūst vārtus",
+          "Donarumma atvaira",
+          "Sitiens garām vārtiem"
+        ],
+        "correct_index": null,
+        "reveal": "11 metru soda sitiens izpildīts. Vai tu uzminēji pareizi?",
+        "english_gloss": "Q: After the VAR review the referee awards Estonia an 11-metre penalty kick at 0:1. In goal – Donnarumma. What will happen? Options: Estonia scores a goal / Donnarumma saves / The shot goes wide of the goal. Reveal: The 11-metre penalty kick has been taken. Did you guess right?"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.4,
+    "mqm_penalty": 18,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Soda sitiens Igaunijai!",
+      "question": "67. minūtē VAR piešķir Igaunijai soda sitienu. Kā tas beigsies pret Donnarummu?",
+      "options": [
+        "Vārti – 1:1",
+        "Donnarumma atvairīs",
+        "Garām vai pa stabu"
+      ],
+      "correct_index": null,
+      "reveal": "Soda sitiens izpildīts – skaties, vai Igaunija izlīdzināja!",
+      "english_gloss": "Title: Penalty for Estonia! Question: In the 67th minute VAR awards Estonia a penalty. How will it end against Donnarumma? Options: Goal – 1:1 / Donnarumma will save / Wide or off the post. Reveal: Penalty taken – see whether Estonia equalised!"
+    },
+    "issues": [
+      "[error] term.calque: 'soda sitiens' used; prefer '11 metru soda sitiens' for 'penalty kick'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Soda sitiens Igaunijai!",
+          "explanation": "Bare 'soda sitiens' is ambiguous because it can also mean a direct free kick. House style requires '11 metru soda sitiens' for a penalty kick.",
+          "suggested_fix": "11 metru soda sitiens Igaunijai!"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "VAR piešķir Igaunijai soda sitienu",
+          "explanation": "The same ambiguous bare term 'soda sitiens' is used in the question.",
+          "suggested_fix": "11 metru soda sitienu"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "minor",
+          "span": "VAR piešķir",
+          "explanation": "VAR does not award penalties; the referee does after a VAR review. The phrasing misstates the moment slightly.",
+          "suggested_fix": "pēc VAR pārbaudes tiesnesis nozīmē"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kā tas beigsies pret Donnarummu?",
+          "explanation": "'Tas' has a vague referent and the phrasing is stiff. Naming the kick reads more naturally.",
+          "suggested_fix": "Kā beigsies sitiens pret Donnarummu?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Garām vai pa stabu",
+          "explanation": "Latvian commentators say a ball goes 'stabā' (into the post); 'pa stabu' sounds slightly off.",
+          "suggested_fix": "Garām vai stabā"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Soda sitiens izpildīts",
+          "explanation": "The reveal also uses the ambiguous bare term, so it should be consistent with the title.",
+          "suggested_fix": "11 metru soda sitiens izpildīts"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "11 metru soda sitiens Igaunijai!",
+        "question": "67. minūtē pēc VAR pārbaudes tiesnesis nozīmē 11 metru soda sitienu Igaunijas labā. Kā beigsies sitiens pret Donnarummu?",
+        "options": [
+          "Vārti – 1:1",
+          "Donnarumma atvairīs",
+          "Garām vai stabā"
+        ],
+        "correct_index": null,
+        "reveal": "11 metru soda sitiens izpildīts – skaties, vai Igaunija izlīdzināja!",
+        "english_gloss": "Title: Penalty kick for Estonia! Question: In the 67th minute, after a VAR review, the referee awards a penalty kick in Estonia's favour. How will the kick against Donnarumma end? Options: Goal – 1:1 / Donnarumma will save / Wide or off the post. Reveal: The penalty has been taken – see whether Estonia equalised!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Eesti penalti: mis juhtub?",
+      "question": "VAR annab Eestile 0-1 seisul penalti. Kas nad löövad Donnarummale värava?",
+      "options": [
+        "Värav - 1-1!",
+        "Donnarumma tõrjub",
+        "Mööda väravast"
+      ],
+      "correct_index": null,
+      "reveal": "Penalti on löödud - vaata, kas su ennustus läks Tallinnas täppi!",
+      "english_gloss": "Title: Estonia Penalty: What Happens? | Question: VAR gives Estonia a penalty at 0-1. Can they beat Donnarumma from the spot? | Options: Goal - 1-1! / Donnarumma saves / Misses the target | Reveal: The penalty has been taken - see if your call matched the outcome in Tallinn!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "accuracy-facts",
+          "severity": "minor",
+          "span": "VAR annab Eestile",
+          "explanation": "VAR does not award the penalty; the referee does after the video review. Estonian copy usually says the penalty was awarded after the VAR check.",
+          "suggested_fix": "Pärast VAR-i ülevaatust sai Eesti penalti"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "0-1 seisul",
+          "explanation": "House style writes scores with a colon (0:1), not a hyphen.",
+          "suggested_fix": "0:1 kaotusseisus"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kas nad löövad Donnarummale värava?",
+          "explanation": "The plural 'nad' for a team about to take a single penalty sounds translated. A yes/no 'Kas' question also clashes with three outcome options.",
+          "suggested_fix": "Kuidas lõpeb löök Donnarumma vastu?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Värav - 1-1!",
+          "explanation": "The score should use a colon, and the separator should be an en dash.",
+          "suggested_fix": "Värav – 1:1!"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "läks Tallinnas täppi",
+          "explanation": "The inserted 'Tallinnas' is superfluous and reads oddly. The hyphen should also be an en dash.",
+          "suggested_fix": "Penalti on löödud – vaata, kas su ennustus läks täppi!"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 5,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Eesti penalti: mis juhtub?",
+        "question": "Pärast VAR-i ülevaatust sai Eesti 0:1 kaotusseisus penalti. Kuidas lõpeb löök Donnarumma vastu?",
+        "options": [
+          "Värav – 1:1!",
+          "Donnarumma tõrjub",
+          "Mööda väravast"
+        ],
+        "correct_index": null,
+        "reveal": "Penalti on löödud – vaata, kas su ennustus läks täppi!",
+        "english_gloss": "Question: After the VAR review, Estonia got a penalty while trailing 0:1. How will the shot against Donnarumma end? Options: Goal – 1:1! / Donnarumma saves / Wide of the goal. Reveal: The penalty has been taken – see whether your prediction came true!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.0,
+    "mqm_penalty": 5,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Penalti Eestile!",
+      "question": "67. minutil määras kohtunik pärast VAR-i kontrolli Eestile penalti. Kuidas see lõpeb?",
+      "options": [
+        "Pall läheb väravasse",
+        "Donnarumma tõrjub",
+        "Löök läheb mööda"
+      ],
+      "correct_index": null,
+      "reveal": "Penalti on löödud – vaata, kas Eesti viigistas seisu 1:1!",
+      "english_gloss": "Title: Penalty to Estonia! Question: In the 67th minute, after a VAR check, the referee awarded Estonia a penalty. How will it end? Options: The ball goes into the goal / Donnarumma saves / The shot goes wide. Reveal: The penalty has been taken – see whether Estonia levelled it at 1-1!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kuidas see lõpeb?",
+          "explanation": "The pronoun „see“ is slightly vague after a long sentence. Naming the penalty is punchier and clearer on a small card.",
+          "suggested_fix": "Kuidas penalti lõpeb?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Penalti on löödud – vaata, kas Eesti viigistas seisu 1:1!",
+          "explanation": "The reveal is a generic teaser rather than a result. It is acceptable for a prediction card, but a little flat.",
+          "suggested_fix": "Penalti on löödud – kas Eesti viigistas seisu 1:1? Vaata kohe!"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.6,
+    "mqm_penalty": 2,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Estijos 1-ojo kėlinio herojus?",
+      "question": "Karol Mets laimėjo 6 dvikovas ore ir blokavo du smūgius. Kas jus labiausiai sužavėjo per 1-ąjį kėlinį?",
+      "options": [
+        "Karol Mets",
+        "Italijos įvarčio autorius",
+        "Estijos vartininkas",
+        "Kažkas kitas"
+      ],
+      "correct_index": null,
+      "reveal": "Per kėlinių pertrauką Taline Mets laimėjo 6 dvikovas ore ir blokavo du smūgius.",
+      "english_gloss": "Title: Estonia's First-Half Hero? | Question: Karol Mets won 6 aerial duels and blocked two shots. Who impressed you most in the first half? | Options: Karol Mets / Italy's goalscorer / Estonia's keeper / Someone else | Reveal: At half-time in Tallinn, Mets has won 6 aerial duels and blocked two shots."
+    },
+    "issues": [
+      "[warn] name.form: 'Mets' is not in the case table for any entity",
+      "[warn] name.form: 'Mets' is not in the case table for any entity"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Karol Mets laimėjo",
+          "explanation": "A consonant-final foreign name must take Lithuanian endings on the original spelling. The undeclined form looks like untranslated text.",
+          "suggested_fix": "Karolis Metsas laimėjo"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Karol Mets (option)",
+          "explanation": "The option uses the same undeclined name form; it should match the declined form in the question.",
+          "suggested_fix": "Karolis Metsas"
+        },
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "Kas jus labiausiai sužavėjo",
+          "explanation": "This uses the polite or plural 'jūs' register. House style requires informal singular 'tu'.",
+          "suggested_fix": "Kas tave labiausiai sužavėjo"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "critical",
+          "span": "Per kėlinių pertrauką Taline Mets laimėjo",
+          "explanation": "The reveal says the duels were won during the half-time break. They were won during the first half.",
+          "suggested_fix": "Per pirmąjį kėlinį Taline K. Metsas laimėjo"
+        },
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Mets laimėjo (reveal)",
+          "explanation": "The surname is left undeclined; it should be 'Metsas' (press style: K. Metsas).",
+          "suggested_fix": "K. Metsas laimėjo"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "minor",
+          "span": "Estijos 1-ojo kėlinio herojus?",
+          "explanation": "The title limits the hero to Estonia, but one option is Italy's goalscorer. The title and options are inconsistent.",
+          "suggested_fix": "Pirmojo kėlinio herojus?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "1-ojo kėlinio / 1-ąjį kėlinį",
+          "explanation": "The numeral-ordinal abbreviation is stiff in fan copy. Spelling the word out reads better.",
+          "suggested_fix": "pirmojo kėlinio / pirmąjį kėlinį"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 2,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Pirmojo kėlinio herojus?",
+        "question": "Karolis Metsas laimėjo 6 dvikovas ore ir blokavo du smūgius. Kas tave labiausiai sužavėjo per pirmąjį kėlinį?",
+        "options": [
+          "Karolis Metsas",
+          "Italijos įvarčio autorius",
+          "Estijos vartininkas",
+          "Kažkas kitas"
+        ],
+        "correct_index": null,
+        "reveal": "Per pirmąjį kėlinį Taline K. Metsas laimėjo 6 dvikovas ore ir blokavo du smūgius.",
+        "english_gloss": "Title: First-half hero? Question: Karol Mets won 6 aerial duels and blocked two shots. Who impressed you most in the first half? Options: Karol Mets / Italy's goalscorer / Estonia's goalkeeper / Someone else. Reveal: In the first half in Tallinn, K. Mets won 6 aerial duels and blocked two shots."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.0,
+    "mqm_penalty": 32,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Metsas – Estijos siena?",
+      "question": "Metsas laimėjo 6 dvikovas ore ir blokavo 2 smūgius. Ar jis – geriausias pirmojo kėlinio žaidėjas?",
+      "options": [
+        "Taip, be abejo",
+        "Geras, bet ne geriausias",
+        "Ne, buvo geresnių"
+      ],
+      "correct_index": null,
+      "reveal": "Pertrauka Taline: Estija pralaimi Italijai 0:1.",
+      "english_gloss": "Title: Mets – Estonia's wall? Question: Mets won 6 aerial duels and blocked 2 shots. Is he the best player of the first half? Options: Yes, no doubt / Good, but not the best / No, there were better ones. Reveal: Half-time in Tallinn: Estonia trail Italy 0-1."
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Ar'"
+    ],
+    "judgement": {
+      "errors": [],
+      "grammar": 5,
+      "naturalness": 5,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.8,
+    "mqm_penalty": 0,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Igaunijas pirmā puslaika varonis?",
+      "question": "Karols Metss uzvarēja 6 gaisa cīņās un bloķēja divus sitienus. Vai viņš bija Igaunijas labākais pirmajā puslaikā?",
+      "options": [
+        "Jā, noteikti",
+        "Grūti teikt",
+        "Kāds cits"
+      ],
+      "correct_index": null,
+      "reveal": "Puslaiks Tallinā: Igaunija atpaliek no Itālijas 1-0 A. Le Coq Arena.",
+      "english_gloss": "Title: Estonia's First-Half Hero? Question: Karol Mets won 6 aerial duels and blocked two shots. Was he Estonia's best player in the first half? Options: Yes, clearly / Close call / Someone else. Reveal: Half-time in Tallinn: Estonia trail Italy 1-0 at A. Le Coq Arena."
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Vai'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "accuracy-facts",
+          "severity": "major",
+          "span": "atpaliek no Itālijas 1-0",
+          "explanation": "The score is written from Italy's side and with a hyphen. Latvian copy puts the subject team's score first and uses a colon, so Estonia trailing is 0:1. As written it confuses the reader and breaks house typography.",
+          "suggested_fix": "atpaliek no Itālijas ar 0:1"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "major",
+          "span": "1-0 A. Le Coq Arena.",
+          "explanation": "The stadium name is tacked on at the end with no preposition, locative or quotes. It reads like a machine-translated fragment. Latvian needs 'stadionā \"A. Le Coq Arena\"'.",
+          "suggested_fix": "stadionā \"A. Le Coq Arena\""
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "uzvarēja 6 gaisa cīņās un bloķēja divus sitienus",
+          "explanation": "The numerals are inconsistent: one is a digit and the other a word. 'Gaisa divcīņās' is the more usual press term.",
+          "suggested_fix": "uzvarēja sešās gaisa divcīņās un bloķēja divus sitienus"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Kāds cits",
+          "explanation": "This is a bare answer to a yes/no question. 'Nē, kāds cits' reads more naturally as a reply to 'Vai…?'.",
+          "suggested_fix": "Nē, kāds cits"
+        }
+      ],
+      "grammar": 3,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Igaunijas pirmā puslaika varonis?",
+        "question": "Karols Metss uzvarēja sešās gaisa divcīņās un bloķēja divus sitienus. Vai viņš bija Igaunijas labākais pirmajā puslaikā?",
+        "options": [
+          "Jā, noteikti",
+          "Grūti teikt",
+          "Nē, kāds cits"
+        ],
+        "correct_index": null,
+        "reveal": "Puslaiks Tallinas stadionā \"A. Le Coq Arena\": Igaunija atpaliek no Itālijas ar 0:1.",
+        "english_gloss": "Title: Estonia's first-half hero? Question: Karol Mets won six aerial duels and blocked two shots. Was he Estonia's best in the first half? Options: Yes, definitely / Hard to say / No, someone else. Reveal: Half-time at Tallinn's A. Le Coq Arena: Estonia trails Italy 0:1."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 12,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Metss – puslaika varonis?",
+      "question": "Karols Metss uzvarējis 6 gaisa cīņas un bloķējis 2 sitienus. Vai viņš ir Igaunijas labākais puslaikā?",
+      "options": [
+        "Jā, noteikti",
+        "Drīzāk jā",
+        "Nē, citi labāki"
+      ],
+      "correct_index": null,
+      "reveal": "Puslaikā Itālija Tallinā vada ar 1:0.",
+      "english_gloss": "Q: Karol Mets has won 6 aerial duels and blocked 2 shots. Is he Estonia's best player in the first half? Options: Yes, definitely / Rather yes / No, others were better. Reveal: At half-time Italy lead 1-0 in Tallinn."
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Vai'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Karols Metss uzvarējis 6 gaisa cīņas un bloķējis 2 sitienus.",
+          "explanation": "Dropping the auxiliary 'ir' is normal in headlines. In a full sentence, though, it can read as reported speech. Adding 'ir' or 'pirmajā puslaikā' makes it a plain statement of fact.",
+          "suggested_fix": "Karols Metss pirmajā puslaikā uzvarējis 6 gaisa cīņas un bloķējis 2 sitienus."
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Igaunijas labākais puslaikā",
+          "explanation": "The bare adjective 'labākais' with 'puslaikā' is a little stiff. An editor would add 'spēlētājs' and name the half.",
+          "suggested_fix": "Igaunijas labākais spēlētājs pirmajā puslaikā"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Nē, citi labāki",
+          "explanation": "This ellipsis is acceptable on a button but sounds clipped. 'Nē, bija labāki' reads more naturally.",
+          "suggested_fix": "Nē, bija labāki"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.6,
+    "mqm_penalty": 3,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Eesti esimese poolaja kangelane?",
+      "question": "Karol Mets võitis 6 õhuduelli ja blokeeris kaks lööki. Kes oli Eesti parim esimesel poolajal?",
+      "options": [
+        "Karol Mets",
+        "Väravavaht",
+        "Poolkaitse",
+        "Veel mitte keegi"
+      ],
+      "correct_index": null,
+      "reveal": "Mets on olnud Tallinnas Eesti kaitses nagu müür.",
+      "english_gloss": "Title: Estonia's First-Half Hero? | Question: Karol Mets won 6 aerial duels and blocked two shots. Who was Estonia's standout in the first half? | Options: Karol Mets / The goalkeeper / The midfield / Nobody yet | Reveal: Mets has been a wall at the back for Estonia in Tallinn."
+    },
+    "issues": [
+      "[error] term.calque: 'pool' used; prefer 'poolaeg' for 'half (football)'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "võitis 6 õhuduelli ja blokeeris kaks lööki",
+          "explanation": "The same sentence writes one number as a digit (6) and the other as a word (kaks). It reads slightly untidy.",
+          "suggested_fix": "võitis kuus õhuduelli ja blokeeris kaks lööki"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Veel mitte keegi",
+          "explanation": "The answer doesn't quite fit the past-tense question \"Kes oli … parim?\". \"Veel\" (yet) hints at a translated \"No one yet\". A bare \"Mitte keegi\" or \"Keegi ei paistnud silma\" sounds more natural.",
+          "suggested_fix": "Mitte keegi"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Mets on olnud Tallinnas Eesti kaitses nagu müür.",
+          "explanation": "\"Tallinnas\" adds nothing at half-time and makes the sentence a little stiff. It could be punchier.",
+          "suggested_fix": "Mets on seisnud Eesti kaitses nagu müür."
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.6,
+    "mqm_penalty": 3,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Estonia vs Italy",
+    "sport": "football",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Karol Metsa poolaeg",
+      "question": "Karol Mets on võitnud 6 õhuvõitlust ja blokeerinud kaks pealelööki. Kuidas hindad tema poolaega?",
+      "options": [
+        "Maailmatasemel!",
+        "Väga tugev",
+        "Korralik",
+        "Võiks parem olla"
+      ],
+      "correct_index": null,
+      "reveal": "Poolaeg: Eesti 0:1 Itaalia – Mets on olnud kaitses kindel kalju.",
+      "english_gloss": "Title: Karol Mets's half. Question: Karol Mets has won 6 aerial duels and blocked two shots. How do you rate his half? Options: World class! / Very strong / Solid / Could be better. Reveal: Half-time: Estonia 0:1 Italy – Mets has been a solid rock in defence."
+    },
+    "issues": [
+      "[error] term.calque: 'pool' used; prefer 'poolaeg' for 'half (football)'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "fluency-translationese",
+          "severity": "major",
+          "span": "kindel kalju",
+          "explanation": "A broken idiom. The Estonian set phrase is „kindel kui kalju“ (or „kaljukindel“). „Kindel kalju“ reads like a literal rendering of \"solid rock\".",
+          "suggested_fix": "kindel kui kalju"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "6 õhuvõitlust ja blokeerinud kaks pealelööki",
+          "explanation": "Inconsistent numerals in the same sentence: a digit for 6, but a word for two. Small numbers in running copy read better as words.",
+          "suggested_fix": "kuus õhuvõitlust ja blokeerinud kaks pealelööki"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 3,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Karol Metsa poolaeg",
+        "question": "Karol Mets on võitnud kuus õhuvõitlust ja blokeerinud kaks pealelööki. Kuidas hindad tema poolaega?",
+        "options": [
+          "Maailmatasemel!",
+          "Väga tugev",
+          "Korralik",
+          "Võiks parem olla"
+        ],
+        "correct_index": null,
+        "reveal": "Poolaeg: Eesti 0:1 Itaalia – Mets on olnud kaitses kindel kui kalju.",
+        "english_gloss": "Q: Karol Mets has won six aerial duels and blocked two shots. How do you rate his half? Options: World class! / Very strong / Solid / Could be better. Reveal: Half-time: Estonia 0:1 Italy – Mets has been solid as a rock in defence."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.4,
+    "mqm_penalty": 6,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Latvijos daugumos žaidimas!",
+      "question": "Kanada gauna baudą už pakišimą esant 1-1. Ar Latvija įmuš žaisdama daugumoje?",
+      "options": [
+        "Taip, Latvija įmuša",
+        "Ne, Kanada atsilaiko",
+        "Kanada įmuša mažumoje"
+      ],
+      "correct_index": null,
+      "reveal": "Dauguma baigėsi: pažiūrėkite, kaip Latvija išnaudojo persvarą šioje 1-1 kovoje!",
+      "english_gloss": "Title: Latvia Power Play! | Question: Canada takes a tripping minor at 1-1. Will Latvia score on this power play? | Options: Yes, Latvia scores / No, Canada kills it / Canada scores shorthanded | Reveal: Power play over: see how Latvia's man advantage played out in this 1-1 battle!"
+    },
+    "issues": [
+      "[error] term.calque: 'žaidimas' used; prefer 'rungtynės' for 'match / game'",
+      "[warn] grammar.yesno: yes/no question should start with 'Ar'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "pažiūrėkite",
+          "explanation": "Polite/plural 'Jūs' imperative breaks the house 'tu' register.",
+          "suggested_fix": "pažiūrėk"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "major",
+          "span": "kaip Latvija išnaudojo persvarą",
+          "explanation": "The reveal is written before the outcome is known and assumes Latvia converted the power play. This is invented, and for a prediction card it spoils or contradicts the result.",
+          "suggested_fix": "Dauguma baigėsi! Ar tavo spėjimas pasitvirtino?"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "esant 1-1",
+          "explanation": "'esant 1-1' is a stiff, translated construction. The score must also be written 1:1.",
+          "suggested_fix": "rezultatas 1:1"
+        },
+        {
+          "category": "spelling-diacritics",
+          "severity": "minor",
+          "span": "1-1 kovoje",
+          "explanation": "House style writes scores with a colon and no spaces.",
+          "suggested_fix": "1:1"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Latvijos daugumos žaidimas!",
+          "explanation": "'daugumos žaidimas' reads as a calque of 'power play'. Broadcasters say a team 'žaidžia daugumoje'.",
+          "suggested_fix": "Latvija žaidžia daugumoje!"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "baudą už pakišimą",
+          "explanation": "Hockey commentators say 'kojos pakišimas' for tripping. 'nubausta' is also more idiomatic than 'gauna baudą'.",
+          "suggested_fix": "nubausta už kojos pakišimą"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Ar Latvija įmuš",
+          "explanation": "Bare 'įmuš' without an object is colloquial. The glossary prefers 'pelnys įvartį'.",
+          "suggested_fix": "Ar Latvija pelnys įvartį"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Taip, Latvija įmuša",
+          "explanation": "The options use present tense while the question is in future tense. Prediction options read better in future tense.",
+          "suggested_fix": "Taip, Latvija pelnys"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 3,
+      "faithfulness": 2,
+      "engagement": 3,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Latvija žaidžia daugumoje!",
+        "question": "Kanada nubausta už kojos pakišimą, rezultatas 1:1. Ar Latvija pelnys įvartį žaisdama daugumoje?",
+        "options": [
+          "Taip, Latvija pelnys",
+          "Ne, Kanada atsilaikys",
+          "Kanada pelnys mažumoje"
+        ],
+        "correct_index": null,
+        "reveal": "Dauguma baigėsi! Ar tavo spėjimas pasitvirtino?",
+        "english_gloss": "Q: Canada penalized for tripping, score 1:1. Will Latvia score a goal while playing on the power play? Options: Yes, Latvia will score / No, Canada will hold out / Canada will score short-handed. Reveal: The power play is over! Did your prediction come true?"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.0,
+    "mqm_penalty": 16,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Latvija žaidžia daugumoje!",
+      "question": "Kanada gavo 2 min. už pakišimą, rezultatas 1:1. Kas nutiks per šią daugumą?",
+      "options": [
+        "Latvija įmuš",
+        "Įvarčių nebus",
+        "Kanada įmuš mažumoje"
+      ],
+      "correct_index": null,
+      "reveal": "Dauguma baigėsi – žiūrėkite, ar jūsų prognozė išsipildė!",
+      "english_gloss": "Title: Latvia plays on the power play! Question: Canada got 2 min for tripping, score 1:1. What will happen during this power play? Options: Latvia will score / No goals / Canada will score shorthanded. Reveal: The power play is over – see whether your prediction came true!"
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "žiūrėkite, ar jūsų prognozė",
+          "explanation": "The reveal uses the polite/plural register (žiūrėkite, jūsų). House style requires informal singular \"tu\", and the rest of the card does not mix registers.",
+          "suggested_fix": "pažiūrėk, ar tavo prognozė"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "prognozė išsipildė",
+          "explanation": "A prediction is said to come true with \"pasitvirtino\"; \"išsipildė\" fits wishes or dreams better.",
+          "suggested_fix": "prognozė pasitvirtino"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "gavo 2 min. už pakišimą",
+          "explanation": "Broadcasters usually say \"2 min. baudą už kojos pakišimą\". The bare \"pakišimą\" without \"baudą\" sounds clipped.",
+          "suggested_fix": "gavo 2 min. baudą už kojos pakišimą"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 4,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Latvija žaidžia daugumoje!",
+        "question": "Kanada gavo 2 min. baudą už kojos pakišimą, rezultatas 1:1. Kas nutiks per šią daugumą?",
+        "options": [
+          "Latvija įmuš",
+          "Įvarčių nebus",
+          "Kanada įmuš mažumoje"
+        ],
+        "correct_index": null,
+        "reveal": "Dauguma baigėsi – pažiūrėk, ar tavo prognozė pasitvirtino!",
+        "english_gloss": "Canada got a 2-min. penalty for tripping, score 1:1. What will happen during this power play? Options: Latvia will score / There will be no goals / Canada will score short-handed. Reveal: The power play is over – see whether your prediction came true!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.2,
+    "mqm_penalty": 7,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Latvijas vairākums!",
+      "question": "Kanāda paliek mazākumā par aizķeršanu. Vai Latvija gūs vārtus vairākumā un izvirzīsies vadībā?",
+      "options": [
+        "Jā, Latvija gūst vārtus",
+        "Nē, Kanāda noturas",
+        "Kanāda gūst vārtus mazākumā"
+      ],
+      "correct_index": null,
+      "reveal": "Noraidījums beidzies. Vai tavs minējums sakrita ar vairākuma iznākumu?",
+      "english_gloss": "Title: Latvia Power Play! | Question: Canada is down a man for tripping. Will Latvia score on this power play to take the lead? | Options: Yes, Latvia scores / No, Canada kills it / Canada scores shorthanded | Reveal: The penalty is over. Did your call match the power play result?"
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Vai'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Vai tavs minējums sakrita ar vairākuma iznākumu?",
+          "explanation": "The reveal is grammatically correct but bureaucratic. 'Sakrita ar vairākuma iznākumu' sounds stiff for a live fan card. A shorter, punchier wording would read more naturally.",
+          "suggested_fix": "Noraidījums beidzies. Vai tavs minējums piepildījās?"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.6,
+    "mqm_penalty": 1,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Latvija spēlē vairākumā!",
+      "question": "Kanādai 2 minūtes par aizķeršanu. Vai Latvija realizēs vairākumu?",
+      "options": [
+        "Jā, gūs vārtus",
+        "Nē, Kanāda izturēs",
+        "Kanāda gūs vārtus"
+      ],
+      "correct_index": null,
+      "reveal": "Vairākums beidzies – skaties, kā mainījās rezultāts!",
+      "english_gloss": "Title: Latvia plays on the power play! Question: Canada gets 2 minutes for tripping. Will Latvia convert the power play? Options: Yes, they'll score / No, Canada will hold out / Canada will score (shorthanded). Reveal: The power play is over – see how the score changed!"
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Vai'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kanāda gūs vārtus",
+          "explanation": "The third option does not answer the yes/no question \"Vai…?\". It also overlaps logically with the other two, since Canada could score short-handed and Latvia could still score afterwards.",
+          "suggested_fix": "Nē, Kanāda iemetīs mazākumā"
+        },
+        {
+          "category": "accuracy-facts",
+          "severity": "minor",
+          "span": "skaties, kā mainījās rezultāts!",
+          "explanation": "This presupposes the score changed. If neither team scored, the reveal is misleading. The tense also clashes with \"beidzies\".",
+          "suggested_fix": "Vairākums beidzies – pārbaudi, vai tava prognoze piepildījās!"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 4,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.4,
+    "mqm_penalty": 2,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Läti arvulises ülekaalus!",
+      "question": "Kanada saab 1-1 seisul jalaga tõkestamise eest 2 minutit. Kas Läti lööb ülekaalus värava?",
+      "options": [
+        "Jah, Läti lööb",
+        "Ei, Kanada peab vastu",
+        "Kanada lööb vähemuses"
+      ],
+      "correct_index": null,
+      "reveal": "Ülekaal on läbi. Kas su ennustus läks jääl täppi?",
+      "english_gloss": "Title: Latvia Power Play! | Question: Canada takes a tripping minor with the game tied 1-1. Will Latvia score on this power play? | Options: Yes, Latvia scores / No, Canada kills it / Canada scores shorthanded | Reveal: The power play is over. Did your call match the result on the ice?"
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Kas'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Kas Läti lööb ülekaalus värava?",
+          "explanation": "In ice hockey a goal is 'thrown', not 'kicked'. Estonian broadcasters say 'viskab värava'. 'Lööb värava' is the football verb.",
+          "suggested_fix": "Kas Läti viskab ülekaalus värava?"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Jah, Läti lööb",
+          "explanation": "This uses the football verb in a hockey context. The hockey verb is 'viskama'.",
+          "suggested_fix": "Jah, Läti viskab"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Kanada lööb vähemuses",
+          "explanation": "This uses the football verb in a hockey context. The hockey verb is 'viskama'.",
+          "suggested_fix": "Kanada viskab vähemuses"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "1-1 seisul",
+          "explanation": "House style writes scores with a colon.",
+          "suggested_fix": "1:1 seisul"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "saab ... 2 minutit",
+          "explanation": "The present tense with a bare digit reads clipped and stiff. A native editor would write the past tense and spell out the penalty.",
+          "suggested_fix": "sai ... kahe minuti karistuse"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "läks jääl täppi",
+          "explanation": "'jääl' is a superfluous, awkward insertion in the idiom 'läks täppi'.",
+          "suggested_fix": "läks täppi"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Läti arvulises ülekaalus!",
+        "question": "Kanada sai 1:1 seisul jalaga tõkestamise eest kahe minuti karistuse. Kas Läti viskab ülekaalus värava?",
+        "options": [
+          "Jah, Läti viskab",
+          "Ei, Kanada peab vastu",
+          "Kanada viskab vähemuses"
+        ],
+        "correct_index": null,
+        "reveal": "Ülekaal on läbi – kas su ennustus läks täppi?",
+        "english_gloss": "Q: At 1:1, Canada got a two-minute penalty for tripping. Will Latvia score on the power play? Options: Yes, Latvia scores / No, Canada holds out / Canada scores short-handed. Reveal: The power play is over – did your prediction hit the mark?"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 18,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m1",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "prediction",
+      "title": "Läti ülekaalus!",
+      "question": "Kanada sai komistamise eest 2 minutit. Kas Läti lööb arvulises ülekaalus värava?",
+      "options": [
+        "Jah, Läti lööb",
+        "Ei, Kanada peab vastu",
+        "Kanada lööb hoopis"
+      ],
+      "correct_index": null,
+      "reveal": "Läti võitis 2023. aastal oma esimese MM-medali – pronksi.",
+      "english_gloss": "Title: Latvia on the power play! Question: Canada got 2 minutes for tripping. Will Latvia score on the power play? Options: Yes, Latvia scores / No, Canada holds out / Canada scores instead (shorthanded). Reveal: Latvia won its first World Championship medal, bronze, in 2023."
+    },
+    "issues": [
+      "[warn] grammar.yesno: yes/no question should start with 'Kas'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "komistamise eest",
+          "explanation": "„Komistamine“ means stumbling oneself and is a calque of English „tripping“. Estonian hockey coverage calls this penalty „jala ette panemine“ (or „jalaga tõkestamine“).",
+          "suggested_fix": "jala ette panemise eest"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Kas Läti lööb arvulises ülekaalus värava?",
+          "explanation": "In ice hockey the standard verb for scoring is „viskama“ (viskab värava). „Lööma“ is the football verb.",
+          "suggested_fix": "Kas Läti viskab arvulises ülekaalus värava?"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Jah, Läti lööb",
+          "explanation": "Same sport-verb error: in hockey the verb should be „viskab“.",
+          "suggested_fix": "Jah, Läti viskab"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Kanada lööb hoopis",
+          "explanation": "Uses the football verb „lööb“. The word order with a trailing „hoopis“ also reads stiff and translated; „hoopis“ should come first for emphasis.",
+          "suggested_fix": "Hoopis Kanada viskab"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "2 minutit",
+          "explanation": "In running text, small numbers read better spelled out (kaks minutit).",
+          "suggested_fix": "kaks minutit"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "prediction",
+        "title": "Läti arvulises ülekaalus!",
+        "question": "Kanada sai jala ette panemise eest kaks minutit. Kas Läti viskab arvulises ülekaalus värava?",
+        "options": [
+          "Jah, Läti viskab",
+          "Ei, Kanada peab vastu",
+          "Hoopis Kanada viskab"
+        ],
+        "correct_index": null,
+        "reveal": "Läti võitis 2023. aastal oma esimese MM-medali – pronksi.",
+        "english_gloss": "Title: Latvia on the power play! Question: Canada got two minutes for tripping. Will Latvia score (throw) a goal on the power play? Options: Yes, Latvia scores / No, Canada holds out / Instead Canada scores. Reveal: In 2023 Latvia won its first World Championship medal – bronze."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.8,
+    "mqm_penalty": 21,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Merzļikins – kaip siena",
+      "question": "Merzļikins po dviejų kėlinių atrėmė 31 metimą. Kaip vertinate jo žaidimą?",
+      "options": [
+        "Tiesiog elitinis",
+        "Labai solidus",
+        "Jam sekasi",
+        "Dar per anksti"
+      ],
+      "correct_index": null,
+      "reveal": "Merzļikins atrėmė 31 metimą, o Latvija po dviejų kėlinių pirmauja prieš Kanadą 2-1.",
+      "english_gloss": "Title: Merzļikins – like a wall. Question: Merzļikins has saved 31 shots after two periods. How do you rate his play? Options: Simply elite / Very solid / He is getting lucky / Still too early. Reveal: Merzļikins has stopped 31 shots, and Latvia leads Canada 2-1 after two periods."
+    },
+    "issues": [
+      "[error] ortho.foreign_letter: 'Merzļikins' has ļ (not lt)",
+      "[error] ortho.foreign_letter: 'Merzļikins' has ļ (not lt)",
+      "[error] ortho.foreign_letter: 'Merzļikins' has ļ (not lt)",
+      "[error] term.calque: 'žaidimas' used; prefer 'rungtynės' for 'match / game'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "name-form",
+          "severity": "major",
+          "span": "Merzļikins",
+          "explanation": "Lithuanian copy adapts Latvian consonant-final surnames. They take the Lithuanian ending -as and drop the Latvian diacritic, as in Porziņģis → Porzingis. Lithuanian press writes (E.) Merzlikinas. The unadapted Latvian nominative reads as foreign copy.",
+          "suggested_fix": "E. Merzlikinas / Merzlikinas"
+        },
+        {
+          "category": "style-register",
+          "severity": "major",
+          "span": "Kaip vertinate",
+          "explanation": "The polite or plural 'Jūs' form breaks house style, which requires informal 'tu'.",
+          "suggested_fix": "Kaip vertini"
+        },
+        {
+          "category": "spelling-diacritics",
+          "severity": "minor",
+          "span": "2-1",
+          "explanation": "Scores are written with a colon and no spaces.",
+          "suggested_fix": "2:1"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "Tiesiog elitinis",
+          "explanation": "'Elitinis' sounds like an anglicism when used to praise a performance. Lithuanian commentators would say 'aukščiausia klasė'.",
+          "suggested_fix": "Aukščiausia klasė"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Labai solidus",
+          "explanation": "'Solidus' is a slightly stiff, borrowed word for a goalie performance. 'Labai patikimas' is more natural.",
+          "suggested_fix": "Labai patikimas"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Dar per anksti",
+          "explanation": "Without a verb the option reads truncated, as if translated from 'too early to tell'.",
+          "suggested_fix": "Dar per anksti spręsti"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Merzlikinas – kaip siena",
+        "question": "E. Merzlikinas per du kėlinius atrėmė jau 31 metimą. Kaip vertini jo žaidimą?",
+        "options": [
+          "Aukščiausia klasė",
+          "Labai patikimas",
+          "Jam tiesiog sekasi",
+          "Dar per anksti spręsti"
+        ],
+        "correct_index": null,
+        "reveal": "E. Merzlikinas atrėmė 31 metimą, o Latvija po dviejų kėlinių pirmauja 2:1 prieš Kanadą.",
+        "english_gloss": "Q: E. Merzlikins has already saved 31 shots in two periods. How do you rate his play? Options: Top class / Very reliable / He's just lucky / Too early to judge. Reveal: E. Merzlikins saved 31 shots, and Latvia leads Canada 2:1 after two periods."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 4.0,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "lt",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Latvija veda prieš Kanadą",
+      "question": "Po dviejų kėlinių Latvija veda 2:1. Kas labiausiai lėmė šį pranašumą?",
+      "options": [
+        "Merzlikino atrėmimai",
+        "Latvių atsidavimas",
+        "Kanados klaidos",
+        "Taiklūs metimai"
+      ],
+      "correct_index": null,
+      "reveal": "Merzlikinas per du kėlinius jau atrėmė 31 metimą.",
+      "english_gloss": "Q: After two periods Latvia leads 2:1. What most determined this lead? Options: Merzļikins' saves / The Latvians' commitment / Canada's mistakes / Accurate shots. Reveal: Merzļikins has already stopped 31 shots in two periods."
+    },
+    "issues": [
+      "[warn] name.form: 'Latvių' is not in the case table for any entity"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Merzlikino atrėmimai",
+          "explanation": "The noun 'atrėmimai' is understandable but rare. Lithuanian hockey copy usually uses the participle phrase 'atremti metimai', or simply refers to the goalie's play.",
+          "suggested_fix": "Merzlikino žaidimas vartuose"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 5,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.6,
+    "mqm_penalty": 1,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Merzļikins kā siena",
+      "question": "Merzļikinam pēc divām trešdaļām 31 atvairīts metiens. Kā vērtē viņa spēli?",
+      "options": [
+        "Leģendāri",
+        "Izcili",
+        "Stabili",
+        "Veicas"
+      ],
+      "correct_index": null,
+      "reveal": "Latvija ar 2-1 pret Kanādu dodas trešajā trešdaļā, pateicoties Merzļikina 31 atvairītajam metienam.",
+      "english_gloss": "Title: Merzļikins like a wall. Question: Merzļikins has 31 saved shots after two periods. How do you rate his game? Options: Legendary / Outstanding / Solid / Getting lucky. Reveal: Latvia takes a 2-1 lead over Canada into the third period behind Merzļikins' 31 saves."
+    },
+    "issues": [
+      "[error] term.calque: 'trešdaļa' used; prefer 'periods' for 'period (ice hockey)'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "pēc divām trešdaļām",
+          "explanation": "In hockey the period is 'periods'. 'Trešdaļa' is an explicitly rejected calque in the glossary, and it also clashes with the meaning of 'trešdaļa' (one third).",
+          "suggested_fix": "pēc diviem periodiem"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "trešajā trešdaļā",
+          "explanation": "Same wrong term for the hockey period. 'Trešajā trešdaļā' also sounds clumsy and tautological.",
+          "suggested_fix": "trešajā periodā / pirms trešā perioda"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Merzļikinam pēc divām trešdaļām 31 atvairīts metiens.",
+          "explanation": "This is a verbless nominal construction that reads stiff. A native editor would use the active verb 'atvairījis'.",
+          "suggested_fix": "Merzļikins pēc diviem periodiem atvairījis jau 31 metienu."
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Kā vērtē viņa spēli?",
+          "explanation": "The 'tu' register is implied but not explicit. Adding 'tu' makes the question more direct and personal.",
+          "suggested_fix": "Kā tu vērtē viņa spēli?"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Veicas",
+          "explanation": "The other options are adverbs, so this verb option breaks the parallelism. Without a subject it also reads abruptly.",
+          "suggested_fix": "Viņam veicas"
+        },
+        {
+          "category": "ui-fit",
+          "severity": "minor",
+          "span": "2-1",
+          "explanation": "House typography requires a colon in scores.",
+          "suggested_fix": "2:1"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Merzļikins kā siena",
+        "question": "Merzļikins pēc diviem periodiem atvairījis jau 31 metienu. Kā tu vērtē viņa spēli?",
+        "options": [
+          "Leģendāri",
+          "Izcili",
+          "Stabili",
+          "Viņam veicas"
+        ],
+        "correct_index": null,
+        "reveal": "Pateicoties Merzļikina 31 atvairītajam metienam, Latvija pirms trešā perioda pret Kanādu vada ar 2:1.",
+        "english_gloss": "Question: 'Merzļikins has already saved 31 shots after two periods. How do you rate his game?' Options: 'Legendary' / 'Excellent' / 'Solid' / 'He's getting lucky'. Reveal: 'Thanks to Merzļikins' 31 saves, Latvia leads Canada 2:1 before the third period.'"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 14,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "lv",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Merzļikins tur cietoksni!",
+      "question": "Merzļikins atvairījis jau 31 metienu. Vai Latvija noturēs pārsvaru arī trešajā trešdaļā?",
+      "options": [
+        "Noteikti noturēs!",
+        "Kanāda izlīdzinās",
+        "Būs papildlaiks",
+        "Latvija vēl iemetīs"
+      ],
+      "correct_index": null,
+      "reveal": "Pēc divām trešdaļām Latvija vada ar 2:1 pār Kanādu!",
+      "english_gloss": "Title: Merzļikins holds the fortress! Question: Merzļikins has already turned away 31 shots. Will Latvia hold the lead in the third period too? Options: Definitely will hold! / Canada will equalize / There will be overtime / Latvia will score again. Reveal: After two periods Latvia leads Canada 2:1!"
+    },
+    "issues": [
+      "[error] term.calque: 'trešdaļa' used; prefer 'periods' for 'period (ice hockey)'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "trešajā trešdaļā",
+          "explanation": "A hockey period is 'periods', not the calque 'trešdaļa' ('third'). The glossary explicitly bans 'trešdaļa', and it reads as translated.",
+          "suggested_fix": "trešajā periodā"
+        },
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "Pēc divām trešdaļām",
+          "explanation": "The same banned term for period appears in the reveal.",
+          "suggested_fix": "Pēc diviem periodiem"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "vada ar 2:1 pār Kanādu",
+          "explanation": "'pār Kanādu' calques English 'over Canada'. Latvian press says 'vada pret Kanādu ar 2:1'.",
+          "suggested_fix": "vada pret Kanādu ar 2:1"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Vai Latvija noturēs pārsvaru arī trešajā trešdaļā?",
+          "explanation": "A yes/no question does not match the multi-outcome options ('Būs papildlaiks', 'Latvija vēl iemetīs'). An open question fits the options better.",
+          "suggested_fix": "Kā beigsies trešais periods?"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Latvija vēl iemetīs",
+          "explanation": "The bare 'iemetīs' without an object or with this word order sounds clipped. 'Iemetīs vēl' reads more naturally.",
+          "suggested_fix": "Latvija iemetīs vēl"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Merzļikins tur cietoksni!",
+        "question": "Merzļikins atvairījis jau 31 metienu. Kā beigsies trešais periods?",
+        "options": [
+          "Latvija noturēs 2:1",
+          "Kanāda izlīdzinās",
+          "Būs papildlaiks",
+          "Latvija iemetīs vēl"
+        ],
+        "correct_index": null,
+        "reveal": "Pēc diviem periodiem Latvija vada pret Kanādu ar 2:1!",
+        "english_gloss": "Merzļikins has already saved 31 shots. How will the third period end? Options: Latvia will hold on to 2:1 / Canada will equalize / There will be overtime / Latvia will score more. Reveal: After two periods Latvia leads Canada 2:1!"
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 13,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "A.translate",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Merzļikins seisab kindlalt",
+      "question": "Merzļikinsil on kahe perioodiga 31 tõrjet. Mis on Läti 2-1 eduseisu võti?",
+      "options": [
+        "Merzļikinsi tõrjed",
+        "Täpne viskamine",
+        "Meeskonna kaitse",
+        "Publiku energia"
+      ],
+      "correct_index": null,
+      "reveal": "Läti, 2023. aasta pronksimedalist, juhib 40 minuti järel MM-ide edukaima riigi vastu.",
+      "english_gloss": "Title: Merzļikins Standing Tall. Question: Merzļikins has 31 saves through two periods. What's been the key to Latvia's 2-1 lead? Options: Merzļikins' saves / Clinical finishing / Team defense / Crowd energy. Reveal: Latvia, 2023 bronze medalists, lead the most decorated World Championship nation after 40 minutes."
+    },
+    "issues": [],
+    "judgement": {
+      "errors": [
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "2-1",
+          "explanation": "House style writes scores with a colon, not a hyphen.",
+          "suggested_fix": "2:1"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Publiku energia",
+          "explanation": "This is a slight calque of 'crowd energy'. Estonian sports copy more often says „publiku toetus“.",
+          "suggested_fix": "Publiku toetus"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Meeskonna kaitse",
+          "explanation": "It is understandable but a bit flat. „Kaitsemäng“ is the usual sports term for team defence.",
+          "suggested_fix": "Meeskonna kaitsemäng"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "MM-ide edukaima riigi vastu",
+          "explanation": "It is slightly stiff, and in sport the side is usually called „koondis“ rather than „riik“. Naming Canada would also read more naturally.",
+          "suggested_fix": "MM-ide ajaloo edukaima koondise Kanada vastu"
+        }
+      ],
+      "grammar": 5,
+      "naturalness": 4,
+      "terminology": 4,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "approve",
+      "native_rewrite": null
+    },
+    "xjudgement": null,
+    "mean_score": 4.4,
+    "mqm_penalty": 4,
+    "trace": [],
+    "error": null
+  },
+  {
+    "event": "Latvia vs Canada",
+    "sport": "ice hockey",
+    "moment": "m2",
+    "lang": "et",
+    "arm": "B.native",
+    "buff": {
+      "buff_type": "poll",
+      "title": "Kas Läti peab vastu?",
+      "question": "Merzļikins on teinud juba 31 tõrjet, Läti juhib 2:1. Mis otsustab kolmanda kolmandiku?",
+      "options": [
+        "Merzļikinsi tõrjed",
+        "Läti kaitse",
+        "Kanada surve",
+        "Läti kontrad"
+      ],
+      "correct_index": null,
+      "reveal": "Läti võitis 2023. aastal oma esimese MM-medali – pronksi.",
+      "english_gloss": "Title: Will Latvia hold on? Question: Merzļikins has already made 31 saves, Latvia leads 2-1. What will decide the third period? Options: Merzļikins's saves / Latvia's defence / Canada's pressure / Latvia's counterattacks. Reveal: Latvia won its first World Championship medal, bronze, in 2023."
+    },
+    "issues": [
+      "[error] term.calque: 'kolmandik' used; prefer 'periood' for 'period (ice hockey)'"
+    ],
+    "judgement": {
+      "errors": [
+        {
+          "category": "terminology",
+          "severity": "major",
+          "span": "kolmanda kolmandiku",
+          "explanation": "In Estonian hockey coverage a period is 'periood'; 'kolmandik' is a rare calque. 'Kolmanda kolmandiku' also sounds clumsy.",
+          "suggested_fix": "kolmandas perioodis"
+        },
+        {
+          "category": "fluency-translationese",
+          "severity": "minor",
+          "span": "Mis otsustab kolmanda kolmandiku?",
+          "explanation": "'Otsustama perioodi' (to decide the period) is odd. The stakes are the match, so the question should be about deciding the game.",
+          "suggested_fix": "Mis otsustab mängu kolmandas perioodis?"
+        },
+        {
+          "category": "terminology",
+          "severity": "minor",
+          "span": "on teinud juba 31 tõrjet",
+          "explanation": "'Tõrjet tegema' calques 'make saves'. Broadcasters usually use the verb: 'tõrjus/on tõrjunud 31 pealeviset'.",
+          "suggested_fix": "on tõrjunud juba 31 pealeviset"
+        },
+        {
+          "category": "style-register",
+          "severity": "minor",
+          "span": "Läti kontrad",
+          "explanation": "'Kontrad' is colloquial; 'vasturünnakud' is the standard term on ERR and in sports copy.",
+          "suggested_fix": "Läti vasturünnakud"
+        }
+      ],
+      "grammar": 4,
+      "naturalness": 3,
+      "terminology": 2,
+      "faithfulness": 5,
+      "engagement": 4,
+      "verdict": "revise",
+      "native_rewrite": {
+        "buff_type": "poll",
+        "title": "Kas Läti peab vastu?",
+        "question": "Merzļikins on tõrjunud juba 31 pealeviset ja Läti juhib 2:1. Mis otsustab mängu kolmandas perioodis?",
+        "options": [
+          "Merzļikinsi tõrjed",
+          "Läti kaitse",
+          "Kanada surve",
+          "Läti vasturünnakud"
+        ],
+        "correct_index": null,
+        "reveal": "Läti võitis 2023. aastal oma esimese MM-medali – pronksi.",
+        "english_gloss": "Title: Will Latvia hold on? Question: Merzļikins has already saved 31 shots and Latvia leads 2:1. What will decide the game in the third period? Options: Merzļikins's saves / Latvia's defence / Canada's pressure / Latvia's counterattacks. Reveal: Latvia won its first World Championship medal in 2023 – bronze."
+      }
+    },
+    "xjudgement": null,
+    "mean_score": 3.6,
+    "mqm_penalty": 8,
+    "trace": [],
+    "error": null
+  }
+]

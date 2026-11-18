@@ -1,0 +1,15 @@
+<section id="stack" class="light">
+<p class="eyebrow">APPENDIX</p>
+<h2>What the POC runs on</h2>
+<table class="in" style="--i:0; font-size:32px">
+<tr><th style="width:30%">Piece</th><th style="width:30%">Library or service</th><th>What it does here</th></tr>
+<tr><td>Generator + judge</td><td>anthropic SDK, claude-opus-5-5</td><td>messages.parse into pydantic schemas</td></tr>
+<tr><td>Reference names</td><td>Wikidata wbgetentities API</td><td>lt / lv / et labels, aliases and the “mul” fallback</td></tr>
+<tr><td>Latvian morphology</td><td>Tēzaurs morpho-api (no key)</td><td>Rule-based case forms for player names</td></tr>
+<tr><td>Spell check</td><td>spylls + phunspell</td><td>Hunspell lt_LT, lv_LV, et_EE in pure Python</td></tr>
+<tr><td>Second judge</td><td>google-genai, Gemini</td><td>Cross-family check on the main judge</td></tr>
+<tr><td>Tooling</td><td>uv, pytest and rich</td><td>Environment, 12 offline tests, terminal tables</td></tr>
+</table>
+<p class="small in" style="--i:1">Language sources: VLKK and 15min/LRT (lt), LSPA/RSU sports dictionary and LSM (lv), EKI and ERR/soccernet (et). Model evidence: EuroEval, the EKI leaderboard, WMT25.</p>
+<aside>No LanguageTool: it has no Lithuanian, Latvian or Estonian. COMET-Kiwi is non-commercial, so MetricX-24 is the license-safe option for later automatic quality estimation.</aside>
+</section>

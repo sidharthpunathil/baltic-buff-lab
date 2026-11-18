@@ -1,0 +1,22 @@
+{
+  "id": "ih-lat-can",
+  "sport": "ice hockey",
+  "competition": "IIHF World Championship (simulated group game)",
+  "home": "Latvia",
+  "away": "Canada",
+  "entities": [
+    {"name": "Latvia", "kind": "team", "qid": "Q1330238"},
+    {"name": "Canada", "kind": "team", "qid": "Q461503"},
+    {"name": "Elvis Merzļikins", "kind": "player", "qid": "Q15238428"}
+  ],
+  "facts": [
+    "Latvia won its first IIHF World Championship medal (bronze) in 2023.",
+    "Canada is the most decorated nation at the IIHF World Championship."
+  ],
+  "moments": [
+    {"id": "m1", "buff_type": "prediction", "state": "2nd period, 14:30, Latvia 1 - 1 Canada",
+     "text": "Canada gets a two-minute minor for tripping; Latvia goes on the power play."},
+    {"id": "m2", "buff_type": "poll", "state": "End of 2nd period, Latvia 2 - 1 Canada",
+     "text": "Goaltender Elvis Merzļikins has made 31 saves so far."}
+  ]
+}

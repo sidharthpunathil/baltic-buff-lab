@@ -1,0 +1,12 @@
+<section id="rollout" class="big-body">
+<p class="eyebrow">ROLLOUT · per org, behind feature_flags</p>
+<h2>Shadow first, then operator-visible, then default</h2>
+<div class="row in fill" style="--i:0; align-items:stretch">
+<div class="card grow"><p class="tag">STAGE 0 · NOW</p><h3>PRs 1 and 2</h3><p class="body">Prompt-only. Ship to every org with Baltic languages; watch edit rate.</p></div>
+<div class="card grow"><p class="tag">STAGE 1 · SHADOW</p><h3>PRs 3 to 5</h3><p class="body">Pipeline runs beside today’s output; decisions logged, nothing shown. Compare against operator edits.</p></div>
+<div class="card grow hot"><p class="tag">STAGE 2 · ASSIST</p><h3>Operator sees it</h3><p class="body">Native buff + English gloss + reviewer flags in the approval card. Operator still approves.</p></div>
+<div class="card grow"><p class="tag">STAGE 3 · DEFAULT</p><h3>On for Baltic orgs</h3><p class="body">After natives sign off on the golden set and edit rate drops.</p></div>
+</div>
+<p class="small in" style="--i:1">Exit criteria for each stage: native rater agreement with the judge, edit rate trend and p95 latency, all from the observability slide.</p>
+<aside>The existing multi_language_buffs org flag and the superadmin language shortlist already gate which orgs see lt, lv and et, so a new flag only needs to switch the pipeline variant.</aside>
+</section>

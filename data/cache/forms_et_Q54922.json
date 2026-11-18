@@ -1,0 +1,78 @@
+{
+  "lemma": "Madridi Real",
+  "gender": "none",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Madridi Real",
+      "short": "Real"
+    },
+    {
+      "case": "omastav",
+      "singular": "Madridi Reali",
+      "short": "Reali"
+    },
+    {
+      "case": "osastav",
+      "singular": "Madridi Reali",
+      "short": "Reali"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Madridi Realisse",
+      "short": "Realisse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Madridi Realis",
+      "short": "Realis"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Madridi Realist",
+      "short": "Realist"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Madridi Realile",
+      "short": "Realile"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Madridi Realil",
+      "short": "Realil"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Madridi Realilt",
+      "short": "Realilt"
+    },
+    {
+      "case": "saav",
+      "singular": "Madridi Realiks",
+      "short": "Realiks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Madridi Realini",
+      "short": "Realini"
+    },
+    {
+      "case": "olev",
+      "singular": "Madridi Realina",
+      "short": "Realina"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Madridi Realita",
+      "short": "Realita"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Madridi Realiga",
+      "short": "Realiga"
+    }
+  ],
+  "usage_note": "Estonian sports media write the basketball club as 'Madridi Real' (city in genitive, no quotes), or simply 'Real' in running text; the full Spanish name 'Real Madrid Baloncesto' is rarely used. Only 'Real' declines (stem Reali-); 'Madridi' stays in the genitive. When the football club could be confused, add 'korvpalliklubi' (e.g., 'Madridi Reali korvpallimeeskond')."
+}

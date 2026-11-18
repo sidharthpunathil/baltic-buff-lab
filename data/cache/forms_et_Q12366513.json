@@ -1,0 +1,78 @@
+{
+  "lemma": "Karol Mets",
+  "gender": "masculine",
+  "declines": true,
+  "forms": [
+    {
+      "case": "nimetav",
+      "singular": "Karol Mets",
+      "short": "Mets"
+    },
+    {
+      "case": "omastav",
+      "singular": "Karol Metsa",
+      "short": "Metsa"
+    },
+    {
+      "case": "osastav",
+      "singular": "Karol Metsa",
+      "short": "Metsa"
+    },
+    {
+      "case": "sisseütlev",
+      "singular": "Karol Metsasse",
+      "short": "Metsasse"
+    },
+    {
+      "case": "seesütlev",
+      "singular": "Karol Metsas",
+      "short": "Metsas"
+    },
+    {
+      "case": "seestütlev",
+      "singular": "Karol Metsast",
+      "short": "Metsast"
+    },
+    {
+      "case": "alaleütlev",
+      "singular": "Karol Metsale",
+      "short": "Metsale"
+    },
+    {
+      "case": "alalütlev",
+      "singular": "Karol Metsal",
+      "short": "Metsal"
+    },
+    {
+      "case": "alaltütlev",
+      "singular": "Karol Metsalt",
+      "short": "Metsalt"
+    },
+    {
+      "case": "saav",
+      "singular": "Karol Metsaks",
+      "short": "Metsaks"
+    },
+    {
+      "case": "rajav",
+      "singular": "Karol Metsani",
+      "short": "Metsani"
+    },
+    {
+      "case": "olev",
+      "singular": "Karol Metsana",
+      "short": "Metsana"
+    },
+    {
+      "case": "ilmaütlev",
+      "singular": "Karol Metsata",
+      "short": "Metsata"
+    },
+    {
+      "case": "kaasaütlev",
+      "singular": "Karol Metsaga",
+      "short": "Metsaga"
+    }
+  ],
+  "usage_note": "Estonian footballer; the surname Mets declines like the common noun mets (stem metsa-: Metsa, Metsas, Metsaga). In a full name only the surname takes case endings (Karol Metsa, Karol Metsaga); the first name stays in the nominative. For the illative, sports copy normally uses the long form Metsasse rather than the short form Metsa. No apostrophe is needed."
+}

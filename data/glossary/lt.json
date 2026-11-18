@@ -1,0 +1,592 @@
+[
+  {
+    "en": "match / game",
+    "term": "rungtynės",
+    "avoid": [
+      "matčas",
+      "mačas (colloquial)",
+      "žaidimas"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Plural-only noun (pluralia tantum): vienos rungtynės, dvejos rungtynės (collective numerals). 'Mačas' appears in 15min headlines in quotes but is colloquial; use rungtynės in buffs.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "half (football)",
+    "term": "kėlinys",
+    "avoid": [
+      "pusė",
+      "puslaikis"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "pirmasis / antrasis kėlinys. Same word is used for hockey periods.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "period (ice hockey)",
+    "term": "kėlinys",
+    "avoid": [
+      "periodas"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Antrajame kėlinyje...",
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "quarter (basketball)",
+    "term": "kėlinys / ketvirtis",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "LT basketball press uses kėlinys for quarters; ketvirtis also seen. Not confirmed from a source in this pass.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "overtime",
+    "term": "pratęsimas",
+    "avoid": [
+      "overtaimas",
+      "papildomas laikas"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "per pratęsimą (during OT).",
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/latvijoje-lietuvos-ledo-ritulininku-taskas-295-2806562",
+    "verified": true
+  },
+  {
+    "en": "extra time (football)",
+    "term": "pratęsimas",
+    "avoid": [
+      "papildomas laikas"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Same word as overtime.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/auksini-maca-baudiniu-serijoje-laimejes-plunges-babrungas-iskovojo-kelialapi-i-toplyga-24-2804024",
+    "verified": true
+  },
+  {
+    "en": "penalty shoot-out",
+    "term": "baudinių serija",
+    "avoid": [
+      "penalų serija",
+      "baudos smūgių serija"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "laimėti baudinių serijoje",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/auksini-maca-baudiniu-serijoje-laimejes-plunges-babrungas-iskovojo-kelialapi-i-toplyga-24-2804024",
+    "verified": true
+  },
+  {
+    "en": "penalty kick",
+    "term": "baudinys",
+    "avoid": [
+      "penalas",
+      "bausmės smūgis",
+      "baudos smūgis"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "'Baudos smūgis' is a FREE KICK, not a penalty. Realizuoti baudinį = convert a penalty.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "penalty spot",
+    "term": "11 metrų žyma",
+    "avoid": [
+      "penalų taškas"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "penalty area / box",
+    "term": "baudos aikštelė",
+    "avoid": [
+      "baudos zona"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/skirtingi-grandu-likimai-liverpool-triumfavo-o-chelsea-krito-pries-autsaiderius-24-2801424",
+    "verified": true
+  },
+  {
+    "en": "free kick",
+    "term": "baudos smūgis",
+    "avoid": [
+      "laisvas smūgis",
+      "frikikas"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "tiesioginis / netiesioginis baudos smūgis (LFF rules).",
+    "source": "https://lff.lt/files/documents/160/2017m.Futbolo-taisykles.pdf",
+    "verified": true
+  },
+  {
+    "en": "corner kick",
+    "term": "kampinis (smūgis)",
+    "avoid": [
+      "kornas",
+      "kampo smūgis"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Usually just kampinis: po kampinio, kampiniai 6:2.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "offside",
+    "term": "nuošalė",
+    "avoid": [
+      "ofsaidas"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "atsidūrė nuošalėje (was offside).",
+    "source": "https://klaipeda.diena.lt/naujienos/sportas/futbolas/pirmasis-ketvertas-zemaiciams-uzsivere-1780428",
+    "verified": true
+  },
+  {
+    "en": "VAR review",
+    "term": "VAR peržiūra",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://klaipeda.diena.lt/naujienos/sportas/futbolas/pirmasis-ketvertas-zemaiciams-uzsivere-1780428",
+    "verified": true
+  },
+  {
+    "en": "yellow card",
+    "term": "geltonoji kortelė",
+    "avoid": [
+      "geltonas lapelis"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Press also writes 'geltoną kortelę užsidirbo'.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/skirtingi-grandu-likimai-liverpool-triumfavo-o-chelsea-krito-pries-autsaiderius-24-2801424",
+    "verified": true
+  },
+  {
+    "en": "red card",
+    "term": "raudonoji kortelė",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "Parallel to geltonoji kortelė; not seen in a fetched source this pass.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "goal (scored)",
+    "term": "įvartis",
+    "avoid": [
+      "golas (slang)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "įmušti / pelnyti įvartį. 'Vartai' (the goal frame) is plural-only.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "to score a goal",
+    "term": "įmušti įvartį / pelnyti įvartį",
+    "avoid": [
+      "padaryti įvartį",
+      "skoruoti"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "goalkeeper",
+    "term": "vartininkas",
+    "avoid": [
+      "golkiperis"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Also 'vartų sargas' in press.",
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "save (goalkeeper)",
+    "term": "atremti (smūgį / metimą)",
+    "avoid": [
+      "išgelbėti smūgį"
+    ],
+    "pos": "verb",
+    "sport": "general",
+    "note": "metimą atrėmė vartininkas (hockey).",
+    "source": "https://www.lrt.lt/naujienos/sportas/10/1965357/lietuvos-ledo-ritulio-rinktinei-nepavyko-palauzti-ukrainieciu",
+    "verified": true
+  },
+  {
+    "en": "shot (football)",
+    "term": "smūgis",
+    "avoid": [
+      "šūvis"
+    ],
+    "pos": "noun",
+    "sport": "football",
+    "note": "smūgiai 21:7",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "assist",
+    "term": "rezultatyvus perdavimas",
+    "avoid": [
+      "asistas (slang)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Used for basketball and hockey stats.",
+    "source": "https://lrt.lt/naujienos/sportas/10/3113027/po-nesekmes-juskaite-neslepe-apmaudo-dareme-kvailu-klaidu-ir-nepagavome-ritmo",
+    "verified": true
+  },
+  {
+    "en": "substitution",
+    "term": "keitimas",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Not seen in a fetched source this pass.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "draw",
+    "term": "lygiosios",
+    "avoid": [
+      "lygybė",
+      "lygus rezultatas (stiff)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Plural-only: baigėsi lygiosiomis.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/egzotiskas-isbandymas-lapkricio-zvarboje-lietuva-surinamas-24-2804940",
+    "verified": true
+  },
+  {
+    "en": "win / victory",
+    "term": "pergalė; laimėti, nugalėti, įveikti",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "loss / to lose",
+    "term": "pralaimėjimas; pralaimėti, nusileisti",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "baigė pralaimėjimu; nusileido.",
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "score / result",
+    "term": "rezultatas",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Score written with colon and no spaces in press: 2:0.",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "expected goals (xG)",
+    "term": "tikėtini įvarčiai",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": "3,17 tikėtino įvarčio (xG)",
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "man of the match",
+    "term": "geriausias rungtynių žaidėjas",
+    "avoid": [
+      "rungtynių žmogus (calque)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": "Source shows 'varžybų geriausiais žaidėjais pripažinti'; exact buff phrasing is a draft.",
+    "source": "https://silutesnaujienos.lt/lt/r-jocio-tritaskis-sustabde-suduvos-sugrizima",
+    "verified": false
+  },
+  {
+    "en": "national team",
+    "term": "rinktinė",
+    "avoid": [
+      "nacionalinė komanda (stiff)"
+    ],
+    "pos": "noun",
+    "sport": "general",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/oficialus-cepo-debiutas-su-nezinomybes-prieskoniu-tylu-kaip-24-2806736",
+    "verified": true
+  },
+  {
+    "en": "footballer",
+    "term": "futbolininkas",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "football",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/futbolas/paskutines-metu-rungtynes-lietuva-lichtensteinas-24-2807356",
+    "verified": true
+  },
+  {
+    "en": "basketball",
+    "term": "krepšinis",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Lithuania's number-one sport.",
+    "source": "https://lrt.lt/naujienos/sportas/10/3113027/po-nesekmes-juskaite-neslepe-apmaudo-dareme-kvailu-klaidu-ir-nepagavome-ritmo",
+    "verified": true
+  },
+  {
+    "en": "basketball player",
+    "term": "krepšininkas / krepšininkė",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Gendered: krepšininkė for women.",
+    "source": "https://lrt.lt/naujienos/sportas/10/3113027/po-nesekmes-juskaite-neslepe-apmaudo-dareme-kvailu-klaidu-ir-nepagavome-ritmo",
+    "verified": true
+  },
+  {
+    "en": "three-pointer",
+    "term": "tritaškis",
+    "avoid": [
+      "trijų taškų šūvis"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Stat abbreviation trit.",
+    "source": "https://silutesnaujienos.lt/lt/r-jocio-tritaskis-sustabde-suduvos-sugrizima",
+    "verified": true
+  },
+  {
+    "en": "two-point shot",
+    "term": "dvitaškis",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Stat abbreviation dvit.",
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "free throw",
+    "term": "baudos metimas",
+    "avoid": [
+      "laisvas metimas"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "Plural baudų metimai; abbreviation baud.",
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "rebound",
+    "term": "atkovotas kamuolys",
+    "avoid": [
+      "atšokęs kamuolys",
+      "rebaundas"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "atkovojo 10 kamuolių",
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "steal",
+    "term": "perimtas kamuolys",
+    "avoid": [
+      "pavogtas kamuolys"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "turnover",
+    "term": "klaida",
+    "avoid": [
+      "praradimas"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "efficiency rating (PIR)",
+    "term": "naudingumo balai",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://basketnews.lt/news-259476-jarumbausko-rekordo-pakyleti-siauliai-atsitiese-pries-lkl-sezono-issisokelius.html",
+    "verified": true
+  },
+  {
+    "en": "points",
+    "term": "taškai; pelnyti taškų",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": "pelnė 19 taškų (gen. pl. after 10+).",
+    "source": "https://lrt.lt/naujienos/sportas/10/3113027/po-nesekmes-juskaite-neslepe-apmaudo-dareme-kvailu-klaidu-ir-nepagavome-ritmo",
+    "verified": true
+  },
+  {
+    "en": "EuroLeague",
+    "term": "Eurolyga",
+    "avoid": [
+      "Euroliga"
+    ],
+    "pos": "noun",
+    "sport": "basketball",
+    "note": null,
+    "source": "https://go3.lt/sport_tv",
+    "verified": true
+  },
+  {
+    "en": "ice hockey",
+    "term": "ledo ritulys",
+    "avoid": [
+      "hokėjus (colloquial)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "hockey player",
+    "term": "ledo ritulininkas",
+    "avoid": [
+      "hokėjistas"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "puck",
+    "term": "ritulys",
+    "avoid": [
+      "šaibė (slang)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://www.lrt.lt/naujienos/sportas/10/1965357/lietuvos-ledo-ritulio-rinktinei-nepavyko-palauzti-ukrainieciu",
+    "verified": true
+  },
+  {
+    "en": "shot (hockey)",
+    "term": "metimas",
+    "avoid": [
+      "smūgis (football word)"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Hockey and basketball use metimas; football uses smūgis.",
+    "source": "https://tv3.lt/naujiena/zmones/is-nausedos-netiketumas-sioje-vietoje-jam-nebuvo-lygiu-n1568346",
+    "verified": true
+  },
+  {
+    "en": "power play",
+    "term": "dauguma (žaisti daugumoje)",
+    "avoid": [
+      "jėgos žaidimas"
+    ],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "daugumoje sušvelnino rezultatą",
+    "source": "https://15min.lt/sportas/naujiena/ziemos-sportas/lietuvos-ledo-ritulininkai-tautu-taures-varzybas-baige-pralaimejimu-estijai-295-2801178",
+    "verified": true
+  },
+  {
+    "en": "short-handed",
+    "term": "mažuma (žaisti mažumoje)",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": "Pair of dauguma; not seen in a fetched source.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "penalty minutes",
+    "term": "baudos minutės",
+    "avoid": [],
+    "pos": "noun",
+    "sport": "hockey",
+    "note": null,
+    "source": "https://tv3.lt/naujiena/zmones/is-nausedos-netiketumas-sioje-vietoje-jam-nebuvo-lygiu-n1568346",
+    "verified": true
+  },
+  {
+    "en": "who will score next?",
+    "term": "Kas pelnys kitą įvartį?",
+    "avoid": [
+      "Kas įmuš sekantį įvartį?"
+    ],
+    "pos": "phrase",
+    "sport": "general",
+    "note": "Draft. 'Sekantis' in the sense of 'next' is a long-flagged Russianism; use kitas.",
+    "source": null,
+    "verified": false
+  },
+  {
+    "en": "who will win?",
+    "term": "Kas laimės?",
+    "avoid": [],
+    "pos": "phrase",
+    "sport": "general",
+    "note": null,
+    "source": "https://www.15min.lt/zmones/naujiena/lietuva/m-1-apklausa-sostines-gatvese-ka-palaiko-zmones-kauno-zalgiri-ar-vilniaus-ryta-1050-2317582",
+    "verified": true
+  }
+]
